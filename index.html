@@ -299,30 +299,7 @@
     </div>
 
     <script>
-        // Data for the 20 largest countries by population
-        const countries = [
-            { code: 'CN', name: 'China', flag: '🇨🇳' },
-            { code: 'IN', name: 'India', flag: '🇮🇳' },
-            { code: 'US', name: 'United States', flag: '🇺🇸' },
-            { code: 'ID', name: 'Indonesia', flag: '🇮🇩' },
-            { code: 'PK', name: 'Pakistan', flag: '🇵🇰' },
-            { code: 'BR', name: 'Brazil', flag: '🇧🇷' },
-            { code: 'NG', name: 'Nigeria', flag: '🇳🇬' },
-            { code: 'BD', name: 'Bangladesh', flag: '🇧🇩' },
-            { code: 'RU', name: 'Russia', flag: '🇷🇺' },
-            { code: 'MX', name: 'Mexico', flag: '🇲🇽' },
-            { code: 'JP', name: 'Japan', flag: '🇯🇵' },
-            { code: 'ET', name: 'Ethiopia', flag: '🇪🇹' },
-            { code: 'PH', name: 'Philippines', flag: '🇵🇭' },
-            { code: 'EG', name: 'Egypt', flag: '🇪🇬' },
-            { code: 'VN', name: 'Vietnam', flag: '🇻🇳' },
-            { code: 'CD', name: 'DR Congo', flag: '🇨🇩' },
-            { code: 'TR', name: 'Turkey', flag: '🇹🇷' },
-            { code: 'IR', name: 'Iran', flag: '🇮🇷' },
-            { code: 'DE', name: 'Germany', flag: '🇩🇪' },
-            { code: 'TH', name: 'Thailand', flag: '🇹🇭' }
-        ];
-        
+        // Define the months
         const months = [
             { id: 0, name: 'January' },
             { id: 1, name: 'February' },
@@ -338,216 +315,76 @@
             { id: 11, name: 'December' }
         ];
         
-        // Sample holiday data (in a real implementation, this would come from an API)
-        const holidaysData = [
-            // China (CN)
-            { date: '2025-01-01', name: 'New Year\'s Day', country: 'CN' },
-            { date: '2025-01-25', name: 'Chinese New Year', country: 'CN' },
-            { date: '2025-04-05', name: 'Qingming Festival', country: 'CN' },
-            { date: '2025-05-01', name: 'Labor Day', country: 'CN' },
-            { date: '2025-06-22', name: 'Dragon Boat Festival', country: 'CN' },
-            { date: '2025-09-29', name: 'Mid-Autumn Festival', country: 'CN' },
-            { date: '2025-10-01', name: 'National Day', country: 'CN' },
-            
-            // India (IN)
-            { date: '2025-01-26', name: 'Republic Day', country: 'IN' },
-            { date: '2025-03-07', name: 'Holi', country: 'IN' },
-            { date: '2025-04-14', name: 'Ambedkar Jayanti', country: 'IN' },
-            { date: '2025-08-15', name: 'Independence Day', country: 'IN' },
-            { date: '2025-10-02', name: 'Gandhi Jayanti', country: 'IN' },
-            { date: '2025-11-12', name: 'Diwali', country: 'IN' },
-            
-            // United States (US)
-            { date: '2025-01-01', name: 'New Year\'s Day', country: 'US' },
-            { date: '2025-01-20', name: 'Martin Luther King Jr. Day', country: 'US' },
-            { date: '2025-02-17', name: 'Presidents\' Day', country: 'US' },
-            { date: '2025-05-26', name: 'Memorial Day', country: 'US' },
-            { date: '2025-06-19', name: 'Juneteenth', country: 'US' },
-            { date: '2025-07-04', name: 'Independence Day', country: 'US' },
-            { date: '2025-09-01', name: 'Labor Day', country: 'US' },
-            { date: '2025-10-13', name: 'Columbus Day', country: 'US' },
-            { date: '2025-11-11', name: 'Veterans Day', country: 'US' },
-            { date: '2025-11-27', name: 'Thanksgiving Day', country: 'US' },
-            { date: '2025-12-25', name: 'Christmas Day', country: 'US' },
-            
-            // Indonesia (ID)
-            { date: '2025-01-01', name: 'New Year\'s Day', country: 'ID' },
-            { date: '2025-03-31', name: 'Nyepi', country: 'ID' },
-            { date: '2025-04-10', name: 'Eid al-Fitr', country: 'ID' },
-            { date: '2025-05-01', name: 'Labor Day', country: 'ID' },
-            { date: '2025-06-17', name: 'Eid al-Adha', country: 'ID' },
-            { date: '2025-08-17', name: 'Independence Day', country: 'ID' },
-            
-            // Pakistan (PK)
-            { date: '2025-02-05', name: 'Kashmir Day', country: 'PK' },
-            { date: '2025-03-23', name: 'Pakistan Day', country: 'PK' },
-            { date: '2025-05-01', name: 'Labour Day', country: 'PK' },
-            { date: '2025-08-14', name: 'Independence Day', country: 'PK' },
-            { date: '2025-12-25', name: 'Quaid-e-Azam Day', country: 'PK' },
-            
-            // Brazil (BR)
-            { date: '2025-01-01', name: 'New Year\'s Day', country: 'BR' },
-            { date: '2025-02-25', name: 'Carnival', country: 'BR' },
-            { date: '2025-04-18', name: 'Good Friday', country: 'BR' },
-            { date: '2025-04-21', name: 'Tiradentes Day', country: 'BR' },
-            { date: '2025-05-01', name: 'Labor Day', country: 'BR' },
-            { date: '2025-09-07', name: 'Independence Day', country: 'BR' },
-            { date: '2025-10-12', name: 'Our Lady of Aparecida', country: 'BR' },
-            { date: '2025-11-02', name: 'All Souls\' Day', country: 'BR' },
-            { date: '2025-11-15', name: 'Republic Proclamation Day', country: 'BR' },
-            { date: '2025-12-25', name: 'Christmas Day', country: 'BR' },
-            
-            // Nigeria (NG)
-            { date: '2025-01-01', name: 'New Year\'s Day', country: 'NG' },
-            { date: '2025-04-18', name: 'Good Friday', country: 'NG' },
-            { date: '2025-04-21', name: 'Easter Monday', country: 'NG' },
-            { date: '2025-05-01', name: 'Workers\' Day', country: 'NG' },
-            { date: '2025-06-12', name: 'Democracy Day', country: 'NG' },
-            { date: '2025-10-01', name: 'Independence Day', country: 'NG' },
-            { date: '2025-12-25', name: 'Christmas Day', country: 'NG' },
-            { date: '2025-12-26', name: 'Boxing Day', country: 'NG' },
-            
-            // Bangladesh (BD)
-            { date: '2025-02-21', name: 'Language Movement Day', country: 'BD' },
-            { date: '2025-03-26', name: 'Independence Day', country: 'BD' },
-            { date: '2025-04-14', name: 'Bengali New Year', country: 'BD' },
-            { date: '2025-05-01', name: 'May Day', country: 'BD' },
-            { date: '2025-12-16', name: 'Victory Day', country: 'BD' },
-            
-            // Russia (RU)
-            { date: '2025-01-01', name: 'New Year\'s Day', country: 'RU' },
-            { date: '2025-01-07', name: 'Orthodox Christmas', country: 'RU' },
-            { date: '2025-02-23', name: 'Defender of the Fatherland Day', country: 'RU' },
-            { date: '2025-03-08', name: 'International Women\'s Day', country: 'RU' },
-            { date: '2025-05-01', name: 'Spring and Labor Day', country: 'RU' },
-            { date: '2025-05-09', name: 'Victory Day', country: 'RU' },
-            { date: '2025-06-12', name: 'Russia Day', country: 'RU' },
-            { date: '2025-11-04', name: 'Unity Day', country: 'RU' },
-            
-            // Mexico (MX)
-            { date: '2025-01-01', name: 'New Year\'s Day', country: 'MX' },
-            { date: '2025-02-05', name: 'Constitution Day', country: 'MX' },
-            { date: '2025-03-21', name: 'Benito Juárez\'s Birthday', country: 'MX' },
-            { date: '2025-05-01', name: 'Labor Day', country: 'MX' },
-            { date: '2025-09-16', name: 'Independence Day', country: 'MX' },
-            { date: '2025-11-02', name: 'Day of the Dead', country: 'MX' },
-            { date: '2025-11-20', name: 'Revolution Day', country: 'MX' },
-            { date: '2025-12-12', name: 'Day of the Virgin of Guadalupe', country: 'MX' },
-            { date: '2025-12-25', name: 'Christmas Day', country: 'MX' },
-            
-            // Japan (JP)
-            { date: '2025-01-01', name: 'New Year\'s Day', country: 'JP' },
-            { date: '2025-01-13', name: 'Coming of Age Day', country: 'JP' },
-            { date: '2025-02-11', name: 'National Foundation Day', country: 'JP' },
-            { date: '2025-02-23', name: 'Emperor\'s Birthday', country: 'JP' },
-            { date: '2025-03-21', name: 'Vernal Equinox Day', country: 'JP' },
-            { date: '2025-04-29', name: 'Showa Day', country: 'JP' },
-            { date: '2025-05-03', name: 'Constitution Memorial Day', country: 'JP' },
-            { date: '2025-05-04', name: 'Greenery Day', country: 'JP' },
-            { date: '2025-05-05', name: 'Children\'s Day', country: 'JP' },
-            { date: '2025-07-21', name: 'Marine Day', country: 'JP' },
-            { date: '2025-08-11', name: 'Mountain Day', country: 'JP' },
-            { date: '2025-09-15', name: 'Respect for the Aged Day', country: 'JP' },
-            { date: '2025-09-23', name: 'Autumnal Equinox Day', country: 'JP' },
-            { date: '2025-10-13', name: 'Sports Day', country: 'JP' },
-            { date: '2025-11-03', name: 'Culture Day', country: 'JP' },
-            { date: '2025-11-23', name: 'Labor Thanksgiving Day', country: 'JP' },
-            
-            // Ethiopia (ET)
-            { date: '2025-01-07', name: 'Ethiopian Christmas', country: 'ET' },
-            { date: '2025-01-19', name: 'Epiphany', country: 'ET' },
-            { date: '2025-03-02', name: 'Victory of Adwa', country: 'ET' },
-            { date: '2025-04-19', name: 'Ethiopian Good Friday', country: 'ET' },
-            { date: '2025-05-01', name: 'International Workers\' Day', country: 'ET' },
-            { date: '2025-05-05', name: 'Patriots\' Victory Day', country: 'ET' },
-            { date: '2025-09-11', name: 'Ethiopian New Year', country: 'ET' },
-            { date: '2025-09-27', name: 'Finding of the True Cross', country: 'ET' },
-            
-            // Philippines (PH)
-            { date: '2025-01-01', name: 'New Year\'s Day', country: 'PH' },
-            { date: '2025-02-25', name: 'EDSA Revolution Anniversary', country: 'PH' },
-            { date: '2025-04-09', name: 'Day of Valor', country: 'PH' },
-            { date: '2025-04-18', name: 'Good Friday', country: 'PH' },
-            { date: '2025-05-01', name: 'Labor Day', country: 'PH' },
-            { date: '2025-06-12', name: 'Independence Day', country: 'PH' },
-            { date: '2025-08-21', name: 'Ninoy Aquino Day', country: 'PH' },
-            { date: '2025-11-01', name: 'All Saints\' Day', country: 'PH' },
-            { date: '2025-11-30', name: 'Bonifacio Day', country: 'PH' },
-            { date: '2025-12-25', name: 'Christmas Day', country: 'PH' },
-            { date: '2025-12-30', name: 'Rizal Day', country: 'PH' },
-            
-            // Egypt (EG)
-            { date: '2025-01-07', name: 'Coptic Christmas', country: 'EG' },
-            { date: '2025-01-25', name: 'Revolution Day', country: 'EG' },
-            { date: '2025-04-25', name: 'Sinai Liberation Day', country: 'EG' },
-            { date: '2025-05-01', name: 'Labor Day', country: 'EG' },
-            { date: '2025-07-23', name: 'Revolution Day', country: 'EG' },
-            { date: '2025-10-06', name: 'Armed Forces Day', country: 'EG' },
-            
-            // Vietnam (VN)
-            { date: '2025-01-01', name: 'New Year\'s Day', country: 'VN' },
-            { date: '2025-01-22', name: 'Lunar New Year', country: 'VN' },
-            { date: '2025-04-30', name: 'Reunification Day', country: 'VN' },
-            { date: '2025-05-01', name: 'Labor Day', country: 'VN' },
-            { date: '2025-09-02', name: 'National Day', country: 'VN' },
-            
-            // DR Congo (CD)
-            { date: '2025-01-01', name: 'New Year\'s Day', country: 'CD' },
-            { date: '2025-01-04', name: 'Martyrs of Independence Day', country: 'CD' },
-            { date: '2025-01-17', name: 'Laurent-Désiré Kabila Day', country: 'CD' },
-            { date: '2025-05-01', name: 'Labor Day', country: 'CD' },
-            { date: '2025-05-17', name: 'Liberation Day', country: 'CD' },
-            { date: '2025-06-30', name: 'Independence Day', country: 'CD' },
-            { date: '2025-08-01', name: 'Parents\' Day', country: 'CD' },
-            { date: '2025-12-25', name: 'Christmas Day', country: 'CD' },
-            
-            // Turkey (TR)
-            { date: '2025-01-01', name: 'New Year\'s Day', country: 'TR' },
-            { date: '2025-04-23', name: 'National Sovereignty and Children\'s Day', country: 'TR' },
-            { date: '2025-05-01', name: 'Labor and Solidarity Day', country: 'TR' },
-            { date: '2025-05-19', name: 'Commemoration of Atatürk, Youth and Sports Day', country: 'TR' },
-            { date: '2025-07-15', name: 'Democracy and National Unity Day', country: 'TR' },
-            { date: '2025-08-30', name: 'Victory Day', country: 'TR' },
-            { date: '2025-10-29', name: 'Republic Day', country: 'TR' },
-            
-            // Iran (IR)
-            { date: '2025-02-11', name: 'Revolution Day', country: 'IR' },
-            { date: '2025-03-21', name: 'Nowruz (Persian New Year)', country: 'IR' },
-            { date: '2025-04-01', name: 'Islamic Republic Day', country: 'IR' },
-            { date: '2025-06-04', name: 'Demise of Imam Khomeini', country: 'IR' },
-            { date: '2025-06-05', name: 'Khordad 15 Uprising', country: 'IR' },
-            
-            // Germany (DE)
-            { date: '2025-01-01', name: 'New Year\'s Day', country: 'DE' },
-            { date: '2025-04-18', name: 'Good Friday', country: 'DE' },
-            { date: '2025-04-21', name: 'Easter Monday', country: 'DE' },
-            { date: '2025-05-01', name: 'Labor Day', country: 'DE' },
-            { date: '2025-05-29', name: 'Ascension Day', country: 'DE' },
-            { date: '2025-06-09', name: 'Whit Monday', country: 'DE' },
-            { date: '2025-10-03', name: 'German Unity Day', country: 'DE' },
-            { date: '2025-12-25', name: 'Christmas Day', country: 'DE' },
-            { date: '2025-12-26', name: 'Boxing Day', country: 'DE' },
-            
-            // Thailand (TH)
-            { date: '2025-01-01', name: 'New Year\'s Day', country: 'TH' },
-            { date: '2025-02-10', name: 'Makha Bucha', country: 'TH' },
-            { date: '2025-04-06', name: 'Chakri Day', country: 'TH' },
-            { date: '2025-04-13', name: 'Songkran Festival', country: 'TH' },
-            { date: '2025-05-01', name: 'Labor Day', country: 'TH' },
-            { date: '2025-05-05', name: 'Coronation Day', country: 'TH' },
-            { date: '2025-06-03', name: 'Queen Suthida\'s Birthday', country: 'TH' },
-            { date: '2025-07-28', name: 'King Vajiralongkorn\'s Birthday', country: 'TH' },
-            { date: '2025-08-12', name: 'Queen Mother\'s Birthday', country: 'TH' },
-            { date: '2025-10-13', name: 'King Bhumibol\'s Memorial Day', country: 'TH' },
-            { date: '2025-12-05', name: 'King Bhumibol\'s Birthday', country: 'TH' },
-            { date: '2025-12-10', name: 'Constitution Day', country: 'TH' },
-            { date: '2025-12-31', name: 'New Year\'s Eve', country: 'TH' }
-        ];
+        // Placeholder data to use before loading the JSON
+        let countries = [];
+        let holidaysData = [];
         
-        // Initialize the application
-        document.addEventListener('DOMContentLoaded', function() {
-            // Populate country filters
+        // Load holiday data from the JSON file
+        fetch('holiday-data.json')
+            .then(response => response.json())
+            .then(data => {
+                // Process countries
+                countries = data.countries.map(country => {
+                    // Add flag emoji based on country code
+                    const countryCode = country.code.toUpperCase();
+                    const flagEmoji = getFlagEmoji(countryCode);
+                    return {
+                        code: countryCode,
+                        name: country.name,
+                        flag: flagEmoji
+                    };
+                });
+                
+                // Process holidays
+                holidaysData = [];
+                data.countries.forEach(country => {
+                    if (country.holidays && country.holidays.length > 0) {
+                        country.holidays.forEach(holiday => {
+                            // Convert month and day to date format
+                            const month = holiday.month; // 0-based month
+                            const day = holiday.day;
+                            const year = 2025; // Using 2025 as a fixed year for consistency
+                            
+                            const date = new Date(year, month, day);
+                            const formattedDate = date.toISOString().split('T')[0]; // YYYY-MM-DD format
+                            
+                            holidaysData.push({
+                                date: formattedDate,
+                                name: holiday.name,
+                                country: country.code.toUpperCase()
+                            });
+                        });
+                    }
+                });
+                
+                // After data is loaded, populate the filters and render the initial view
+                populateCountryFilters();
+                renderHolidays();
+            })
+            .catch(error => {
+                console.error('Error loading holiday data:', error);
+                document.getElementById('holidays-container').innerHTML = `
+                    <div class="no-results">
+                        <i class="fas fa-exclamation-circle" style="font-size: 2em; margin-bottom: 20px; color: #ff6b6b;"></i>
+                        <p>Error loading holiday data. Please try again later.</p>
+                    </div>
+                `;
+            });
+        
+        // Function to get flag emoji from country code
+        function getFlagEmoji(countryCode) {
+            const codePoints = countryCode
+                .toUpperCase()
+                .split('')
+                .map(char => 127397 + char.charCodeAt());
+            return String.fromCodePoint(...codePoints);
+        }
+        
+        // Function to populate country filters after data is loaded
+        function populateCountryFilters() {
             const countryFiltersContainer = document.getElementById('country-filters');
+            countryFiltersContainer.innerHTML = '';
+            
             countries.forEach(country => {
                 const checkboxItem = document.createElement('div');
                 checkboxItem.className = 'checkbox-item';
@@ -566,8 +403,21 @@
                 checkboxItem.appendChild(label);
                 countryFiltersContainer.appendChild(checkboxItem);
             });
+        ];
+        
+        // Initialize the application
+        document.addEventListener('DOMContentLoaded', function() {
+            // Populate month filters (doesn't depend on JSON data)
+            populateMonthFilters();
             
-            // Populate month filters
+            // Setup event listeners for buttons and search
+            setupEventListeners();
+            
+            // The country filters and holiday rendering will be done after the JSON is loaded
+        });
+        
+        // Function to populate month filters
+        function populateMonthFilters() {
             const monthFiltersContainer = document.getElementById('month-filters');
             months.forEach(month => {
                 const checkboxItem = document.createElement('div');
@@ -587,7 +437,10 @@
                 checkboxItem.appendChild(label);
                 monthFiltersContainer.appendChild(checkboxItem);
             });
-            
+        }
+        
+        // Function to setup event listeners
+        function setupEventListeners() {
             // Setup event listeners for buttons
             document.getElementById('select-all-countries').addEventListener('click', () => {
                 document.querySelectorAll('#country-filters input[type="checkbox"]').forEach(checkbox => {
@@ -629,8 +482,17 @@
             // Apply filters button
             document.getElementById('apply-filters').addEventListener('click', renderHolidays);
             
-            // Initial render
-            renderHolidays();
+            // Initial render will be triggered after JSON data is loaded
+            
+display = 'flex';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+            
+            // Apply filters button
+            document.getElementById('apply-filters').addEventListener('click', renderHolidays);
             
             // Function to render holidays based on selected filters
             function renderHolidays() {
@@ -734,6 +596,7 @@
                             const formattedDate = `${monthName} ${date.getDate()}`;
                             
                             const country = countries.find(c => c.code === holiday.country);
+                            if (!country) return; // Skip if country info is not found
                             
                             holidayItem.innerHTML = `
                                 <div class="holiday-date">${formattedDate}</div>
