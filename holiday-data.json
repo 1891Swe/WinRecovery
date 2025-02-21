@@ -1,0 +1,6805 @@
+{
+  "countries": [
+    {
+      "code": "at",
+      "name": "Austria",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Neujahr",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Epiphany",
+          "localName": "Heilige Drei Könige",
+          "month": 0,
+          "day": 6,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Monday",
+          "localName": "Ostermontag",
+          "month": 3,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "National Holiday",
+          "localName": "Staatsfeiertag",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Ascension Day",
+          "localName": "Christi Himmelfahrt",
+          "month": 4,
+          "day": 29,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Whit Monday",
+          "localName": "Pfingstmontag",
+          "month": 5,
+          "day": 9,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Corpus Christi",
+          "localName": "Fronleichnam",
+          "month": 5,
+          "day": 19,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Assumption Day",
+          "localName": "Maria Himmelfahrt",
+          "month": 7,
+          "day": 15,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "National Holiday",
+          "localName": "Nationalfeiertag",
+          "month": 9,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "All Saints' Day",
+          "localName": "Allerheiligen",
+          "month": 10,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Immaculate Conception",
+          "localName": "Mariä Empfängnis",
+          "month": 11,
+          "day": 8,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Weihnachten",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "St. Stephen's Day",
+          "localName": "Stefanitag",
+          "month": 11,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "au",
+      "name": "Australia",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "New Year's Day",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Australia Day",
+          "localName": "Australia Day",
+          "month": 0,
+          "day": 27,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labour Day",
+          "localName": "Labour Day",
+          "month": 2,
+          "day": 3,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Canberra Day",
+          "localName": "Canberra Day",
+          "month": 2,
+          "day": 10,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "March Public Holiday",
+          "localName": "March Public Holiday",
+          "month": 2,
+          "day": 10,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Eight Hours Day",
+          "localName": "Eight Hours Day",
+          "month": 2,
+          "day": 10,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labour Day",
+          "localName": "Labour Day",
+          "month": 2,
+          "day": 10,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Good Friday",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Holy Saturday",
+          "localName": "Easter Eve",
+          "month": 3,
+          "day": 19,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Sunday",
+          "localName": "Easter Sunday",
+          "month": 3,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Monday",
+          "localName": "Easter Monday",
+          "month": 3,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Anzac Day",
+          "localName": "Anzac Day",
+          "month": 3,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "May Day",
+          "localName": "May Day",
+          "month": 4,
+          "day": 5,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labour Day",
+          "localName": "Labour Day",
+          "month": 4,
+          "day": 5,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Reconciliation Day",
+          "localName": "Reconciliation Day",
+          "month": 5,
+          "day": 2,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Western Australia Day",
+          "localName": "Western Australia Day",
+          "month": 5,
+          "day": 2,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "King's Birthday",
+          "localName": "King's Birthday",
+          "month": 5,
+          "day": 9,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Picnic Day",
+          "localName": "Picnic Day",
+          "month": 7,
+          "day": 4,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "King's Birthday",
+          "localName": "King's Birthday",
+          "month": 8,
+          "day": 22,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labour Day",
+          "localName": "Labour Day",
+          "month": 9,
+          "day": 6,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "King's Birthday",
+          "localName": "King's Birthday",
+          "month": 9,
+          "day": 6,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Melbourne Cup",
+          "localName": "Melbourne Cup",
+          "month": 10,
+          "day": 4,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Christmas Day",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "St. Stephen's Day",
+          "localName": "Boxing Day",
+          "month": 11,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "be",
+      "name": "Belgium",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Nieuwjaar",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Goede Vrijdag",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Sunday",
+          "localName": "Pasen",
+          "month": 3,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Monday",
+          "localName": "Paasmaandag",
+          "month": 3,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labour Day",
+          "localName": "Dag van de arbeid",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Ascension Day",
+          "localName": "Onze Lieve Heer hemel",
+          "month": 4,
+          "day": 29,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Day after Ascension Day",
+          "localName": "Day after Ascension Day",
+          "month": 4,
+          "day": 30,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Whit Monday",
+          "localName": "Pinkstermaandag",
+          "month": 5,
+          "day": 9,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Belgian National Day",
+          "localName": "Nationale feestdag",
+          "month": 6,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Assumption Day",
+          "localName": "Onze Lieve Vrouw hemelvaart",
+          "month": 7,
+          "day": 15,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "All Saints' Day",
+          "localName": "Allerheiligen",
+          "month": 10,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Armistice Day",
+          "localName": "Wapenstilstand",
+          "month": 10,
+          "day": 11,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Kerstdag",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "St. Stephen's Day",
+          "localName": "Boxing Day",
+          "month": 11,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "br",
+      "name": "Brazil",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Confraternização Universal",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Carnival",
+          "localName": "Carnaval",
+          "month": 2,
+          "day": 3,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Carnival",
+          "localName": "Carnaval",
+          "month": 2,
+          "day": 4,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Sexta-feira Santa",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Sunday",
+          "localName": "Domingo de Páscoa",
+          "month": 3,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Tiradentes",
+          "localName": "Dia de Tiradentes",
+          "month": 3,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labour Day",
+          "localName": "Dia do Trabalhador",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Corpus Christi",
+          "localName": "Corpus Christi",
+          "month": 5,
+          "day": 19,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Constitutionalist Revolution of 1932",
+          "localName": "Revolução Constitucionalista de 1932",
+          "month": 6,
+          "day": 9,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Independence Day",
+          "localName": "Dia da Independência",
+          "month": 8,
+          "day": 7,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Our Lady of Aparecida",
+          "localName": "Nossa Senhora Aparecida",
+          "month": 9,
+          "day": 12,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "All Souls' Day",
+          "localName": "Dia de Finados",
+          "month": 10,
+          "day": 2,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Republic Proclamation Day",
+          "localName": "Proclamação da República",
+          "month": 10,
+          "day": 15,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Black Awareness Day",
+          "localName": "Dia da Consciência Negra",
+          "month": 10,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Natal",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "ca",
+      "name": "Canada",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "New Year's Day",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Louis Riel Day",
+          "localName": "Louis Riel Day",
+          "month": 1,
+          "day": 17,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Islander Day",
+          "localName": "Islander Day",
+          "month": 1,
+          "day": 17,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Heritage Day",
+          "localName": "Heritage Day",
+          "month": 1,
+          "day": 17,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Family Day",
+          "localName": "Family Day",
+          "month": 1,
+          "day": 17,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Saint Patrick's Day",
+          "localName": "Saint Patrick's Day",
+          "month": 2,
+          "day": 17,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Good Friday",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Monday",
+          "localName": "Easter Monday",
+          "month": 3,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Saint George's Day",
+          "localName": "Saint George's Day",
+          "month": 3,
+          "day": 23,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "National Patriots' Day",
+          "localName": "National Patriots' Day",
+          "month": 4,
+          "day": 19,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Victoria Day",
+          "localName": "Victoria Day",
+          "month": 4,
+          "day": 19,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "National Aboriginal Day",
+          "localName": "National Aboriginal Day",
+          "month": 5,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Discovery Day",
+          "localName": "Discovery Day",
+          "month": 5,
+          "day": 24,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "National Holiday",
+          "localName": "Fête nationale du Québec",
+          "month": 5,
+          "day": 24,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Canada Day",
+          "localName": "Canada Day",
+          "month": 6,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Orangemen's Day",
+          "localName": "Orangemen's Day",
+          "month": 6,
+          "day": 12,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Civic Holiday",
+          "localName": "Civic Holiday",
+          "month": 7,
+          "day": 4,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "British Columbia Day",
+          "localName": "British Columbia Day",
+          "month": 7,
+          "day": 4,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Heritage Day",
+          "localName": "Heritage Day",
+          "month": 7,
+          "day": 4,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "New Brunswick Day",
+          "localName": "New Brunswick Day",
+          "month": 7,
+          "day": 4,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Natal Day",
+          "localName": "Natal Day",
+          "month": 7,
+          "day": 4,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Saskatchewan Day",
+          "localName": "Saskatchewan Day",
+          "month": 7,
+          "day": 4,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Gold Cup Parade Day",
+          "localName": "Gold Cup Parade Day",
+          "month": 7,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Discovery Day",
+          "localName": "Discovery Day",
+          "month": 7,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labour Day",
+          "localName": "Labour Day",
+          "month": 8,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "National Day for Truth and Reconciliation",
+          "localName": "National Day for Truth and Reconciliation",
+          "month": 8,
+          "day": 30,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Thanksgiving",
+          "localName": "Thanksgiving",
+          "month": 9,
+          "day": 13,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Armistice Day",
+          "localName": "Armistice Day",
+          "month": 10,
+          "day": 11,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Remembrance Day",
+          "localName": "Remembrance Day",
+          "month": 10,
+          "day": 11,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Christmas Day",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "St. Stephen's Day",
+          "localName": "Boxing Day",
+          "month": 11,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "ch",
+      "name": "Switzerland",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Neujahr",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "St. Berchtold's Day",
+          "localName": "Berchtoldstag",
+          "month": 0,
+          "day": 2,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Epiphany",
+          "localName": "Heilige Drei Könige",
+          "month": 0,
+          "day": 6,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Epiphany",
+          "localName": "Heilige Drei Könige",
+          "month": 0,
+          "day": 6,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Republic Day",
+          "localName": "Jahrestag der Ausrufung der Republik",
+          "month": 2,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Saint Joseph's Day",
+          "localName": "Josefstag",
+          "month": 2,
+          "day": 19,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Saint Joseph's Day",
+          "localName": "Josefstag",
+          "month": 2,
+          "day": 19,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Näfels procession",
+          "localName": "Näfelser Fahrt",
+          "month": 3,
+          "day": 4,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Karfreitag",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Monday",
+          "localName": "Ostermontag",
+          "month": 3,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Monday",
+          "localName": "Ostermontag",
+          "month": 3,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labour Day",
+          "localName": "Tag der Arbeit",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labour Day",
+          "localName": "Tag der Arbeit",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Ascension Day",
+          "localName": "Auffahrt",
+          "month": 4,
+          "day": 29,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Whit Monday",
+          "localName": "Pfingstmontag",
+          "month": 5,
+          "day": 9,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Whit Monday",
+          "localName": "Pfingstmontag",
+          "month": 5,
+          "day": 9,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Corpus Christi",
+          "localName": "Fronleichnam",
+          "month": 5,
+          "day": 19,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Corpus Christi",
+          "localName": "Fronleichnam",
+          "month": 5,
+          "day": 19,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Saints Peter and Paul",
+          "localName": "Peter und Paul",
+          "month": 5,
+          "day": 29,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Swiss National Day",
+          "localName": "Bundesfeier",
+          "month": 7,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Assumption of the Virgin Mary",
+          "localName": "Maria Himmelfahrt",
+          "month": 7,
+          "day": 15,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Assumption of the Virgin Mary",
+          "localName": "Maria Himmelfahrt",
+          "month": 7,
+          "day": 15,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Geneva Prayday",
+          "localName": "Jeûne genevois",
+          "month": 8,
+          "day": 11,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Federal Day of Thanksgiving",
+          "localName": "Eidgenössischer Dank-, Buss- und Bettag",
+          "month": 8,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Federal Fast Monday",
+          "localName": "Bettagsmontag",
+          "month": 8,
+          "day": 22,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "All Saints' Day",
+          "localName": "Allerheiligen",
+          "month": 10,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "All Saints' Day",
+          "localName": "Allerheiligen",
+          "month": 10,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Immaculate Conception",
+          "localName": "Mariä Empfängnis",
+          "month": 11,
+          "day": 8,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Immaculate Conception",
+          "localName": "Mariä Empfängnis",
+          "month": 11,
+          "day": 8,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Weihnachten",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "St. Stephen's Day",
+          "localName": "Stephanstag",
+          "month": 11,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "St. Stephen's Day",
+          "localName": "Stephanstag",
+          "month": 11,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Restoration Day",
+          "localName": "Restauration de la République",
+          "month": 11,
+          "day": 31,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "cn",
+      "name": "China",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "元旦",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Chinese New Year (Spring Festival)",
+          "localName": "春节",
+          "month": 0,
+          "day": 29,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Qingming Festival (Tomb-Sweeping Day)",
+          "localName": "清明节",
+          "month": 3,
+          "day": 5,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labour Day",
+          "localName": "劳动节",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Dragon Boat Festival",
+          "localName": "端午节",
+          "month": 4,
+          "day": 31,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "National Day",
+          "localName": "国庆节",
+          "month": 9,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Mid-Autumn Festival",
+          "localName": "中秋节",
+          "month": 9,
+          "day": 6,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "de",
+      "name": "Germany",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Neujahr",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Epiphany",
+          "localName": "Heilige Drei Könige",
+          "month": 0,
+          "day": 6,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "International Women's Day",
+          "localName": "Internationaler Frauentag",
+          "month": 2,
+          "day": 8,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Karfreitag",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Sunday",
+          "localName": "Ostersonntag",
+          "month": 3,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Monday",
+          "localName": "Ostermontag",
+          "month": 3,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labour Day",
+          "localName": "Tag der Arbeit",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Liberation Day",
+          "localName": "Tag der Befreiung",
+          "month": 4,
+          "day": 8,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Ascension Day",
+          "localName": "Christi Himmelfahrt",
+          "month": 4,
+          "day": 29,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Pentecost",
+          "localName": "Pfingstsonntag",
+          "month": 5,
+          "day": 8,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Whit Monday",
+          "localName": "Pfingstmontag",
+          "month": 5,
+          "day": 9,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Corpus Christi",
+          "localName": "Fronleichnam",
+          "month": 5,
+          "day": 19,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Assumption Day",
+          "localName": "Mariä Himmelfahrt",
+          "month": 7,
+          "day": 15,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "World Children's Day",
+          "localName": "Weltkindertag",
+          "month": 8,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "German Unity Day",
+          "localName": "Tag der Deutschen Einheit",
+          "month": 9,
+          "day": 3,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Reformation Day",
+          "localName": "Reformationstag",
+          "month": 9,
+          "day": 31,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "All Saints' Day",
+          "localName": "Allerheiligen",
+          "month": 10,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Repentance and Prayer Day",
+          "localName": "Buß- und Bettag",
+          "month": 10,
+          "day": 19,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Erster Weihnachtstag",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "St. Stephen's Day",
+          "localName": "Zweiter Weihnachtstag",
+          "month": 11,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "dk",
+      "name": "Denmark",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Nytårsdag",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Maundy Thursday",
+          "localName": "Skærtorsdag",
+          "month": 3,
+          "day": 17,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Langfredag",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Sunday",
+          "localName": "Påskedag",
+          "month": 3,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Monday",
+          "localName": "2. Påskedag",
+          "month": 3,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Ascension Day",
+          "localName": "Kristi Himmelfartsdag",
+          "month": 4,
+          "day": 29,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Bank closing day",
+          "localName": "Banklukkedag",
+          "month": 4,
+          "day": 30,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Constitution Day",
+          "localName": "Grundlovsdag",
+          "month": 5,
+          "day": 5,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Pentecost",
+          "localName": "Pinsedag",
+          "month": 5,
+          "day": 8,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Whit Monday",
+          "localName": "2. Pinsedag",
+          "month": 5,
+          "day": 9,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Eve",
+          "localName": "Juleaftensdag",
+          "month": 11,
+          "day": 24,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Juledag / 1. juledag",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "St. Stephen's Day",
+          "localName": "2. juledag",
+          "month": 11,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "New Year's Eve",
+          "localName": "Nytårsaftensdag",
+          "month": 11,
+          "day": 31,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "es",
+      "name": "Spain",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Año Nuevo",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Epiphany",
+          "localName": "Día de Reyes / Epifanía del Señor",
+          "month": 0,
+          "day": 6,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Day of Andalucía",
+          "localName": "Día de Andalucía",
+          "month": 1,
+          "day": 28,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Day of the Balearic Islands",
+          "localName": "Dia de les Illes Balears",
+          "month": 2,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Maundy Thursday",
+          "localName": "Jueves Santo",
+          "month": 3,
+          "day": 17,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Viernes Santo",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Monday",
+          "localName": "Lunes de Pascua",
+          "month": 3,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Castile and León Day",
+          "localName": "Día de Castilla y León",
+          "month": 3,
+          "day": 23,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Day of Aragón",
+          "localName": "San Jorge (Día de Aragón)",
+          "month": 3,
+          "day": 23,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labour Day",
+          "localName": "Fiesta del trabajo",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Day of Madrid",
+          "localName": "Fiesta de la Comunidad de Madrid",
+          "month": 4,
+          "day": 2,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Galician Literature Day",
+          "localName": "Día das Letras Galegas",
+          "month": 4,
+          "day": 17,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Day of the Canary Islands",
+          "localName": "Día de Canarias",
+          "month": 4,
+          "day": 30,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Day of Castilla-La Mancha",
+          "localName": "Día de la Región Castilla-La Mancha",
+          "month": 4,
+          "day": 31,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Day of La Rioja",
+          "localName": "Día de La Rioja",
+          "month": 5,
+          "day": 9,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Day of Murcia",
+          "localName": "Día de la Región de Murcia",
+          "month": 5,
+          "day": 9,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Corpus Christi",
+          "localName": "Corpus Christi",
+          "month": 5,
+          "day": 19,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "St. John's Day",
+          "localName": "Sant Joan",
+          "month": 5,
+          "day": 24,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Santiago Apóstol",
+          "localName": "Santiago Apóstol",
+          "month": 6,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Day of the Cantabrian Institutions",
+          "localName": "Día de las Instituciones de Cantabria",
+          "month": 6,
+          "day": 28,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Assumption",
+          "localName": "Asunción",
+          "month": 7,
+          "day": 15,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Day of Asturias",
+          "localName": "Día de Asturias",
+          "month": 8,
+          "day": 8,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Day of Extremadura",
+          "localName": "Día de Extremadura",
+          "month": 8,
+          "day": 8,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "National Day of Catalonia",
+          "localName": "Diada Nacional de Catalunya",
+          "month": 8,
+          "day": 11,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Regional Holiday",
+          "localName": "La Bien Aparecida",
+          "month": 8,
+          "day": 15,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Day of the Valencian Community",
+          "localName": "Dia de la Comunitat Valenciana",
+          "month": 9,
+          "day": 9,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Fiesta Nacional de España",
+          "localName": "Fiesta Nacional de España",
+          "month": 9,
+          "day": 12,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "All Saints Day",
+          "localName": "Día de todos los Santos",
+          "month": 10,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Constitution Day",
+          "localName": "Día de la Constitución",
+          "month": 11,
+          "day": 6,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Immaculate Conception",
+          "localName": "Inmaculada Concepción",
+          "month": 11,
+          "day": 8,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Navidad",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Santiago Apóstol",
+          "localName": "St. Stephen's Day",
+          "month": 11,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "fi",
+      "name": "Finland",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Uudenvuodenpäivä",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Epiphany",
+          "localName": "Loppiainen",
+          "month": 0,
+          "day": 6,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Pitkäperjantai",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Sunday",
+          "localName": "Pääsiäispäivä",
+          "month": 3,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Monday",
+          "localName": "Toinen pääsiäispäivä",
+          "month": 3,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "May Day",
+          "localName": "Vappu",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Ascension Day",
+          "localName": "Helatorstai",
+          "month": 4,
+          "day": 29,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Pentecost",
+          "localName": "Helluntaipäivä",
+          "month": 5,
+          "day": 8,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Midsummer Eve",
+          "localName": "Juhannusaatto",
+          "month": 5,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Midsummer Day",
+          "localName": "Juhannuspäivä",
+          "month": 5,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "All Saints' Day",
+          "localName": "Pyhäinpäivä",
+          "month": 10,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Independence Day",
+          "localName": "Itsenäisyyspäivä",
+          "month": 11,
+          "day": 6,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Eve",
+          "localName": "Jouluaatto",
+          "month": 11,
+          "day": 24,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Joulupäivä",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "St. Stephen's Day",
+          "localName": "Tapaninpäivä",
+          "month": 11,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "fr",
+      "name": "France",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Jour de l'an",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Monday",
+          "localName": "Lundi de Pâques",
+          "month": 3,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labour Day",
+          "localName": "Fête du Travail",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Victory in Europe Day",
+          "localName": "Victoire 1945",
+          "month": 4,
+          "day": 8,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Ascension Day",
+          "localName": "Ascension",
+          "month": 4,
+          "day": 29,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Whit Monday",
+          "localName": "Lundi de Pentecôte",
+          "month": 5,
+          "day": 9,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Bastille Day",
+          "localName": "Fête nationale",
+          "month": 6,
+          "day": 14,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Assumption Day",
+          "localName": "Assomption",
+          "month": 7,
+          "day": 15,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "All Saints' Day",
+          "localName": "Toussaint",
+          "month": 10,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Armistice Day",
+          "localName": "Armistice 1918",
+          "month": 10,
+          "day": 11,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Noël",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "gb",
+      "name": "United Kingdom",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "New Year's Day",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "2 January",
+          "localName": "2 January",
+          "month": 0,
+          "day": 2,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Saint Patrick's Day",
+          "localName": "Saint Patrick's Day",
+          "month": 2,
+          "day": 17,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Good Friday",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Monday",
+          "localName": "Easter Monday",
+          "month": 3,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Early May Bank Holiday",
+          "localName": "Early May Bank Holiday",
+          "month": 4,
+          "day": 5,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Spring Bank Holiday",
+          "localName": "Spring Bank Holiday",
+          "month": 4,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Battle of the Boyne",
+          "localName": "Battle of the Boyne",
+          "month": 6,
+          "day": 14,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Summer Bank Holiday",
+          "localName": "Summer Bank Holiday",
+          "month": 7,
+          "day": 4,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Summer Bank Holiday",
+          "localName": "Summer Bank Holiday",
+          "month": 7,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Saint Andrew's Day",
+          "localName": "Saint Andrew's Day",
+          "month": 11,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Christmas Day",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "St. Stephen's Day",
+          "localName": "Boxing Day",
+          "month": 11,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "gr",
+      "name": "Greece",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Πρωτοχρονιά",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Epiphany",
+          "localName": "Θεοφάνεια",
+          "month": 0,
+          "day": 6,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Clean Monday",
+          "localName": "Καθαρά Δευτέρα",
+          "month": 2,
+          "day": 3,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Annunciation",
+          "localName": "Ευαγγελισμός της Θεοτόκου",
+          "month": 2,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Independence Day",
+          "localName": "Εικοστή Πέμπτη Μαρτίου",
+          "month": 2,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Μεγάλη Παρασκευή",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Sunday",
+          "localName": "Κυριακή του Πάσχα",
+          "month": 3,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Monday",
+          "localName": "Δευτέρα του Πάσχα",
+          "month": 3,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labour Day",
+          "localName": "Εργατική Πρωτομαγιά",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Pentecost",
+          "localName": "Πεντηκοστή",
+          "month": 5,
+          "day": 8,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Whit Monday",
+          "localName": "Δευτέρα Πεντηκοστής",
+          "month": 5,
+          "day": 9,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Assumption Day",
+          "localName": "Κοίμηση της Θεοτόκου",
+          "month": 7,
+          "day": 15,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Ochi Day",
+          "localName": "Το Όχι",
+          "month": 9,
+          "day": 28,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Χριστούγεννα",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "St. Stephen's Day",
+          "localName": "Σύναξις Υπεραγίας Θεοτόκου Μαρίας",
+          "month": 11,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "hk",
+      "name": "Hong Kong",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "元旦新年",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Lunar New Year",
+          "localName": "農曆年初一",
+          "month": 0,
+          "day": 29,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Second day of Lunar New Year",
+          "localName": "農曆年初二",
+          "month": 0,
+          "day": 30,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Third day of Lunar New Year",
+          "localName": "農曆年初三",
+          "month": 0,
+          "day": 31,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Ching Ming Festival",
+          "localName": "清明節",
+          "month": 3,
+          "day": 4,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "耶穌受難節",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Holy Saturday",
+          "localName": "耶穌受難節翌日",
+          "month": 3,
+          "day": 19,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Monday",
+          "localName": "復活節星期一",
+          "month": 3,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labour Day",
+          "localName": "勞動節",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Buddha's Birthday",
+          "localName": "佛誕",
+          "month": 4,
+          "day": 5,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Dragon Boat Festival",
+          "localName": "端午節",
+          "month": 4,
+          "day": 31,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Hong Kong Special Administrative Region Establishment Day",
+          "localName": "香港特別行政區成立紀念日",
+          "month": 6,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "National Day",
+          "localName": "中華人民共和國國慶日",
+          "month": 9,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Day following the Mid-Autumn Festival",
+          "localName": "中秋節翌日",
+          "month": 9,
+          "day": 7,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Chung Yeung Festival",
+          "localName": "重陽節",
+          "month": 9,
+          "day": 29,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "聖誕節",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Boxing Day",
+          "localName": "聖誕節翌日",
+          "month": 11,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "ie",
+      "name": "Ireland",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Lá Caille",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Saint Brigid's Day",
+          "localName": "Lá Fhéile Bríde",
+          "month": 1,
+          "day": 3,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Saint Patrick's Day",
+          "localName": "Lá Fhéile Pádraig",
+          "month": 2,
+          "day": 17,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Aoine an Chéasta",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Monday",
+          "localName": "Luan Cásca",
+          "month": 3,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "May Day",
+          "localName": "Lá Bealtaine",
+          "month": 4,
+          "day": 5,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "June Holiday",
+          "localName": "Lá Saoire i mí an Mheithimh",
+          "month": 5,
+          "day": 2,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "August Holiday",
+          "localName": "Lá Saoire i mí Lúnasa",
+          "month": 7,
+          "day": 4,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "October Holiday",
+          "localName": "Lá Saoire i mí Dheireadh Fómhair",
+          "month": 9,
+          "day": 27,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Lá Nollag",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "St. Stephen's Day",
+          "localName": "Lá Fhéile Stiofáin",
+          "month": 11,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "in",
+      "name": "India",
+      "holidays": []
+    },
+    {
+      "code": "it",
+      "name": "Italy",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Capodanno",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Epiphany",
+          "localName": "Epifania",
+          "month": 0,
+          "day": 6,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Sunday",
+          "localName": "Pasqua",
+          "month": 3,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Monday",
+          "localName": "Lunedì dell'Angelo",
+          "month": 3,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Liberation Day",
+          "localName": "Festa della Liberazione",
+          "month": 3,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "International Workers Day",
+          "localName": "Festa del Lavoro",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Republic Day",
+          "localName": "Festa della Repubblica",
+          "month": 5,
+          "day": 2,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Assumption Day",
+          "localName": "Ferragosto o Assunzione",
+          "month": 7,
+          "day": 15,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "All Saints Day",
+          "localName": "Tutti i santi",
+          "month": 10,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Immaculate Conception",
+          "localName": "Immacolata Concezione",
+          "month": 11,
+          "day": 8,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Natale",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "St. Stephen's Day",
+          "localName": "Santo Stefano",
+          "month": 11,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "jp",
+      "name": "Japan",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "元日",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Coming of Age Day",
+          "localName": "成人の日",
+          "month": 0,
+          "day": 13,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Foundation Day",
+          "localName": "建国記念の日",
+          "month": 1,
+          "day": 11,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "The Emperor's Birthday",
+          "localName": "天皇誕生日",
+          "month": 1,
+          "day": 24,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Vernal Equinox Day",
+          "localName": "春分の日",
+          "month": 2,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Shōwa Day",
+          "localName": "昭和の日",
+          "month": 3,
+          "day": 29,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Constitution Memorial Day",
+          "localName": "憲法記念日",
+          "month": 4,
+          "day": 3,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Greenery Day",
+          "localName": "みどりの日",
+          "month": 4,
+          "day": 5,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Children's Day",
+          "localName": "こどもの日",
+          "month": 4,
+          "day": 5,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Marine Day",
+          "localName": "海の日",
+          "month": 6,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Mountain Day",
+          "localName": "山の日",
+          "month": 7,
+          "day": 11,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Respect for the Aged Day",
+          "localName": "敬老の日",
+          "month": 8,
+          "day": 15,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Autumnal Equinox Day",
+          "localName": "秋分の日",
+          "month": 8,
+          "day": 23,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Sports Day",
+          "localName": "スポーツの日",
+          "month": 9,
+          "day": 13,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Culture Day",
+          "localName": "文化の日",
+          "month": 10,
+          "day": 3,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labour Thanksgiving Day",
+          "localName": "勤労感謝の日",
+          "month": 10,
+          "day": 24,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "mx",
+      "name": "Mexico",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Año Nuevo",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Constitution Day",
+          "localName": "Día de la Constitución",
+          "month": 1,
+          "day": 3,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Benito Juárez's birthday",
+          "localName": "Natalicio de Benito Juárez",
+          "month": 2,
+          "day": 17,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Maundy Thursday",
+          "localName": "Jueves Santo",
+          "month": 3,
+          "day": 17,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Viernes Santo",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labor Day",
+          "localName": "Día del Trabajo",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Independence Day",
+          "localName": "Día de la Independencia",
+          "month": 8,
+          "day": 16,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Revolution Day",
+          "localName": "Día de la Revolución",
+          "month": 10,
+          "day": 17,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Navidad",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "nl",
+      "name": "Netherlands",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Nieuwjaarsdag",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Goede Vrijdag",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Sunday",
+          "localName": "Eerste Paasdag",
+          "month": 3,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Monday",
+          "localName": "Tweede Paasdag",
+          "month": 3,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "King's Day",
+          "localName": "Koningsdag",
+          "month": 3,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Liberation Day",
+          "localName": "Bevrijdingsdag",
+          "month": 4,
+          "day": 5,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Ascension Day",
+          "localName": "Hemelvaartsdag",
+          "month": 4,
+          "day": 29,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Pentecost",
+          "localName": "Eerste Pinksterdag",
+          "month": 5,
+          "day": 8,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Whit Monday",
+          "localName": "Tweede Pinksterdag",
+          "month": 5,
+          "day": 9,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Eerste Kerstdag",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "St. Stephen's Day",
+          "localName": "Tweede Kerstdag",
+          "month": 11,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "no",
+      "name": "Norway",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Første nyttårsdag",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Maundy Thursday",
+          "localName": "Skjærtorsdag",
+          "month": 3,
+          "day": 17,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Langfredag",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Sunday",
+          "localName": "Første påskedag",
+          "month": 3,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Monday",
+          "localName": "Andre påskedag",
+          "month": 3,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labour Day",
+          "localName": "Første mai",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Constitution Day",
+          "localName": "Syttende mai",
+          "month": 4,
+          "day": 17,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Ascension Day",
+          "localName": "Kristi himmelfartsdag",
+          "month": 4,
+          "day": 29,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Pentecost",
+          "localName": "Første pinsedag",
+          "month": 5,
+          "day": 8,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Whit Monday",
+          "localName": "Andre pinsedag",
+          "month": 5,
+          "day": 9,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Første juledag",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "St. Stephen's Day",
+          "localName": "Andre juledag",
+          "month": 11,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "nz",
+      "name": "New Zealand",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "New Year's Day",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Day after New Year's Day",
+          "localName": "Day after New Year's Day",
+          "month": 0,
+          "day": 2,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Wellington Anniversary Day",
+          "localName": "Wellington Anniversary Day",
+          "month": 0,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Auckland Anniversary Day",
+          "localName": "Auckland/Northland Anniversary Day",
+          "month": 0,
+          "day": 27,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Nelson Anniversary Day",
+          "localName": "Nelson Anniversary Day",
+          "month": 1,
+          "day": 3,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Waitangi Day",
+          "localName": "Waitangi Day",
+          "month": 1,
+          "day": 6,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Taranaki Anniversary Day",
+          "localName": "Taranaki Anniversary Day",
+          "month": 2,
+          "day": 10,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Otago Anniversary Day",
+          "localName": "Otago Anniversary Day",
+          "month": 2,
+          "day": 24,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Good Friday",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Monday",
+          "localName": "Easter Monday",
+          "month": 3,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Southland Anniversary Day",
+          "localName": "Southland Anniversary Day",
+          "month": 3,
+          "day": 22,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Anzac Day",
+          "localName": "Anzac Day",
+          "month": 3,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "King's Birthday",
+          "localName": "King's Birthday",
+          "month": 5,
+          "day": 2,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Matariki",
+          "localName": "Matariki",
+          "month": 5,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Canterbury (South) Anniversary Day",
+          "localName": "Dominion Day",
+          "month": 8,
+          "day": 22,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Hawke's Bay Anniversary Day",
+          "localName": "Hawke's Bay Anniversary Day",
+          "month": 9,
+          "day": 24,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labour Day",
+          "localName": "Labour Day",
+          "month": 9,
+          "day": 27,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Marlborough Anniversary Day",
+          "localName": "Marlborough Anniversary Day",
+          "month": 10,
+          "day": 3,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Canterbury Anniversary Day",
+          "localName": "Canterbury (North & Central) Anniversary Day",
+          "month": 10,
+          "day": 14,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Chatham Islands Anniversary Day",
+          "localName": "Chatham Islands Anniversary Day",
+          "month": 11,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Westland Anniversary Day",
+          "localName": "Westland Anniversary Day",
+          "month": 11,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Christmas Day",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Boxing Day",
+          "localName": "Boxing Day",
+          "month": 11,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "pl",
+      "name": "Poland",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Nowy Rok",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Epiphany",
+          "localName": "Święto Trzech Króli",
+          "month": 0,
+          "day": 6,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Sunday",
+          "localName": "Wielkanoc",
+          "month": 3,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Monday",
+          "localName": "Drugi Dzień Wielkanocy",
+          "month": 3,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "May Day",
+          "localName": "Święto Pracy",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Constitution Day",
+          "localName": "Święto Narodowe Trzeciego Maja",
+          "month": 4,
+          "day": 3,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Pentecost",
+          "localName": "Zielone Świątki",
+          "month": 5,
+          "day": 8,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Corpus Christi",
+          "localName": "Boże Ciało",
+          "month": 5,
+          "day": 19,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Assumption Day",
+          "localName": "Wniebowzięcie Najświętszej Maryi Panny",
+          "month": 7,
+          "day": 15,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "All Saints' Day",
+          "localName": "Wszystkich Świętych",
+          "month": 10,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Independence Day",
+          "localName": "Narodowe Święto Niepodległości",
+          "month": 10,
+          "day": 11,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Eve",
+          "localName": "Wolna Wigilia",
+          "month": 11,
+          "day": 24,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Boże Narodzenie",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "St. Stephen's Day",
+          "localName": "Drugi Dzień Bożego Narodzenia",
+          "month": 11,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "pt",
+      "name": "Portugal",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Ano Novo",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Carnival",
+          "localName": "Carnaval",
+          "month": 2,
+          "day": 4,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Sexta-feira Santa",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Sunday",
+          "localName": "Domingo de Páscoa",
+          "month": 3,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Freedom Day",
+          "localName": "Dia da Liberdade",
+          "month": 3,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labour Day",
+          "localName": "Dia do Trabalhador",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Azores Day",
+          "localName": "Dia dos Açores",
+          "month": 5,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "National Day",
+          "localName": "Dia de Portugal, de Camões e das Comunidades Portuguesas",
+          "month": 5,
+          "day": 10,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Corpus Christi",
+          "localName": "Corpo de Deus",
+          "month": 5,
+          "day": 19,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Madeira Day",
+          "localName": "Dia da Madeira",
+          "month": 6,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Assumption Day",
+          "localName": "Assunção de Nossa Senhora",
+          "month": 7,
+          "day": 15,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Republic Day",
+          "localName": "Implantação da República",
+          "month": 9,
+          "day": 5,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "All Saints Day",
+          "localName": "Dia de Todos-os-Santos",
+          "month": 10,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Restoration of Independence",
+          "localName": "Restauração da Independência",
+          "month": 11,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Immaculate Conception",
+          "localName": "Imaculada Conceição",
+          "month": 11,
+          "day": 8,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Natal",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "St. Stephen's Day",
+          "localName": "Primeira Oitava",
+          "month": 11,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "ro",
+      "name": "Romania",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Anul Nou",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Day after New Year's Day",
+          "localName": "Anul Nou",
+          "month": 0,
+          "day": 2,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Epiphany",
+          "localName": "Bobotează",
+          "month": 0,
+          "day": 6,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Saint John the Baptist",
+          "localName": "Sfântul Ion",
+          "month": 0,
+          "day": 7,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Union Day/Small Union",
+          "localName": "Unirea Principatelor Române/Mica Unire",
+          "month": 0,
+          "day": 24,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Vinerea mare",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Sunday",
+          "localName": "Paștele",
+          "month": 3,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Monday",
+          "localName": "Paștele",
+          "month": 3,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labour Day",
+          "localName": "Ziua Muncii",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Children's Day",
+          "localName": "Ziua Copilului",
+          "month": 5,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Pentecost",
+          "localName": "Rusaliile",
+          "month": 5,
+          "day": 8,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Whit Monday",
+          "localName": "Rusaliile",
+          "month": 5,
+          "day": 9,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Dormition of the Theotokos",
+          "localName": "Adormirea Maicii Domnului/Sfânta Maria Mare",
+          "month": 7,
+          "day": 15,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "St. Andrew's Day",
+          "localName": "Sfântul Andrei",
+          "month": 10,
+          "day": 30,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "National Day/Great Union",
+          "localName": "Ziua Națională/Marea Unire",
+          "month": 11,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Crăciunul",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "St. Stephen's Day",
+          "localName": "Crăciunul",
+          "month": 11,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "ru",
+      "name": "Russia",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Новый год",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "New Year holiday",
+          "localName": "Новогодние каникулы",
+          "month": 0,
+          "day": 2,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "New Year holiday",
+          "localName": "Новогодние каникулы",
+          "month": 0,
+          "day": 3,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "New Year holiday",
+          "localName": "Новогодние каникулы",
+          "month": 0,
+          "day": 4,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "New Year holiday",
+          "localName": "Новогодние каникулы",
+          "month": 0,
+          "day": 5,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "New Year holiday",
+          "localName": "Новогодние каникулы",
+          "month": 0,
+          "day": 6,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Orthodox Christmas Day",
+          "localName": "Рождество Христово",
+          "month": 0,
+          "day": 7,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Defender of the Fatherland Day",
+          "localName": "День защитника Отечества",
+          "month": 1,
+          "day": 23,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "International Women's Day",
+          "localName": "Международный женский день",
+          "month": 2,
+          "day": 8,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labour Day",
+          "localName": "День труда",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Victory Day",
+          "localName": "День Победы",
+          "month": 4,
+          "day": 9,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Russia Day",
+          "localName": "День России",
+          "month": 5,
+          "day": 12,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Unity Day",
+          "localName": "День народного единства",
+          "month": 10,
+          "day": 4,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "se",
+      "name": "Sweden",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Nyårsdagen",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Epiphany",
+          "localName": "Trettondedag jul",
+          "month": 0,
+          "day": 6,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Långfredagen",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Sunday",
+          "localName": "Påskdagen",
+          "month": 3,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Monday",
+          "localName": "Annandag påsk",
+          "month": 3,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "International Workers' Day",
+          "localName": "Första maj",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Ascension Day",
+          "localName": "Kristi himmelsfärdsdag",
+          "month": 4,
+          "day": 29,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "National Day of Sweden",
+          "localName": "Sveriges nationaldag",
+          "month": 5,
+          "day": 6,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Pentecost",
+          "localName": "Pingstdagen",
+          "month": 5,
+          "day": 8,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Midsummer Eve",
+          "localName": "Midsommarafton",
+          "month": 5,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Midsummer Day",
+          "localName": "Midsommardagen",
+          "month": 5,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "All Saints' Day",
+          "localName": "Alla helgons dag",
+          "month": 10,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Eve",
+          "localName": "Julafton",
+          "month": 11,
+          "day": 24,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Juldagen",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "St. Stephen's Day",
+          "localName": "Annandag jul",
+          "month": 11,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "New Year's Eve",
+          "localName": "Nyårsafton",
+          "month": 11,
+          "day": 31,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "sg",
+      "name": "Singapore",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "New Year's Day",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Chinese New Year",
+          "localName": "Chinese New Year",
+          "month": 0,
+          "day": 29,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Chinese New Year",
+          "localName": "Chinese New Year",
+          "month": 0,
+          "day": 30,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Hari Raya Puasa",
+          "localName": "Hari Raya Puasa",
+          "month": 2,
+          "day": 31,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Good Friday",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labour Day",
+          "localName": "Labour Day",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Vesak Day",
+          "localName": "Vesak Day",
+          "month": 4,
+          "day": 12,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Hari Raya Haji",
+          "localName": "Hari Raya Haji",
+          "month": 5,
+          "day": 6,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "National Day",
+          "localName": "National Day",
+          "month": 7,
+          "day": 9,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Deepavali",
+          "localName": "Deepavali",
+          "month": 9,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Christmas Day",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "us",
+      "name": "United States",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "New Year's Day",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Martin Luther King, Jr. Day",
+          "localName": "Martin Luther King, Jr. Day",
+          "month": 0,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Lincoln's Birthday",
+          "localName": "Lincoln's Birthday",
+          "month": 1,
+          "day": 12,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Presidents Day",
+          "localName": "Washington's Birthday",
+          "month": 1,
+          "day": 17,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Good Friday",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Good Friday",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Truman Day",
+          "localName": "Truman Day",
+          "month": 4,
+          "day": 8,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Memorial Day",
+          "localName": "Memorial Day",
+          "month": 4,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Juneteenth National Independence Day",
+          "localName": "Juneteenth National Independence Day",
+          "month": 5,
+          "day": 19,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Independence Day",
+          "localName": "Independence Day",
+          "month": 6,
+          "day": 4,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labor Day",
+          "localName": "Labour Day",
+          "month": 8,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Columbus Day",
+          "localName": "Columbus Day",
+          "month": 9,
+          "day": 13,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Indigenous Peoples' Day",
+          "localName": "Indigenous Peoples' Day",
+          "month": 9,
+          "day": 13,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Veterans Day",
+          "localName": "Veterans Day",
+          "month": 10,
+          "day": 11,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Thanksgiving Day",
+          "localName": "Thanksgiving Day",
+          "month": 10,
+          "day": 27,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Christmas Day",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "za",
+      "name": "South Africa",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "New Year's Day",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Human Rights Day",
+          "localName": "Human Rights Day",
+          "month": 2,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Good Friday",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Family Day",
+          "localName": "Family Day",
+          "month": 3,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Freedom Day",
+          "localName": "Freedom Day",
+          "month": 3,
+          "day": 28,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Workers' Day",
+          "localName": "Workers' Day",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Youth Day",
+          "localName": "Youth Day",
+          "month": 5,
+          "day": 16,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "National Women's Day",
+          "localName": "National Women's Day",
+          "month": 7,
+          "day": 9,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Heritage Day",
+          "localName": "Heritage Day",
+          "month": 8,
+          "day": 24,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Day of Reconciliation",
+          "localName": "Day of Reconciliation",
+          "month": 11,
+          "day": 16,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Christmas Day",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Day of Goodwill",
+          "localName": "St. Stephen's Day",
+          "month": 11,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "ar",
+      "name": "Argentina",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Año Nuevo",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Carnival",
+          "localName": "Carnaval",
+          "month": 2,
+          "day": 3,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Carnival",
+          "localName": "Carnaval",
+          "month": 2,
+          "day": 4,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Day of Remembrance for Truth and Justice",
+          "localName": "Día Nacional de la Memoria por la Verdad y la Justicia",
+          "month": 2,
+          "day": 24,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Day of the Veterans and Fallen of the Malvinas War",
+          "localName": "Día del Veterano y de los Caídos en la Guerra de Malvinas",
+          "month": 3,
+          "day": 2,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Viernes Santo",
+          "month": 3,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labour Day",
+          "localName": "Día del Trabajador",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "May Revolution",
+          "localName": "Día de la Revolución de Mayo",
+          "month": 4,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Anniversary of the Passing of General Martín Miguel de Güemes",
+          "localName": "Paso a la Inmortalidad del General Martín Miguel de Güemes",
+          "month": 5,
+          "day": 16,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "General Manuel Belgrano Memorial Day",
+          "localName": "Paso a la Inmortalidad del General Manuel Belgrano",
+          "month": 5,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Independence Day",
+          "localName": "Día de la Independencia",
+          "month": 6,
+          "day": 9,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "General José de San Martín Memorial Day",
+          "localName": "Paso a la Inmortalidad del General José de San Martín",
+          "month": 7,
+          "day": 17,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Day of Respect for Cultural Diversity",
+          "localName": "Día del Respeto a la Diversidad Cultural",
+          "month": 9,
+          "day": 12,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "National Sovereignty Day",
+          "localName": "Día de la Soberanía Nacional",
+          "month": 10,
+          "day": 24,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Immaculate Conception Day",
+          "localName": "Día de la Inmaculada Concepción de María",
+          "month": 11,
+          "day": 8,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Navidad",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "bg",
+      "name": "Bulgaria",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Нова година",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Liberation Day",
+          "localName": "Ден на oсвобождението на България от Oсманско робство",
+          "month": 2,
+          "day": 3,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Разпети петък",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Holy Saturday",
+          "localName": "Велика събота",
+          "month": 3,
+          "day": 19,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Sunday",
+          "localName": "Великден",
+          "month": 3,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Monday",
+          "localName": "Велики понеделник",
+          "month": 3,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "International Workers' Day",
+          "localName": "Ден на труда и на международната работническа солидарност",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Saint George's Day",
+          "localName": "Гергьовден, ден на храбростта и Българската армия",
+          "month": 4,
+          "day": 6,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Saints Cyril and Methodius Day",
+          "localName": "Ден на Българската просвета и култура и на славянската писменост",
+          "month": 4,
+          "day": 24,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Unification Day",
+          "localName": "Ден на съединението",
+          "month": 8,
+          "day": 6,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Independence Day",
+          "localName": "Ден на независимостта на България",
+          "month": 8,
+          "day": 22,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Eve",
+          "localName": "Бъдни вечер",
+          "month": 11,
+          "day": 24,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Рождество Христово",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Second day of Christmas",
+          "localName": "Рождество Христово",
+          "month": 11,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "bo",
+      "name": "Bolivia",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Año Nuevo",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Feast of the Virgin of Candelaria",
+          "localName": "Fiesta de la Virgen de Candelaria",
+          "month": 1,
+          "day": 2,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Carnival",
+          "localName": "Feriado por Carnaval",
+          "month": 2,
+          "day": 3,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Carnival",
+          "localName": "Feriado por Carnaval",
+          "month": 2,
+          "day": 4,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Viernes Santo",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labour Day",
+          "localName": "Dia del trabajo",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Corpus Christi",
+          "localName": "Corpus Christi",
+          "month": 5,
+          "day": 19,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Andean New Year",
+          "localName": "Año Nuevo Andino",
+          "month": 5,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Agrarian Reform Day",
+          "localName": "Día de la Revolución Agraria",
+          "month": 7,
+          "day": 2,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Independence Day",
+          "localName": "Dia de la Patria",
+          "month": 7,
+          "day": 6,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "All Saints' Day",
+          "localName": "Todos Santos",
+          "month": 10,
+          "day": 2,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Navidad",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "cl",
+      "name": "Chile",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Año Nuevo",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Viernes Santo",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Holy Saturday",
+          "localName": "Sábado Santo",
+          "month": 3,
+          "day": 19,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labour Day",
+          "localName": "Día del Trabajo",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Navy Day",
+          "localName": "Día de las Glorias Navales",
+          "month": 4,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Battle of Arica",
+          "localName": "Asalto y Toma del Morro de Arica",
+          "month": 5,
+          "day": 7,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "National Day of Indigenous Peoples",
+          "localName": "Día Nacional de los Pueblos Indígenas",
+          "month": 5,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Saint Peter and Saint Paul",
+          "localName": "San Pedro y San Pablo",
+          "month": 5,
+          "day": 28,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Our Lady of Mount Carmel",
+          "localName": "Virgen del Carmen",
+          "month": 6,
+          "day": 16,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Assumption of Mary",
+          "localName": "Asunción de la Virgen",
+          "month": 7,
+          "day": 15,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "National holiday",
+          "localName": "Fiestas Patrias",
+          "month": 8,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Army Day",
+          "localName": "Día de las Glorias del Ejército",
+          "month": 8,
+          "day": 19,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Columbus Day",
+          "localName": "Día del Descubrimiento de Dos Mundos",
+          "month": 9,
+          "day": 12,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Reformation Day",
+          "localName": "Día Nacional de las Iglesias Evangélicas y Protestantes",
+          "month": 9,
+          "day": 31,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "All Saints",
+          "localName": "Día de Todos los Santos",
+          "month": 10,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Immaculate Conception",
+          "localName": "Inmaculada Concepción",
+          "month": 11,
+          "day": 8,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Navidad / Natividad del Señor",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "co",
+      "name": "Colombia",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Año Nuevo",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Epiphany",
+          "localName": "Día de los Reyes Magos",
+          "month": 0,
+          "day": 6,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Saint Joseph's Day",
+          "localName": "Día de San José",
+          "month": 2,
+          "day": 24,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Maundy Thursday",
+          "localName": "Jueves Santo",
+          "month": 3,
+          "day": 17,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Viernes Santo",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labour Day",
+          "localName": "Primero de Mayo",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Ascension Day",
+          "localName": "Ascensión del señor",
+          "month": 5,
+          "day": 2,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Corpus Christi",
+          "localName": "Corpus Christi",
+          "month": 5,
+          "day": 23,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Saint Peter and Saint Paul",
+          "localName": "San Pedro y San Pablo",
+          "month": 5,
+          "day": 30,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Sacred Heart",
+          "localName": "Sagrado Corazón",
+          "month": 5,
+          "day": 30,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Declaration of Independence",
+          "localName": "Declaracion de la Independencia de Colombia",
+          "month": 6,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Battle of Boyacá",
+          "localName": "Batalla de Boyacá",
+          "month": 7,
+          "day": 7,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Assumption of Mary",
+          "localName": "La Asunción",
+          "month": 7,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Columbus Day",
+          "localName": "Día de la Raza",
+          "month": 9,
+          "day": 13,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "All Saints’ Day",
+          "localName": "Dia de los Santos",
+          "month": 10,
+          "day": 3,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Independence of Cartagena",
+          "localName": "Independencia de Cartagena",
+          "month": 10,
+          "day": 17,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Immaculate Conception",
+          "localName": "La Inmaculada Concepción",
+          "month": 11,
+          "day": 8,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Navidad",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "cr",
+      "name": "Costa Rica",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Año Nuevo",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Juan Santamaría Day",
+          "localName": "Día de Juan Santamaría",
+          "month": 3,
+          "day": 11,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Maundy Thursday",
+          "localName": "Jueves Santo",
+          "month": 3,
+          "day": 17,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Viernes Santo",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labour Day",
+          "localName": "Día Internacional del Trabajo",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Annexation of the Party of Nicoya to Costa Rica",
+          "localName": "Anexión del Partido de Nicoya a Costa Rica",
+          "month": 6,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Feast of Our Lady of the Angels",
+          "localName": "Fiesta de Nuestra Señora de los Ángeles",
+          "month": 7,
+          "day": 2,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Mother's Day",
+          "localName": "Día de la Madre",
+          "month": 7,
+          "day": 15,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Independence Day",
+          "localName": "Día de la Independencia",
+          "month": 8,
+          "day": 15,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Army Abolition Day",
+          "localName": "Día de la Abolición del Ejército",
+          "month": 11,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Navidad",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "cz",
+      "name": "Czechia",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Den obnovy samostatného českého státu; Nový rok",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Velký pátek",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Monday",
+          "localName": "Velikonoční pondělí",
+          "month": 3,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labour Day",
+          "localName": "Svátek práce",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Liberation Day",
+          "localName": "Den vítězství",
+          "month": 4,
+          "day": 8,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Saints Cyril and Methodius Day",
+          "localName": "Den slovanských věrozvěstů Cyrila a Metoděje",
+          "month": 6,
+          "day": 5,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Jan Hus Day",
+          "localName": "Den upálení mistra Jana Husa",
+          "month": 6,
+          "day": 6,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "St. Wenceslas Day",
+          "localName": "Den české státnosti",
+          "month": 8,
+          "day": 28,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Independent Czechoslovak State Day",
+          "localName": "Den vzniku samostatného československého státu",
+          "month": 9,
+          "day": 28,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Struggle for Freedom and Democracy Day",
+          "localName": "Den boje za svobodu a demokracii a Mezinárodní den studentstva",
+          "month": 10,
+          "day": 17,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Eve",
+          "localName": "Štědrý den",
+          "month": 11,
+          "day": 24,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "1. svátek vánoční",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "St. Stephen's Day",
+          "localName": "2. svátek vánoční",
+          "month": 11,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "ec",
+      "name": "Ecuador",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Año Nuevo",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Carnival",
+          "localName": "Carnaval",
+          "month": 2,
+          "day": 3,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Carnival",
+          "localName": "Carnaval",
+          "month": 2,
+          "day": 4,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Good Friday",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "International Workers' Day",
+          "localName": "International Workers' Day",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "The Battle of Pichincha",
+          "localName": "Batalla de Pichincha",
+          "month": 4,
+          "day": 24,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Declaration of Independence of Quito",
+          "localName": "Primer Grito de Independencia",
+          "month": 7,
+          "day": 10,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Independence of Guayaquil",
+          "localName": "Independencia de Guayaquil",
+          "month": 9,
+          "day": 9,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "All Souls' Day",
+          "localName": "Día de los Difuntos, Día de Muertos",
+          "month": 10,
+          "day": 2,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Independence of Cuenca",
+          "localName": "Independencia de Cuenca",
+          "month": 10,
+          "day": 3,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Día de Navidad",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "ee",
+      "name": "Estonia",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "uusaasta",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Independence Day",
+          "localName": "iseseisvuspäev",
+          "month": 1,
+          "day": 24,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "suur reede",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Sunday",
+          "localName": "ülestõusmispühade 1. püha",
+          "month": 3,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Spring Day",
+          "localName": "kevadpüha",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Pentecost",
+          "localName": "nelipühade 1. püha",
+          "month": 5,
+          "day": 8,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Victory Day",
+          "localName": "võidupüha and jaanilaupäev",
+          "month": 5,
+          "day": 23,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Midsummer Day",
+          "localName": "jaanipäev",
+          "month": 5,
+          "day": 24,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Day of Restoration of Independence",
+          "localName": "taasiseseisvumispäev",
+          "month": 7,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Eve",
+          "localName": "jõululaupäev",
+          "month": 11,
+          "day": 24,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "esimene jõulupüha",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "St. Stephen's Day",
+          "localName": "teine jõulupüha",
+          "month": 11,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "eg",
+      "name": "Egypt",
+      "holidays": [
+        {
+          "name": "Christmas",
+          "localName": "عيد الميلاد المجيد",
+          "month": 0,
+          "day": 7,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Revolution Day 2011 National Police Day",
+          "localName": "عيد الثورة 25 يناير",
+          "month": 0,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Sinai Liberation Day",
+          "localName": "عيد تحرير سيناء",
+          "month": 3,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labour Day",
+          "localName": "عيد العمال",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Revolution Day",
+          "localName": "عيد ثورة 23 يوليو",
+          "month": 6,
+          "day": 23,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Armed Forces Day",
+          "localName": "عيد القوات المسلحة",
+          "month": 9,
+          "day": 6,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "hr",
+      "name": "Croatia",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Nova Godina",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Epiphany",
+          "localName": "Bogojavljenje, Sveta tri kralja",
+          "month": 0,
+          "day": 6,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Sunday",
+          "localName": "Uskrs i uskrsni ponedjeljak",
+          "month": 3,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Monday",
+          "localName": "Uskrs i uskrsni ponedjeljak",
+          "month": 3,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "International Workers' Day",
+          "localName": "Međunarodni praznik rada",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "National Day",
+          "localName": "Dan državnosti",
+          "month": 4,
+          "day": 30,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Corpus Christi",
+          "localName": "Tijelovo",
+          "month": 5,
+          "day": 19,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Anti-Fascist Struggle Day",
+          "localName": "Dan antifašističke borbe",
+          "month": 5,
+          "day": 22,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Victory and Homeland Thanksgiving Day and the Day of Croatian defenders",
+          "localName": "Dan pobjede i domovinske zahvalnosti i Dan hrvatskih branitelja",
+          "month": 7,
+          "day": 5,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Assumption Day",
+          "localName": "Velika Gospa",
+          "month": 7,
+          "day": 15,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "All Saints' Day",
+          "localName": "Dan svih svetih",
+          "month": 10,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Remembrance Day",
+          "localName": "Dan sjećanja na žrtve Domovinskog rata",
+          "month": 10,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Božić",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "St. Stephen's Day",
+          "localName": "Prvi dan po Božiću, Sveti Stjepan, Štefanje, Stipanje",
+          "month": 11,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "hu",
+      "name": "Hungary",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Újév",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "1848 Revolution Memorial Day",
+          "localName": "Nemzeti ünnep",
+          "month": 2,
+          "day": 15,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Nagypéntek",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Sunday",
+          "localName": "Húsvétvasárnap",
+          "month": 3,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Monday",
+          "localName": "Húsvéthétfő",
+          "month": 3,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labour day",
+          "localName": "A munka ünnepe",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Pentecost",
+          "localName": "Pünkösdvasárnap",
+          "month": 5,
+          "day": 8,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Whit Monday",
+          "localName": "Pünkösdhétfő",
+          "month": 5,
+          "day": 9,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "State Foundation Day",
+          "localName": "Az államalapítás ünnepe",
+          "month": 7,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "1956 Revolution Memorial Day",
+          "localName": "Nemzeti ünnep",
+          "month": 9,
+          "day": 23,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "All Saints Day",
+          "localName": "Mindenszentek",
+          "month": 10,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Karácsony",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "St. Stephen's Day",
+          "localName": "Karácsony másnapja",
+          "month": 11,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "id",
+      "name": "Indonesia",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Tahun Baru Masehi",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Wafat Isa Almasih",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Sunday",
+          "localName": "Paskah",
+          "month": 3,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labour Day",
+          "localName": "Hari Buruh Internasional",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Ascension Day",
+          "localName": "Kenaikan Isa Almasih",
+          "month": 4,
+          "day": 29,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Pancasila Day",
+          "localName": "Hari Lahir Pancasila",
+          "month": 5,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Independence Day",
+          "localName": "Hari Ulang Tahun Kemerdekaan Republik Indonesia",
+          "month": 7,
+          "day": 17,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Hari Raya Natal",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "il",
+      "name": "Israel",
+      "holidays": []
+    },
+    {
+      "code": "is",
+      "name": "Iceland",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Nýársdagur",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Maundy Thursday",
+          "localName": "Skírdagur",
+          "month": 3,
+          "day": 17,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Föstudagurinn langi",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Sunday",
+          "localName": "Páskadagur",
+          "month": 3,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Monday",
+          "localName": "Annar í páskum",
+          "month": 3,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "First Day of Summer",
+          "localName": "Sumardagurinn fyrsti",
+          "month": 3,
+          "day": 24,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "May Day",
+          "localName": "Verkalýðsdagurinn",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Ascension Day",
+          "localName": "Uppstigningardagur",
+          "month": 4,
+          "day": 29,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Pentecost",
+          "localName": "Hvítasunnudagur",
+          "month": 5,
+          "day": 8,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Whit Monday",
+          "localName": "Annar í hvítasunnu",
+          "month": 5,
+          "day": 9,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Icelandic National Day",
+          "localName": "Þjóðhátíðardagurinn",
+          "month": 5,
+          "day": 17,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Commerce Day",
+          "localName": "Frídagur verslunarmanna",
+          "month": 7,
+          "day": 4,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Eve",
+          "localName": "Aðfangadagur",
+          "month": 11,
+          "day": 24,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Jóladagur",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "St. Stephen's Day",
+          "localName": "Annar í jólum",
+          "month": 11,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "New Year's Eve",
+          "localName": "Gamlársdagur",
+          "month": 11,
+          "day": 31,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "kr",
+      "name": "South Korea",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "새해",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Lunar New Year",
+          "localName": "설날",
+          "month": 0,
+          "day": 28,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Lunar New Year",
+          "localName": "설날",
+          "month": 0,
+          "day": 29,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Lunar New Year",
+          "localName": "설날",
+          "month": 0,
+          "day": 30,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Independence Movement Day",
+          "localName": "3·1절",
+          "month": 2,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Children's Day",
+          "localName": "어린이날",
+          "month": 4,
+          "day": 5,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Buddha's Birthday",
+          "localName": "부처님 오신 날",
+          "month": 4,
+          "day": 5,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Memorial Day",
+          "localName": "현충일",
+          "month": 5,
+          "day": 6,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Liberation Day",
+          "localName": "광복절",
+          "month": 7,
+          "day": 15,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "National Foundation Day",
+          "localName": "개천절",
+          "month": 9,
+          "day": 3,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Chuseok",
+          "localName": "추석",
+          "month": 9,
+          "day": 6,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Chuseok",
+          "localName": "추석",
+          "month": 9,
+          "day": 7,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Chuseok",
+          "localName": "추석",
+          "month": 9,
+          "day": 8,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Hangul Day",
+          "localName": "한글날",
+          "month": 9,
+          "day": 9,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "크리스마스",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "lt",
+      "name": "Lithuania",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Naujieji metai",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "The Day of Restoration of the State of Lithuania",
+          "localName": "Lietuvos valstybės atkūrimo diena",
+          "month": 1,
+          "day": 16,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Day of Restoration of Independence of Lithuania",
+          "localName": "Lietuvos nepriklausomybės atkūrimo diena",
+          "month": 2,
+          "day": 11,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Sunday",
+          "localName": "Velykos",
+          "month": 3,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Monday",
+          "localName": "Antroji Velykų diena",
+          "month": 3,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "International Working Day",
+          "localName": "Tarptautinė darbo diena",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "St. John's Day",
+          "localName": "Joninės, Rasos",
+          "month": 5,
+          "day": 24,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Statehood Day",
+          "localName": "Valstybės diena",
+          "month": 6,
+          "day": 6,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Assumption Day",
+          "localName": "Žolinė",
+          "month": 7,
+          "day": 15,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "All Saints' Day",
+          "localName": "Visų šventųjų diena",
+          "month": 10,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "All Souls' Day",
+          "localName": "Vėlinės",
+          "month": 10,
+          "day": 2,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Eve",
+          "localName": "Šv. Kūčios",
+          "month": 11,
+          "day": 24,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Šv. Kalėdos",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "St. Stephen's Day",
+          "localName": "Šv. Kalėdos",
+          "month": 11,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "lv",
+      "name": "Latvia",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Jaunais Gads",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Lielā Piektdiena",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Sunday",
+          "localName": "Lieldienas",
+          "month": 3,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Monday",
+          "localName": "Otrās Lieldienas",
+          "month": 3,
+          "day": 21,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Labour Day",
+          "localName": "Darba svētki",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Restoration of Independence day",
+          "localName": "Latvijas Republikas Neatkarības atjaunošanas diena",
+          "month": 4,
+          "day": 4,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Mother's Day",
+          "localName": "Mātes diena",
+          "month": 4,
+          "day": 11,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Midsummer Eve",
+          "localName": "Līgo Diena",
+          "month": 5,
+          "day": 23,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Midsummer Day",
+          "localName": "Jāņi",
+          "month": 5,
+          "day": 24,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Proclamation Day of the Republic of Latvia",
+          "localName": "Latvijas Republikas proklamēšanas diena",
+          "month": 10,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Eve",
+          "localName": "Ziemassvētku vakars",
+          "month": 11,
+          "day": 24,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Ziemassvētki",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "St. Stephen's Day",
+          "localName": "Otrie Ziemassvētki",
+          "month": 11,
+          "day": 26,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "New Year's Eve",
+          "localName": "Vecgada vakars",
+          "month": 11,
+          "day": 31,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    },
+    {
+      "code": "my",
+      "name": "Malaysia",
+      "holidays": []
+    },
+    {
+      "code": "pe",
+      "name": "Peru",
+      "holidays": [
+        {
+          "name": "New Year's Day",
+          "localName": "Año Nuevo",
+          "month": 0,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Holy Thursday",
+          "localName": "Jueves Santo",
+          "month": 3,
+          "day": 17,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Maundy Thursday",
+          "localName": "Jueves Santo",
+          "month": 3,
+          "day": 17,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Good Friday",
+          "localName": "Viernes Santo",
+          "month": 3,
+          "day": 18,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Easter Sunday",
+          "localName": "Domingo Santo",
+          "month": 3,
+          "day": 20,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "International Workers' Day",
+          "localName": "Día del Trabajo",
+          "month": 4,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "St. Peter and St. Paul",
+          "localName": "Día de San Pedro y San Pablo",
+          "month": 5,
+          "day": 29,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Independence Day",
+          "localName": "Día de la Independencia",
+          "month": 6,
+          "day": 28,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Independence Day",
+          "localName": "Día de la Independencia",
+          "month": 6,
+          "day": 29,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Santa Rosa de Lima",
+          "localName": "Día de Santa Rosa de Lima",
+          "month": 7,
+          "day": 30,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Battle of Angamos",
+          "localName": "Combate de Angamos",
+          "month": 9,
+          "day": 8,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "All Saints Day",
+          "localName": "Día de Todos los Santos",
+          "month": 10,
+          "day": 1,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Immaculate Conception",
+          "localName": "Inmaculada Concepción",
+          "month": 11,
+          "day": 8,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        },
+        {
+          "name": "Christmas Day",
+          "localName": "Navidad",
+          "month": 11,
+          "day": 25,
+          "description": "A holiday",
+          "is_variable": true,
+          "day_type": "Varies annually"
+        }
+      ]
+    }
+  ]
+}
