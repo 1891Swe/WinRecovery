@@ -42,7 +42,7 @@ window.golfData.titleist.drivers = [
         reviews: "Coming Soon",
         isNew: true
     },
-  // Titleist Fairway Woods
+  //Fairways
     {
         brand: "Titleist",
         model: "GT2 Fairway",
@@ -74,7 +74,7 @@ window.golfData.titleist.drivers = [
         reviews: "Coming Soon",
         isNew: true
     },
-  // Titleist Hybrids
+  //Hybrids
     {
         brand: "Titleist",
         model: "GT2 Hybrid",
@@ -106,7 +106,7 @@ window.golfData.titleist.drivers = [
         reviews: "Coming Soon",
         isNew: true
     },
-  // Titleist Utility Irons
+  //Utility Irons
     {
         brand: "Titleist",
         model: "GT1 Utility",
@@ -127,7 +127,7 @@ window.golfData.titleist.drivers = [
         price: "$271",
         reviews: "Coming Soon"
     },
-  // Titleist Irons
+  //Irons
     {
         brand: "Titleist",
         model: "T100",
