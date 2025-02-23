@@ -4,10 +4,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const allClubs = Object.values(window.golfData).flat();
     
     // Get unique brands
-    const brands = [...new Set(allClubs.map(club => club.brand))];
+    const brands = [...new Set(allClubs.map(club => club.brand))].sort();
     
     // Get unique club types
-    const clubTypes = [...new Set(allClubs.map(club => club.type))];
+    const clubTypes = [...new Set(allClubs.map(club => club.type))].sort();
     
     // Populate brand filter
     const brandFilter = document.getElementById('brandFilter');
@@ -51,7 +51,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 <ul class="club-list">
                     ${brandClubs.map(club => `
                         <li>
-                            <strong>${club.model}</strong> (${club.type})
+                            <strong>
+                                <a href="${club.url}" target="_blank" class="club-link">
+                                    ${club.model}
+                                </a>
+                            </strong> (${club.type})
                             <br>
                             <small>${club.description}</small>
                             <br>
