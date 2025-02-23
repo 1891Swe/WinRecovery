@@ -677,6 +677,88 @@ window.golfData.cleveland = [
         description: "Women's Draw-Biased Launcher XL 2 Performance Driver",
         price: "$299.99",
         reviews: "Coming Soon"
+    },
+    // Fairway woods
+    {
+        brand: "Cleveland Golf",
+        model: "Halo XL Fairway Wood",
+        type: "Fairway Woods",
+        year: "2024",
+        url: "https://us.dunlopsports.com/cleveland-golf/clubs/fairway-woods/halo-xl-fairways/halo-xl-fairway-woods/MLHXLFW.html",
+        description: "Standard Halo XL Performance Fairway Wood",
+        price: "$229.99",
+        reviews: "Coming Soon"
+    },
+    {
+        brand: "Cleveland Golf",
+        model: "Halo XL Lite Fairway Wood",
+        type: "Fairway Woods",
+        year: "2024",
+        url: "https://us.dunlopsports.com/cleveland-golf/clubs/fairway-woods/halo-xl-lite-fairways/halo-xl-lite-fairway-wood/MHALOXLLTFWY.html",
+        description: "Lightweight Halo XL Performance Fairway Wood",
+        price: "$229.99",
+        reviews: "Coming Soon"
+    },
+    {
+        brand: "Cleveland Golf",
+        model: "Women's Halo XL Fairway Wood",
+        type: "Fairway Woods",
+        year: "2024",
+        url: "https://us.dunlopsports.com/cleveland-golf/clubs/fairway-woods/womens-fairways/womens-halo-xl-fairway-woods/MWLHXLFW.html",
+        description: "Women's Halo XL Performance Fairway Wood",
+        price: "$229.99",
+        reviews: "Coming Soon"
+    },
+    {
+        brand: "Cleveland Golf",
+        model: "Women's Halo XL Lite Fairway Wood",
+        type: "Fairway Woods",
+        year: "2024",
+        url: "https://us.dunlopsports.com/cleveland-golf/womens/womens-fairway-woods/womens-halo-xl-lite-fairway-wood/MWHALOXLLTFWY.html",
+        description: "Women's Lightweight Halo XL Performance Fairway Wood",
+        price: "$229.99",
+        reviews: "Coming Soon"
+    },
+    //Hybrids
+    {
+        brand: "Cleveland Golf",
+        model: "Halo XL Hybrid",
+        type: "Hybrids",
+        year: "2024",
+        url: "https://us.dunlopsports.com/cleveland-golf/clubs/hybrids-and-hy-woods/halo-xl-hybrids/halo-xl-hybrids/MLHXLH.html",
+        description: "Standard Halo XL Performance Hybrid",
+        price: "$199.99",
+        reviews: "Coming Soon"
+    },
+    {
+        brand: "Cleveland Golf",
+        model: "Halo XL Hy-Wood",
+        type: "Hybrids",
+        year: "2024",
+        url: "https://us.dunlopsports.com/cleveland-golf/clubs/hybrids-and-hy-woods/halo-xl-hy-woods/halo-xl-hy-woods/MLHXLHH.html",
+        description: "Halo XL Performance Hy-Wood",
+        price: "$199.99",
+        reviews: "Coming Soon"
+    },
+    {
+        brand: "Cleveland Golf",
+        model: "Women's Halo XL Hybrid",
+        type: "Hybrids",
+        year: "2024",
+        url: "https://us.dunlopsports.com/cleveland-golf/clubs/hybrids-and-hy-woods/womens-hybrids/womens-halo-xl-hybrids/MWLHXLH.html",
+        description: "Women's Halo XL Performance Hybrid",
+        price: "$199.99",
+        reviews: "Coming Soon"
+    },
+    {
+        brand: "Cleveland Golf",
+        model: "Women's Halo XL Hy-Wood",
+        type: "Hybrids",
+        year: "2024",
+        url: "https://us.dunlopsports.com/cleveland-golf/clubs/hybrids-and-hy-woods/womens-hybrids/womens-halo-xl-hy-woods/MWLHXLHH.html",
+        description: "Women's Halo XL Performance Hy-Wood",
+        price: "$199.99",
+        reviews: "Coming Soon"
     }
 ];
 
