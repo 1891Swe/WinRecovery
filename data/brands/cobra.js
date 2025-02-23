@@ -203,6 +203,15 @@ window.golfData.cobra = [
     },
     {
         brand: "Cobra",
+        model: "Women's T-Rail - Single Irons",
+        type: "Irons",
+        year: "2023",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-womens/products/womens-t-rail-irons-single-irons-2023",
+        description: "Women's Hybrid-Iron Design",
+        reviews: "No Reviews"
+    },
+    {
+        brand: "Cobra",
         model: "COBRA 3DP Tour",
         type: "Irons",
         year: "2023",
@@ -614,17 +623,6 @@ window.golfData.cobra = [
         year: "2022",
         url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-putters/products/king-3d-printed-agera-armlock-black-putter",
         description: "KING Series Armlock Black Finish",
-        reviews: "No Reviews"
-    },
-
-    // Additional Women's Clubs
-    {
-        brand: "Cobra",
-        model: "Women's T-Rail - Single Irons",
-        type: "Irons",
-        year: "2023",
-        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-womens/products/womens-t-rail-single-irons",
-        description: "Women's Hybrid-Iron Design",
         reviews: "No Reviews"
     }
     ];
