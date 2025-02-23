@@ -1,4 +1,4 @@
-// taylorMade data structure
+// taylorMade.js
 window.golfData.taylormade = [
     // Drivers
     {
