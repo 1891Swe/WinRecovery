@@ -1,5 +1,125 @@
 // cobra.js
 window.golfData.cobra = [
+    // Drivers
+    {
+        brand: "Cobra",
+        model: "DS-ADAPT MAX-K Driver",
+        type: "Drivers",
+        year: "2025",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-drivers/products/ds-adapt-max-k-driver",
+        description: "2025 Driver with MAX-K Technology",
+        reviews: "7 Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "DS-ADAPT LS Driver",
+        type: "Drivers",
+        year: "2025",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-drivers/products/ds-adapt-ls-driver",
+        description: "2025 Low Spin Driver",
+        reviews: "5 Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "DS-ADAPT X Driver",
+        type: "Drivers",
+        year: "2025",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-drivers/products/ds-adapt-x-driver",
+        description: "2025 X Performance Driver",
+        reviews: "7 Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "DS-ADAPT LS Tour Length Driver",
+        type: "Drivers",
+        year: "2025",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-drivers/products/ds-adapt-ls-tour-length-driver",
+        description: "2025 Tour Length Driver",
+        reviews: "No Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "DS-ADAPT MAX-D Driver",
+        type: "Drivers",
+        year: "2025",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-drivers/products/ds-adapt-max-d-driver",
+        description: "2025 Draw-Biased Driver",
+        reviews: "1 Review"
+    },
+    {
+        brand: "Cobra",
+        model: "DS-ADAPT X Tour Length Driver",
+        type: "Drivers",
+        year: "2025",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-drivers/products/ds-adapt-x-tour-length-driver",
+        description: "2025 X Tour Length Driver",
+        reviews: "No Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "Women's DS-ADAPT MAX-D Driver",
+        type: "Drivers",
+        year: "2025",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-drivers/products/womens-ds-adapt-max-d-driver",
+        description: "2025 Women's Draw-Biased Driver",
+        reviews: "No Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "Women's DS-ADAPT MAX-K Driver",
+        type: "Drivers",
+        year: "2025",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-drivers/products/womens-ds-adapt-max-k-driver",
+        description: "2025 Women's MAX-K Driver",
+        reviews: "No Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "Junior DS-ADAPT MAX-K Driver",
+        type: "Drivers",
+        year: "2025",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-drivers/products/junior-ds-adapt-max-k-driver",
+        description: "2025 Junior MAX-K Driver",
+        reviews: "No Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "DARKSPEED LS Driver",
+        type: "Drivers",
+        year: "2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-drivers/products/darkspeed-ls-driver",
+        description: "2024 Low Spin Driver",
+        reviews: "24 Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "DARKSPEED MAX Driver",
+        type: "Drivers",
+        year: "2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-drivers/products/darkspeed-max-driver",
+        description: "2024 Maximum Forgiveness Driver",
+        reviews: "32 Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "DARKSPEED X Driver",
+        type: "Drivers",
+        year: "2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-drivers/products/darkspeed-x-driver",
+        description: "2024 X Performance Driver",
+        reviews: "30 Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "Women's DARKSPEED MAX Driver",
+        type: "Drivers",
+        year: "2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-drivers/products/womens-darkspeed-max-driver",
+        description: "2024 Women's Maximum Forgiveness Driver",
+        reviews: "2 Reviews"
+    },
+
+    // Irons
     {
         brand: "Cobra",
         model: "COBRA LIMITED®",
