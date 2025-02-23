@@ -1,8 +1,46 @@
 // Global array to store all brands data
 let allBrands = [];
 
+// Function to transform club data into the required format
+function transformClubData(clubsData) {
+    const brandName = clubsData[0]?.brand || '';
+    return {
+        name: brandName,
+        clubs: clubsData.map(club => ({
+            type: club.type,
+            name: club.model,
+            description: club.description,
+            year: club.year
+        }))
+    };
+}
+
+// Function to load brand data
+async function loadBrandData(brandFile) {
+    try {
+        const response = await fetch(`data/brands/${brandFile}.js`);
+        const text = await response.text();
+        // Remove export statement and evaluate the code
+        const cleanedText = text.replace('export default', '');
+        // Execute the code to get clubsData
+        const clubsData = eval('(' + cleanedText + ')');
+        return transformClubData(clubsData);
+    } catch (error) {
+        console.error(`Error loading ${brandFile}:`, error);
+        return null;
+    }
+}
+
 // Function to initialize the application
-function initializeApp() {
+async function initializeApp() {
+    // Load all brand data
+    const brandFiles = ['cobra', 'taylormade']; // Add other brands as needed
+    const loadedBrands = await Promise.all(
+        brandFiles.map(brand => loadBrandData(brand))
+    );
+    
+    allBrands = loadedBrands.filter(brand => brand !== null);
+    
     // Populate filters
     updateFilters();
     
@@ -18,6 +56,10 @@ function initializeApp() {
 function updateFilters() {
     const brandFilter = document.getElementById('brandFilter');
     const clubTypeFilter = document.getElementById('clubTypeFilter');
+    
+    // Clear existing options except the first one
+    brandFilter.innerHTML = '<option value="">All Brands</option>';
+    clubTypeFilter.innerHTML = '<option value="">All Club Types</option>';
     
     // Get unique brands
     const brands = [...new Set(allBrands.map(brand => brand.name))];
@@ -49,7 +91,7 @@ function handleFilters() {
     const selectedBrand = document.getElementById('brandFilter').value;
     const selectedClubType = document.getElementById('clubTypeFilter').value;
     
-    let filteredBrands = allBrands;
+    let filteredBrands = [...allBrands];
     
     // Filter by brand
     if (selectedBrand) {
@@ -82,7 +124,9 @@ function renderBrands(brands) {
                 ${brand.clubs.map(club => `
                     <li>
                         <strong>${club.type}:</strong> ${club.name}
-                        ${club.price ? ` - $${club.price}` : ''}
+                        <br>
+                        <small>${club.description || ''}</small>
+                        ${club.year ? `<br><small>Year: ${club.year}</small>` : ''}
                     </li>
                 `).join('')}
             </ul>
