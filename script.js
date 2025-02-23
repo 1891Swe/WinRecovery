@@ -5,10 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
         console.error('Global error:', message, 'at', source, ':', lineno);
         return false;
     };
-
-    // Explicitly log global object and golfData
-    console.log('Window object:', window);
-    console.log('Initial window.golfData:', window.golfData);
     
     // Initialize window.golfData if it doesn't exist
     window.golfData = window.golfData || {};
@@ -32,11 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function getAllClubs() {
         let allClubs = [];
         for (const brand in window.golfData) {
-            console.log(`Processing brand: ${brand}`);
-            
-            // Ensure the brand property exists and is an array
             if (window.golfData.hasOwnProperty(brand) && Array.isArray(window.golfData[brand])) {
-                console.log(`Clubs for ${brand}:`, window.golfData[brand].length);
                 allClubs = allClubs.concat(window.golfData[brand]);
             }
         }
@@ -51,9 +43,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // Get unique brands and types
         const brands = [...new Set(clubs.map(club => club.brand))];
         const types = [...new Set(clubs.map(club => club.type))];
-        
-        console.log('Unique brands:', brands);
-        console.log('Unique types:', types);
         
         // Clear existing options
         brandFilter.innerHTML = '<option value="">All Brands</option>';
@@ -83,12 +72,10 @@ document.addEventListener('DOMContentLoaded', function() {
         
         let filteredClubs = getAllClubs();
         
-        // Apply brand filter
         if (selectedBrand) {
             filteredClubs = filteredClubs.filter(club => club.brand === selectedBrand);
         }
         
-        // Apply type filter
         if (selectedType) {
             filteredClubs = filteredClubs.filter(club => club.type === selectedType);
         }
@@ -100,8 +87,6 @@ document.addEventListener('DOMContentLoaded', function() {
     function renderClubs(clubs) {
         const container = document.getElementById('brandsContainer');
         container.innerHTML = '';
-        
-        console.log('Rendering clubs:', clubs.length);
         
         // Group clubs by brand
         const groupedClubs = {};
@@ -123,7 +108,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 <ul class="club-list">
                     ${brandClubs.map(club => `
                         <li>
-                            <strong>${club.model}</strong> - ${club.type}
+                            <a href="${club.url}" class="club-link" target="_blank" rel="noopener noreferrer">
+                                <strong>${club.model}</strong> - ${club.type}
+                            </a>
                             <br>
                             <small>${club.description}</small>
                             ${club.price ? `<br><small>Price: ${club.price}</small>` : ''}
@@ -138,6 +125,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Delay initialization to ensure scripts are loaded
+    // Initialize the app with a slight delay to ensure scripts are loaded
     setTimeout(initializeApp, 100);
 });
