@@ -41,7 +41,7 @@ window.golfData.srixon = [
         price: "$599",
         reviews: "Coming Soon"
     },
-    //Fairway Wood
+    // Fairway Woods
     {
         brand: "Srixon",
         model: "ZX-i Fairway Woods",
