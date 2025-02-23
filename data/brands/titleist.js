@@ -1,4 +1,3 @@
-
 // titleist.js
 window.golfData.titleist = [
     // Drivers
