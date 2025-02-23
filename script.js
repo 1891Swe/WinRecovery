@@ -1,15 +1,27 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Debug: Log initial state
+    console.log('Initial window.golfData:', window.golfData);
+
     // Ensure window.golfData is initialized
     window.golfData = window.golfData || {};
-    
+
     // Function to get all clubs from all brands
     function getAllClubs() {
         let allClubs = [];
+        
+        // Debug: Log brands in golfData
+        console.log('Brands in golfData:', Object.keys(window.golfData));
+
         for (const brand in window.golfData) {
+            console.log(`Processing brand: ${brand}`);
+            
             if (window.golfData.hasOwnProperty(brand) && Array.isArray(window.golfData[brand])) {
+                console.log(`Clubs for ${brand}:`, window.golfData[brand].length);
                 allClubs = allClubs.concat(window.golfData[brand]);
             }
         }
+        
+        console.log('Total clubs found:', allClubs.length);
         return allClubs;
     }
     
@@ -21,6 +33,9 @@ document.addEventListener('DOMContentLoaded', function() {
         // Get unique brands and types
         const brands = [...new Set(clubs.map(club => club.brand))];
         const types = [...new Set(clubs.map(club => club.type))];
+        
+        console.log('Unique brands:', brands);
+        console.log('Unique types:', types);
         
         // Clear existing options
         brandFilter.innerHTML = '<option value="">All Brands</option>';
@@ -68,6 +83,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const container = document.getElementById('brandsContainer');
         container.innerHTML = '';
         
+        console.log('Rendering clubs:', clubs.length);
+        
         // Group clubs by brand
         const groupedClubs = {};
         clubs.forEach(club => {
@@ -107,8 +124,14 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('brandFilter').addEventListener('change', handleFilters);
     document.getElementById('clubTypeFilter').addEventListener('change', handleFilters);
     
-    // Initialize the app
-    const allClubs = getAllClubs();
-    updateFilters(allClubs);
-    renderClubs(allClubs);
+    // Delay initialization to ensure scripts are loaded
+    setTimeout(() => {
+        try {
+            const allClubs = getAllClubs();
+            updateFilters(allClubs);
+            renderClubs(allClubs);
+        } catch (error) {
+            console.error('Initialization error:', error);
+        }
+    }, 100);
 });
