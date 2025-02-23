@@ -291,5 +291,203 @@ window.golfData.taylormade = [
     url: "https://www.taylormadegolf.eu/Kalea-Gold-Rescue/DW-TC376.html",
     description: "Women's specific hybrid design",
     reviews: "Coming Soon"
+},
+    // Wedges
+{
+    brand: "TaylorMade",
+    model: "MyMG4 Wedge",
+    type: "Wedges",
+    year: "2024",
+    url: "https://www.taylormadegolf.eu/MyMG4-Wedge/DW-TC585.html",
+    description: "Online Exclusive Custom Milled Grind Wedge",
+    reviews: "Coming Soon",
+    price: "KR2,899.00"
+},
+{
+    brand: "TaylorMade",
+    model: "MyHi-Toe 4 Wedge",
+    type: "Wedges",
+    year: "2024",
+    url: "https://www.taylormadegolf.eu/MyHi-Toe-4-Wedge/DW-TC586.html",
+    description: "Online Exclusive Custom Hi-Toe Wedge",
+    reviews: "Coming Soon",
+    price: "KR2,899.00"
+},
+{
+    brand: "TaylorMade",
+    model: "Hi-Toe 4 Wedge",
+    type: "Wedges",
+    year: "2024",
+    url: "https://www.taylormadegolf.eu/Hi-Toe-4-Wedge/DW-TC587.html",
+    description: "Versatile High-Toe Design Wedge",
+    reviews: "Coming Soon"
+},
+{
+    brand: "TaylorMade",
+    model: "Milled Grind 4 Wedge",
+    type: "Wedges",
+    year: "2024",
+    url: "https://www.taylormadegolf.eu/Milled-Grind-4-Wedge/DW-TC588.html",
+    description: "Precision Milled Grind Sole Wedge",
+    reviews: "Coming Soon"
+},
+{
+    brand: "TaylorMade",
+    model: "Milled Grind 4 Black Wedge",
+    type: "Wedges",
+    year: "2024",
+    url: "https://www.taylormadegolf.eu/Milled-Grind-4-Black-Wedge/DW-TC589.html",
+    description: "Black Finish Milled Grind Wedge",
+    reviews: "Coming Soon"
+},
+{
+    brand: "TaylorMade",
+    model: "Milled Grind 4 Wedge Set",
+    type: "Wedges",
+    year: "2024",
+    url: "https://www.taylormadegolf.eu/Milled-Grind-4-Wedge-Set/DW-TC590.html",
+    description: "Oracle Red Bull Racing Special Edition Set",
+    reviews: "Sold Out",
+    price: "KR5,999.00"
+},
+    // Putters
+{
+    brand: "TaylorMade",
+    model: "Spider Tour 5 Long",
+    type: "Putters",
+    year: "2024",
+    url: "https://www.taylormadegolf.eu/Spider-Tour-5-Long/DW-TC845.html",
+    description: "Long-length Spider Tour Putter",
+    reviews: "Coming Soon",
+    price: "KR4,299.00"
+},
+{
+    brand: "TaylorMade",
+    model: "Spider Tour X Proto L-Neck",
+    type: "Putters",
+    year: "2024",
+    url: "https://www.taylormadegolf.eu/Spider-Tour-X-Proto-L-Neck/DW-TC846.html",
+    description: "Proto Series L-Neck Design",
+    reviews: "Coming Soon",
+    price: "KR5,999.00"
+},
+{
+    brand: "TaylorMade",
+    model: "Spider Tour X Proto Short Slant",
+    type: "Putters",
+    year: "2024",
+    url: "https://www.taylormadegolf.eu/Spider-Tour-X-Proto-Short-Slant/DW-TC847.html",
+    description: "Proto Series Short Slant Design",
+    reviews: "Coming Soon",
+    price: "KR5,999.00"
+},
+{
+    brand: "TaylorMade",
+    model: "Spider Tour DB (NO TRUE PATH)",
+    type: "Putters",
+    year: "2024",
+    url: "https://www.taylormadegolf.eu/Spider-Tour-DB/DW-TC848.html",
+    description: "Double Bend Shaft Design",
+    reviews: "Coming Soon",
+    price: "KR4,299.00"
+},
+{
+    brand: "TaylorMade",
+    model: "Spider Tour Z Double Bend",
+    type: "Putters",
+    year: "2024",
+    url: "https://www.taylormadegolf.eu/Spider-Tour-Z-Double-Bend/DW-TC849.html",
+    description: "Z-Series Double Bend Design",
+    reviews: "Coming Soon"
+},
+{
+    brand: "TaylorMade",
+    model: "Spider Tour V",
+    type: "Putters",
+    year: "2024",
+    url: "https://www.taylormadegolf.eu/Spider-Tour-V/DW-TC850.html",
+    description: "V-Series High MOI Design",
+    reviews: "Coming Soon"
+},
+{
+    brand: "TaylorMade",
+    model: "Spider Tour V Double Bend",
+    type: "Putters",
+    year: "2024",
+    url: "https://www.taylormadegolf.eu/Spider-Tour-V-Double-Bend/DW-TC851.html",
+    description: "V-Series Double Bend Design",
+    reviews: "Coming Soon"
+},
+{
+    brand: "TaylorMade",
+    model: "TP Black Juno",
+    type: "Putters",
+    year: "2024",
+    url: "https://www.taylormadegolf.eu/TP-Black-Juno/DW-TC852.html",
+    description: "Classic Blade Design in Black Finish",
+    reviews: "Coming Soon"
+},
+{
+    brand: "TaylorMade",
+    model: "TP Black Soto",
+    type: "Putters",
+    year: "2024",
+    url: "https://www.taylormadegolf.eu/TP-Black-Soto/DW-TC853.html",
+    description: "Traditional Blade Design in Black Finish",
+    reviews: "Coming Soon"
+},
+{
+    brand: "TaylorMade",
+    model: "TP Black Del Monte",
+    type: "Putters",
+    year: "2024",
+    url: "https://www.taylormadegolf.eu/TP-Black-Del-Monte/DW-TC854.html",
+    description: "Mid-Mallet Design in Black Finish",
+    reviews: "Coming Soon"
+},
+{
+    brand: "TaylorMade",
+    model: "TP Black Balboa",
+    type: "Putters",
+    year: "2024",
+    url: "https://www.taylormadegolf.eu/TP-Black-Balboa/DW-TC855.html",
+    description: "Wide Blade Design in Black Finish",
+    reviews: "Coming Soon"
+},
+{
+    brand: "TaylorMade",
+    model: "TP Black Palisades",
+    type: "Putters",
+    year: "2024",
+    url: "https://www.taylormadegolf.eu/TP-Black-Palisades/DW-TC856.html",
+    description: "Modern Mallet Design in Black Finish",
+    reviews: "Coming Soon"
+},
+{
+    brand: "TaylorMade",
+    model: "TP Black Ardmore",
+    type: "Putters",
+    year: "2024",
+    url: "https://www.taylormadegolf.eu/TP-Black-Ardmore/DW-TC857.html",
+    description: "Mallet Design in Black Finish",
+    reviews: "Coming Soon"
+},
+{
+    brand: "TaylorMade",
+    model: "Spider X DB Ice Mint",
+    type: "Putters",
+    year: "2024",
+    url: "https://www.taylormadegolf.eu/Spider-X-DB-Ice-Mint/DW-TC858.html",
+    description: "Ice Mint Finish Spider X Design",
+    reviews: "Coming Soon"
+},
+{
+    brand: "TaylorMade",
+    model: "Kalea Gold Spider S Putter",
+    type: "Putters",
+    year: "2024",
+    url: "https://www.taylormadegolf.eu/Kalea-Gold-Spider-S-Putter/DW-TC859.html",
+    description: "Women's Specific Spider Design",
+    reviews: "Coming Soon"
 }
 ];
