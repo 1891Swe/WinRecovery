@@ -3,32 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Golf Club Directory</title>
+    <title>Top Golf Brands Directory</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Golf Club Directory</h1>
-        
-        <div class="filters">
-            <select id="brandFilter">
-                <option value="">All Brands</option>
+    <header>
+        <h1>Top Golf Brands Directory</h1>
+        <nav>
+            <input type="text" id="brand-search" placeholder="Search brands...">
+            <select id="category-filter">
+                <option value="">All Categories</option>
+                <option value="clubs">Clubs</option>
+                <option value="balls">Balls</option>
+                <option value="accessories">Accessories</option>
             </select>
-            
-            <select id="typeFilter">
-                <option value="">All Types</option>
-            </select>
-        </div>
+        </nav>
+    </header>
 
-        <div id="clubList" class="club-grid"></div>
+    <main id="brand-directory" class="brand-grid">
+        <!-- Brand cards will be dynamically inserted here -->
+    </main>
 
-        <footer>
-            <p>Last updated: <span id="lastUpdated"></span></p>
-            <p>Disclaimer: All links direct to official manufacturer websites. Prices and availability may vary.</p>
-        </footer>
-    </div>
+    <footer>
+        <p>&copy; 2024 Golf Brands Directory. All rights reserved.</p>
+    </footer>
 
-    <script src="data/clubs.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
