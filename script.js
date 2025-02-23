@@ -1,24 +1,12 @@
-// Wait for DOM content to be loaded
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize window.golfData if it doesn't exist
+    // Ensure window.golfData is initialized
     window.golfData = window.golfData || {};
-    
-    // Function to initialize the application
-    function initializeApp() {
-        const allClubs = getAllClubs();
-        updateFilters(allClubs);
-        renderClubs(allClubs);
-        
-        // Add event listeners to filters
-        document.getElementById('brandFilter').addEventListener('change', handleFilters);
-        document.getElementById('clubTypeFilter').addEventListener('change', handleFilters);
-    }
     
     // Function to get all clubs from all brands
     function getAllClubs() {
         let allClubs = [];
         for (const brand in window.golfData) {
-            if (window.golfData.hasOwnProperty(brand)) {
+            if (window.golfData.hasOwnProperty(brand) && Array.isArray(window.golfData[brand])) {
                 allClubs = allClubs.concat(window.golfData[brand]);
             }
         }
@@ -115,6 +103,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
+    // Add event listeners to filters
+    document.getElementById('brandFilter').addEventListener('change', handleFilters);
+    document.getElementById('clubTypeFilter').addEventListener('change', handleFilters);
+    
     // Initialize the app
-    initializeApp();
+    const allClubs = getAllClubs();
+    updateFilters(allClubs);
+    renderClubs(allClubs);
 });
