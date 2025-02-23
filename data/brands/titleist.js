@@ -1,5 +1,6 @@
-// Titleist Drivers
+
 window.golfData.titleist.drivers = [
+    //Drivers
     {
         brand: "Titleist",
         model: "GT2 Driver",
