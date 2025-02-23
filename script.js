@@ -1,31 +1,79 @@
-// script.js
+// Wait for DOM content to be loaded
 document.addEventListener('DOMContentLoaded', function() {
-    // Get all the clubs data from the window.golfData object
-    const allClubs = Object.values(window.golfData).flat();
+    // Initialize window.golfData if it doesn't exist
+    window.golfData = window.golfData || {};
     
-    // Get unique brands
-    const brands = [...new Set(allClubs.map(club => club.brand))].sort();
+    // Function to initialize the application
+    function initializeApp() {
+        const allClubs = getAllClubs();
+        updateFilters(allClubs);
+        renderClubs(allClubs);
+        
+        // Add event listeners to filters
+        document.getElementById('brandFilter').addEventListener('change', handleFilters);
+        document.getElementById('clubTypeFilter').addEventListener('change', handleFilters);
+    }
     
-    // Get unique club types
-    const clubTypes = [...new Set(allClubs.map(club => club.type))].sort();
+    // Function to get all clubs from all brands
+    function getAllClubs() {
+        let allClubs = [];
+        for (const brand in window.golfData) {
+            if (window.golfData.hasOwnProperty(brand)) {
+                allClubs = allClubs.concat(window.golfData[brand]);
+            }
+        }
+        return allClubs;
+    }
     
-    // Populate brand filter
-    const brandFilter = document.getElementById('brandFilter');
-    brands.forEach(brand => {
-        const option = document.createElement('option');
-        option.value = brand;
-        option.textContent = brand;
-        brandFilter.appendChild(option);
-    });
+    // Function to update filter options
+    function updateFilters(clubs) {
+        const brandFilter = document.getElementById('brandFilter');
+        const clubTypeFilter = document.getElementById('clubTypeFilter');
+        
+        // Get unique brands and types
+        const brands = [...new Set(clubs.map(club => club.brand))];
+        const types = [...new Set(clubs.map(club => club.type))];
+        
+        // Clear existing options
+        brandFilter.innerHTML = '<option value="">All Brands</option>';
+        clubTypeFilter.innerHTML = '<option value="">All Club Types</option>';
+        
+        // Add brand options
+        brands.sort().forEach(brand => {
+            const option = document.createElement('option');
+            option.value = brand;
+            option.textContent = brand;
+            brandFilter.appendChild(option);
+        });
+        
+        // Add type options
+        types.sort().forEach(type => {
+            const option = document.createElement('option');
+            option.value = type;
+            option.textContent = type;
+            clubTypeFilter.appendChild(option);
+        });
+    }
     
-    // Populate club type filter
-    const clubTypeFilter = document.getElementById('clubTypeFilter');
-    clubTypes.forEach(type => {
-        const option = document.createElement('option');
-        option.value = type;
-        option.textContent = type;
-        clubTypeFilter.appendChild(option);
-    });
+    // Function to handle filter changes
+    function handleFilters() {
+        const selectedBrand = document.getElementById('brandFilter').value;
+        const selectedType = document.getElementById('clubTypeFilter').value;
+        
+        let filteredClubs = getAllClubs();
+        
+        // Apply brand filter
+        if (selectedBrand) {
+            filteredClubs = filteredClubs.filter(club => club.brand === selectedBrand);
+        }
+        
+        // Apply type filter
+        if (selectedType) {
+            filteredClubs = filteredClubs.filter(club => club.type === selectedType);
+        }
+        
+        renderClubs(filteredClubs);
+    }
     
     // Function to render clubs
     function renderClubs(clubs) {
@@ -33,16 +81,17 @@ document.addEventListener('DOMContentLoaded', function() {
         container.innerHTML = '';
         
         // Group clubs by brand
-        const groupedByBrand = {};
+        const groupedClubs = {};
         clubs.forEach(club => {
-            if (!groupedByBrand[club.brand]) {
-                groupedByBrand[club.brand] = [];
+            if (!groupedClubs[club.brand]) {
+                groupedClubs[club.brand] = [];
             }
-            groupedByBrand[club.brand].push(club);
+            groupedClubs[club.brand].push(club);
         });
         
-        // Create brand cards
-        Object.entries(groupedByBrand).forEach(([brand, brandClubs]) => {
+        // Render each brand's clubs
+        Object.keys(groupedClubs).sort().forEach(brand => {
+            const brandClubs = groupedClubs[brand];
             const brandCard = document.createElement('div');
             brandCard.className = 'brand-card';
             
@@ -51,15 +100,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 <ul class="club-list">
                     ${brandClubs.map(club => `
                         <li>
-                            <strong>
-                                <a href="${club.url}" target="_blank" class="club-link">
-                                    ${club.model}
-                                </a>
-                            </strong> (${club.type})
+                            <strong>${club.model}</strong> - ${club.type}
                             <br>
                             <small>${club.description}</small>
+                            ${club.price ? `<br><small>Price: ${club.price}</small>` : ''}
                             <br>
-                            <small>Year: ${club.year} | ${club.reviews}</small>
+                            <small>${club.reviews}</small>
                         </li>
                     `).join('')}
                 </ul>
@@ -69,28 +115,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Function to handle filters
-    function handleFilters() {
-        const selectedBrand = brandFilter.value;
-        const selectedType = clubTypeFilter.value;
-        
-        let filteredClubs = allClubs;
-        
-        if (selectedBrand) {
-            filteredClubs = filteredClubs.filter(club => club.brand === selectedBrand);
-        }
-        
-        if (selectedType) {
-            filteredClubs = filteredClubs.filter(club => club.type === selectedType);
-        }
-        
-        renderClubs(filteredClubs);
-    }
-    
-    // Add event listeners to filters
-    brandFilter.addEventListener('change', handleFilters);
-    clubTypeFilter.addEventListener('change', handleFilters);
-    
-    // Initial render
-    renderClubs(allClubs);
+    // Initialize the app
+    initializeApp();
 });
