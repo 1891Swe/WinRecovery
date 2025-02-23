@@ -1,4 +1,5 @@
-const clubsData = [
+// taylormade.js
+window.golfData.taylormade = [
     {
         brand: "TaylorMade",
         model: "P·790 Irons",
@@ -26,7 +27,4 @@ const clubsData = [
         description: "Game Improvement Irons with Cap Back Design",
         reviews: "1732 Reviews"
     }
-    // Additional clubs...
 ];
-
-export default clubsData;
