@@ -76,7 +76,7 @@ window.golfData.taylormade = [
         description: "Premium women's specific driver design",
         reviews: "Coming Soon"
     },
-    // Fairways
+    // Fairway woods
     {
         brand: "TaylorMade",
         model: "Qi35 Max Fairway",
