@@ -76,11 +76,11 @@ window.golfData.taylormade = [
         description: "Premium women's specific driver design",
         reviews: "Coming Soon"
     },
-    // Fairway woods
+    // Fairway Woods
     {
         brand: "TaylorMade",
         model: "Qi35 Max Fairway",
-        type: "Fairway woods",
+        type: "Fairway Woods",
         year: "2024",
         url: "https://www.taylormadegolf.eu/Qi35-Max-Fairway/DW-TC379.html",
         description: "Maximum forgiveness fairway wood with low CG design",
@@ -89,7 +89,7 @@ window.golfData.taylormade = [
     {
         brand: "TaylorMade",
         model: "Qi35 Fairway",
-        type: "Fairway woods",
+        type: "Fairway Woods",
         year: "2024",
         url: "https://www.taylormadegolf.eu/Qi35-Fairway/DW-TC380.html",
         description: "Standard model fairway wood with versatile performance",
@@ -98,7 +98,7 @@ window.golfData.taylormade = [
     {
         brand: "TaylorMade",
         model: "Qi35 Tour Ti Fairway",
-        type: "Fairway woods",
+        type: "Fairway Woods",
         year: "2024",
         url: "https://www.taylormadegolf.eu/Qi35-Tour-Ti-Fairway/DW-TC381.html",
         description: "Tour-inspired titanium fairway wood for advanced players",
@@ -107,7 +107,7 @@ window.golfData.taylormade = [
     {
         brand: "TaylorMade",
         model: "Qi35 Max Lite Fairway",
-        type: "Fairway woods",
+        type: "Fairway Woods",
         year: "2024",
         url: "https://www.taylormadegolf.eu/Qi35-Max-Lite-Fairway/DW-TC382.html",
         description: "Lightweight design fairway wood for increased swing speed",
@@ -116,7 +116,7 @@ window.golfData.taylormade = [
     {
         brand: "TaylorMade",
         model: "Kalea Gold Fairway",
-        type: "Fairway woods",
+        type: "Fairway Woods",
         year: "2024",
         url: "https://www.taylormadegolf.eu/Kalea-Gold-Fairway/DW-TC383.html",
         description: "Premium women's specific fairway wood design",
