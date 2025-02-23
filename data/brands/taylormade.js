@@ -72,7 +72,7 @@ window.golfData.taylormade = [
         model: "Kalea Gold Driver",
         type: "Drivers",
         year: "2024",
-        url: "https://www.taylormadegolf.eu/Kalea-Gold-Driver/DW-TC382.html",
+        url: "https://www.taylormadegolf.eu/Kalea-Gold-Rescue/DW-TC349.html",
         description: "Premium women's specific driver design",
         reviews: "Coming Soon"
     },
