@@ -1,6 +1,9 @@
-//titleist.js
+// Initialize golfData.titleist if it doesn't exist
+window.golfData = window.golfData || {};
+
+// titleist.js
 window.golfData.titleist = [
-    //Drivers
+    // Drivers
     {
         brand: "Titleist",
         model: "GT2 Driver",
@@ -42,7 +45,7 @@ window.golfData.titleist = [
         reviews: "Coming Soon",
         isNew: true
     },
-  //Fairways
+    // Fairways
     {
         brand: "Titleist",
         model: "GT2 Fairway",
@@ -74,7 +77,7 @@ window.golfData.titleist = [
         reviews: "Coming Soon",
         isNew: true
     },
-  //Hybrids
+    // Hybrids
     {
         brand: "Titleist",
         model: "GT2 Hybrid",
@@ -106,7 +109,7 @@ window.golfData.titleist = [
         reviews: "Coming Soon",
         isNew: true
     },
-  //Utility Irons
+    // Utility Irons
     {
         brand: "Titleist",
         model: "GT1 Utility",
@@ -127,7 +130,7 @@ window.golfData.titleist = [
         price: "$271",
         reviews: "Coming Soon"
     },
-  //Irons
+    // Irons
     {
         brand: "Titleist",
         model: "T100",
@@ -238,380 +241,384 @@ window.golfData.titleist = [
         price: "$175",
         reviews: "Coming Soon"
     },
-  //Putters
-        {
-            brand: "Titleist",
-            model: "Phantom 5",
-            type: "Putters",
-            collection: "Phantom",
-            year: "2024",
-            url: "https://www.titleist.com/product/phantom-5/748C%3ACP-A748.html",
-            description: "Phantom 5 Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        },
-        {
-            brand: "Titleist",
-            model: "Phantom 5.2",
-            type: "Putters",
-            collection: "Phantom",
-            year: "2024",
-            url: "https://www.titleist.com/product/phantom-5.2/752C%3ACP-J752.html",
-            description: "Phantom 5.2 Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        },
-        {
-            brand: "Titleist",
-            model: "Phantom 5.5",
-            type: "Putters",
-            collection: "Phantom",
-            year: "2024",
-            url: "https://www.titleist.com/product/phantom-5.5/748C%3ACP-B748.html",
-            description: "Phantom 5.5 Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        },
-        {
-            brand: "Titleist",
-            model: "Phantom 5s",
-            type: "Putters",
-            collection: "Phantom",
-            year: "2024",
-            url: "https://www.titleist.com/product/phantom-5s/748C%3ACP-I748.html",
-            description: "Phantom 5s Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        },
-        {
-            brand: "Titleist",
-            model: "Phantom 7",
-            type: "Putters",
-            collection: "Phantom",
-            year: "2024",
-            url: "https://www.titleist.com/product/phantom-7/748C%3ACP-C748.html",
-            description: "Phantom 7 Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        },
-        {
-            brand: "Titleist",
-            model: "Phantom 7.2",
-            type: "Putters",
-            collection: "Phantom",
-            year: "2024",
-            url: "https://www.titleist.com/product/phantom-7.2/752C%3ACP-K752.html",
-            description: "Phantom 7.2 Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        },
-        {
-            brand: "Titleist",
-            model: "Phantom 7.5",
-            type: "Putters",
-            collection: "Phantom",
-            year: "2024",
-            url: "https://www.titleist.com/product/phantom-7.5/748C%3ACP-D748.html",
-            description: "Phantom 7.5 Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        },
-        {
-            brand: "Titleist",
-            model: "Phantom 9",
-            type: "Putters",
-            collection: "Phantom",
-            year: "2024",
-            url: "https://www.titleist.com/product/phantom-9/748C%3ACP-E748.html",
-            description: "Phantom 9 Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        },
-        {
-            brand: "Titleist",
-            model: "Phantom 9.5",
-            type: "Putters",
-            collection: "Phantom",
-            year: "2024",
-            url: "https://www.titleist.com/product/phantom-9.5/748C%3ACP-F748.html",
-            description: "Phantom 9.5 Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        },
-        {
-            brand: "Titleist",
-            model: "Phantom 11",
-            type: "Putters",
-            collection: "Phantom",
-            year: "2024",
-            url: "https://www.titleist.com/product/phantom-11/748C%3ACP-G748.html",
-            description: "Phantom 11 Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        },
-        {
-            brand: "Titleist",
-            model: "Phantom 11 Long Design",
-            type: "Putters",
-            collection: "Phantom",
-            year: "2024",
-            url: "https://www.titleist.com/product/phantom-11-long-design/749C%3ACP-A749.html",
-            description: "Phantom 11 Long Design Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        },
-        {
-            brand: "Titleist",
-            model: "Phantom 11.5",
-            type: "Putters",
-            collection: "Phantom",
-            year: "2024",
-            url: "https://www.titleist.com/product/phantom-11.5/748C%3ACP-H748.html",
-            description: "Phantom 11.5 Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        },
-        {
-            brand: "Titleist",
-            model: "Super Select Newport",
-            type: "Putters",
-            collection: "Super Select",
-            year: "2024",
-            url: "https://www.titleist.com/product/super-select-newport/745C%3ACP-A745.html",
-            description: "Super Select Newport Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        },
-        {
-            brand: "Titleist",
-            model: "Super Select Newport Plus",
-            type: "Putters",
-            collection: "Super Select",
-            year: "2024",
-            url: "https://www.titleist.com/product/super-select-newport-plus/745C%3ACP-B745.html",
-            description: "Super Select Newport Plus Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        },
-        {
-            brand: "Titleist",
-            model: "Super Select Newport 2",
-            type: "Putters",
-            collection: "Super Select",
-            year: "2024",
-            url: "https://www.titleist.com/product/super-select-newport-2/745C%3ACP-C745.html",
-            description: "Super Select Newport 2 Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        },
-        {
-            brand: "Titleist",
-            model: "Super Select Newport 2 Plus",
-            type: "Putters",
-            collection: "Super Select",
-            year: "2024",
-            url: "https://www.titleist.com/product/super-select-newport-2-plus/745C%3ACP-D745.html",
-            description: "Super Select Newport 2 Plus Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        },
-        {
-            brand: "Titleist",
-            model: "Super Select Newport 2.5 Plus",
-            type: "Putters",
-            collection: "Super Select",
-            year: "2024",
-            url: "https://www.titleist.com/product/super-select-newport-2.5-plus/745C%3ACP-E745.html",
-            description: "Super Select Newport 2.5 Plus Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        },
-        {
-            brand: "Titleist",
-            model: "Super Select Squareback 2",
-            type: "Putters",
-            collection: "Super Select",
-            year: "2024",
-            url: "https://www.titleist.com/product/super-select-squareback-2/745C%3ACP-S745.html",
-            description: "Super Select Squareback 2 Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        },
-        {
-            brand: "Titleist",
-            model: "Super Select Squareback 2 Long Design",
-            type: "Putters",
-            collection: "Super Select",
-            year: "2024",
-            url: "https://www.titleist.com/product/super-select-squareback-2-long-design/749C%3ACP-B749.html",
-            description: "Super Select Squareback 2 Long Design Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        },
-        {
-            brand: "Titleist",
-            model: "Super Select Golo 6",
-            type: "Putters",
-            collection: "Super Select",
-            year: "2024",
-            url: "https://www.titleist.com/product/super-select-golo-6/745C%3ACP-H745.html",
-            description: "Super Select Golo 6 Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        },
-        {
-            brand: "Titleist",
-            model: "Super Select Golo 6.5",
-            type: "Putters",
-            collection: "Super Select",
-            year: "2024",
-            url: "https://www.titleist.com/product/super-select-golo-6.5/745C%3ACP-I745.html",
-            description: "Super Select Golo 6.5 Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        },
-        {
-            brand: "Titleist",
-            model: "Super Select Del Mar",
-            type: "Putters",
-            collection: "Super Select",
-            year: "2024",
-            url: "https://www.titleist.com/product/super-select-del-mar/745C%3ACP-G745.html",
-            description: "Super Select Del Mar Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        },
-        {
-            brand: "Titleist",
-            model: "Super Select Fastback 1.5",
-            type: "Putters",
-            collection: "Super Select",
-            year: "2024",
-            url: "https://www.titleist.com/product/super-select-fastback-1.5/745C%3ACP-F745.html",
-            description: "Super Select Fastback 1.5 Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        },
-        {
-            brand: "Titleist",
-            model: "Studio Style Catalina",
-            type: "Putters",
-            collection: "Studio Style",
-            year: "2024",
-            url: "https://www.titleist.com/product/studio-style-catalina/753C%3ACP-H753.html",
-            description: "Studio Style Catalina Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        },
-        {
-            brand: "Titleist",
-            model: "Studio Style Newport",
-            type: "Putters",
-            collection: "Studio Style",
-            year: "2024",
-            url: "https://www.titleist.com/product/studio-style-newport/753C%3ACP-A753.html",
-            description: "Studio Style Newport Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        },
-        {
-            brand: "Titleist",
-            model: "Studio Style Newport Plus",
-            type: "Putters",
-            collection: "Studio Style",
-            year: "2024",
-            url: "https://www.titleist.com/product/studio-style-newport-plus/753C%3ACP-B753.html",
-            description: "Studio Style Newport Plus Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        },
-        {
-            brand: "Titleist",
-            model: "Studio Style Newport 2",
-            type: "Putters",
-            collection: "Studio Style",
-            year: "2024",
-            url: "https://www.titleist.com/product/studio-style-newport-2/753C%3ACP-C753.html",
-            description: "Studio Style Newport 2 Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        },
-        {
-            brand: "Titleist",
-            model: "Studio Style Newport 2.5 Plus",
-            type: "Putters",
-            collection: "Studio Style",
-            year: "2024",
-            url: "https://www.titleist.com/product/studio-style-newport-2.5-plus/753C%3ACP-E753.html",
-            description: "Studio Style Newport 2.5 Plus Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        },
-        {
-            brand: "Titleist",
-            model: "Studio Style Fastback",
-            type: "Putters",
-            collection: "Studio Style",
-            year: "2024",
-            url: "https://www.titleist.com/product/studio-style-fastback/753C%3ACP-F753.html",
-            description: "Studio Style Fastback Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        },
-        {
-            brand: "Titleist",
-            model: "Studio Style Fastback Long Design",
-            type: "Putters",
-            collection: "Studio Style",
-            year: "2024",
-            url: "https://www.titleist.com/product/studio-style-fastback-long-design/754C%3ACP-F754.html",
-            description: "Studio Style Fastback Long Design Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        },
-        {
-            brand: "Titleist",
-            model: "Studio Style Fastback 1.5",
-            type: "Putters",
-            collection: "Studio Style",
-            year: "2024",
-            url: "https://www.titleist.com/product/studio-style-fastback-1.5/753C%3ACP-G753.html",
-            description: "Studio Style Fastback 1.5 Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        },
-        {
-            brand: "Titleist",
-            model: "Studio Style Squareback",
-            type: "Putters",
-            collection: "Studio Style",
-            year: "2024",
-            url: "https://www.titleist.com/product/studio-style-squareback/753C%3ACP-I753.html",
-            description: "Studio Style Squareback Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        },
-        {
-            brand: "Titleist",
-            model: "Studio Style Squareback 2",
-            type: "Putters",
-            collection: "Studio Style",
-            year: "2024",
-            url: "https://www.titleist.com/product/studio-style-squareback-2/753C%3ACP-J753.html",
-            description: "Studio Style Squareback 2 Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        },
-        {
-            brand: "Titleist",
-            model: "Studio Style Squareback 2 Long Design",
-            type: "Putters",
-            collection: "Studio Style",
-            year: "2024",
-            url: "https://www.titleist.com/product/studio-style-squareback-2-long-design/754C%3ACP-J754.html",
-            description: "Studio Style Squareback 2 Long Design Putter",
-            price: "$499",
-            reviews: "Coming Soon"
-        }
-    ]
-};
+   // Phantom Putters Collection
+{
+    brand: "Titleist",
+    model: "Phantom 5",
+    type: "Putters",
+    collection: "Phantom",
+    year: "2024",
+    url: "https://www.titleist.com/product/phantom-5/748C%3ACP-A748.html",
+    description: "Phantom 5 Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+},
+{
+    brand: "Titleist",
+    model: "Phantom 5.2",
+    type: "Putters",
+    collection: "Phantom",
+    year: "2024",
+    url: "https://www.titleist.com/product/phantom-5.2/752C%3ACP-J752.html",
+    description: "Phantom 5.2 Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+},
+{
+    brand: "Titleist",
+    model: "Phantom 5.5",
+    type: "Putters",
+    collection: "Phantom",
+    year: "2024",
+    url: "https://www.titleist.com/product/phantom-5.5/748C%3ACP-B748.html",
+    description: "Phantom 5.5 Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+},
+{
+    brand: "Titleist",
+    model: "Phantom 5s",
+    type: "Putters",
+    collection: "Phantom",
+    year: "2024",
+    url: "https://www.titleist.com/product/phantom-5s/748C%3ACP-I748.html",
+    description: "Phantom 5s Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+},
+{
+    brand: "Titleist",
+    model: "Phantom 7",
+    type: "Putters",
+    collection: "Phantom",
+    year: "2024",
+    url: "https://www.titleist.com/product/phantom-7/748C%3ACP-C748.html",
+    description: "Phantom 7 Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+},
+{
+    brand: "Titleist",
+    model: "Phantom 7.2",
+    type: "Putters",
+    collection: "Phantom",
+    year: "2024",
+    url: "https://www.titleist.com/product/phantom-7.2/752C%3ACP-K752.html",
+    description: "Phantom 7.2 Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+},
+{
+    brand: "Titleist",
+    model: "Phantom 7.5",
+    type: "Putters",
+    collection: "Phantom",
+    year: "2024",
+    url: "https://www.titleist.com/product/phantom-7.5/748C%3ACP-D748.html",
+    description: "Phantom 7.5 Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+},
+{
+    brand: "Titleist",
+    model: "Phantom 9",
+    type: "Putters",
+    collection: "Phantom",
+    year: "2024",
+    url: "https://www.titleist.com/product/phantom-9/748C%3ACP-E748.html",
+    description: "Phantom 9 Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+},
+{
+    brand: "Titleist",
+    model: "Phantom 9.5",
+    type: "Putters",
+    collection: "Phantom",
+    year: "2024",
+    url: "https://www.titleist.com/product/phantom-9.5/748C%3ACP-F748.html",
+    description: "Phantom 9.5 Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+},
+{
+    brand: "Titleist",
+    model: "Phantom 11",
+    type: "Putters",
+    collection: "Phantom",
+    year: "2024",
+    url: "https://www.titleist.com/product/phantom-11/748C%3ACP-G748.html",
+    description: "Phantom 11 Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+},
+{
+    brand: "Titleist",
+    model: "Phantom 11 Long Design",
+    type: "Putters",
+    collection: "Phantom",
+    year: "2024",
+    url: "https://www.titleist.com/product/phantom-11-long-design/749C%3ACP-A749.html",
+    description: "Phantom 11 Long Design Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+},
+{
+    brand: "Titleist",
+    model: "Phantom 11.5",
+    type: "Putters",
+    collection: "Phantom",
+    year: "2024",
+    url: "https://www.titleist.com/product/phantom-11.5/748C%3ACP-H748.html",
+    description: "Phantom 11.5 Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+},
+
+// Super Select Putters
+{
+    brand: "Titleist",
+    model: "Super Select Newport",
+    type: "Putters",
+    collection: "Super Select",
+    year: "2024",
+    url: "https://www.titleist.com/product/super-select-newport/745C%3ACP-A745.html",
+    description: "Super Select Newport Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+},
+{
+    brand: "Titleist",
+    model: "Super Select Newport Plus",
+    type: "Putters",
+    collection: "Super Select",
+    year: "2024",
+    url: "https://www.titleist.com/product/super-select-newport-plus/745C%3ACP-B745.html",
+    description: "Super Select Newport Plus Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+},
+{
+    brand: "Titleist",
+    model: "Super Select Newport 2",
+    type: "Putters",
+    collection: "Super Select",
+    year: "2024",
+    url: "https://www.titleist.com/product/super-select-newport-2/745C%3ACP-C745.html",
+    description: "Super Select Newport 2 Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+},
+{
+    brand: "Titleist",
+    model: "Super Select Newport 2 Plus",
+    type: "Putters",
+    collection: "Super Select",
+    year: "2024",
+    url: "https://www.titleist.com/product/super-select-newport-2-plus/745C%3ACP-D745.html",
+    description: "Super Select Newport 2 Plus Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+},
+{
+    brand: "Titleist",
+    model: "Super Select Newport 2.5 Plus",
+    type: "Putters",
+    collection: "Super Select",
+    year: "2024",
+    url: "https://www.titleist.com/product/super-select-newport-2.5-plus/745C%3ACP-E745.html",
+    description: "Super Select Newport 2.5 Plus Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+},
+{
+    brand: "Titleist",
+    model: "Super Select Squareback 2",
+    type: "Putters",
+    collection: "Super Select",
+    year: "2024",
+    url: "https://www.titleist.com/product/super-select-squareback-2/745C%3ACP-S745.html",
+    description: "Super Select Squareback 2 Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+},
+{
+    brand: "Titleist",
+    model: "Super Select Squareback 2 Long Design",
+    type: "Putters",
+    collection: "Super Select",
+    year: "2024",
+    url: "https://www.titleist.com/product/super-select-squareback-2-long-design/749C%3ACP-B749.html",
+    description: "Super Select Squareback 2 Long Design Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+},
+
+{
+    brand: "Titleist",
+    model: "Super Select Golo 6",
+    type: "Putters",
+    collection: "Super Select",
+    year: "2024",
+    url: "https://www.titleist.com/product/super-select-golo-6/745C%3ACP-H745.html",
+    description: "Super Select Golo 6 Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+},
+{
+    brand: "Titleist",
+    model: "Super Select Golo 6.5",
+    type: "Putters",
+    collection: "Super Select",
+    year: "2024",
+    url: "https://www.titleist.com/product/super-select-golo-6.5/745C%3ACP-I745.html",
+    description: "Super Select Golo 6.5 Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+},
+{
+    brand: "Titleist",
+    model: "Super Select Del Mar",
+    type: "Putters",
+    collection: "Super Select",
+    year: "2024",
+    url: "https://www.titleist.com/product/super-select-del-mar/745C%3ACP-G745.html",
+    description: "Super Select Del Mar Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+},
+{
+    brand: "Titleist",
+    model: "Super Select Fastback 1.5",
+    type: "Putters",
+    collection: "Super Select",
+    year: "2024",
+    url: "https://www.titleist.com/product/super-select-fastback-1.5/745C%3ACP-F745.html",
+    description: "Super Select Fastback 1.5 Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+},
+
+// Studio Style Putters
+{
+    brand: "Titleist",
+    model: "Studio Style Catalina",
+    type: "Putters",
+    collection: "Studio Style",
+    year: "2024",
+    url: "https://www.titleist.com/product/studio-style-catalina/753C%3ACP-H753.html",
+    description: "Studio Style Catalina Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+},
+{
+    brand: "Titleist",
+    model: "Studio Style Newport",
+    type: "Putters",
+    collection: "Studio Style",
+    year: "2024",
+    url: "https://www.titleist.com/product/studio-style-newport/753C%3ACP-A753.html",
+    description: "Studio Style Newport Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+},
+{
+    brand: "Titleist",
+    model: "Studio Style Newport Plus",
+    type: "Putters",
+    collection: "Studio Style",
+    year: "2024",
+    url: "https://www.titleist.com/product/studio-style-newport-plus/753C%3ACP-B753.html",
+    description: "Studio Style Newport Plus Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+},
+{
+    brand: "Titleist",
+    model: "Studio Style Newport 2",
+    type: "Putters",
+    collection: "Studio Style",
+    year: "2024",
+    url: "https://www.titleist.com/product/studio-style-newport-2/753C%3ACP-C753.html",
+    description: "Studio Style Newport 2 Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+},
+{
+    brand: "Titleist",
+    model: "Studio Style Newport 2.5 Plus",
+    type: "Putters",
+    collection: "Studio Style",
+    year: "2024",
+    url: "https://www.titleist.com/product/studio-style-newport-2.5-plus/753C%3ACP-E753.html",
+    description: "Studio Style Newport 2.5 Plus Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+},
+{
+    brand: "Titleist",
+    model: "Studio Style Fastback",
+    type: "Putters",
+    collection: "Studio Style",
+    year: "2024",
+    url: "https://www.titleist.com/product/studio-style-fastback/753C%3ACP-F753.html",
+    description: "Studio Style Fastback Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+},
+{
+    brand: "Titleist",
+    model: "Studio Style Fastback Long Design",
+    type: "Putters",
+    collection: "Studio Style",
+    year: "2024",
+    url: "https://www.titleist.com/product/studio-style-fastback-long-design/754C%3ACP-F754.html",
+    description: "Studio Style Fastback Long Design Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+},
+{
+    brand: "Titleist",
+    model: "Studio Style Fastback 1.5",
+    type: "Putters",
+    collection: "Studio Style",
+    year: "2024",
+    url: "https://www.titleist.com/product/studio-style-fastback-1.5/753C%3ACP-G753.html",
+    description: "Studio Style Fastback 1.5 Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+},
+{
+    brand: "Titleist",
+    model: "Studio Style Squareback",
+    type: "Putters",
+    collection: "Studio Style",
+    year: "2024",
+    url: "https://www.titleist.com/product/studio-style-squareback/753C%3ACP-I753.html",
+    description: "Studio Style Squareback Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+},
+{
+    brand: "Titleist",
+    model: "Studio Style Squareback 2",
+    type: "Putters",
+    collection: "Studio Style",
+    year: "2024",
+    url: "https://www.titleist.com/product/studio-style-squareback-2/753C%3ACP-J753.html",
+    description: "Studio Style Squareback 2 Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+},
+{
+    brand: "Titleist",
+    model: "Studio Style Squareback 2 Long Design",
+    type: "Putters",
+    collection: "Studio Style",
+    year: "2024",
+    url: "https://www.titleist.com/product/studio-style-squareback-2-long-design/754C%3ACP-J754.html",
+    description: "Studio Style Squareback 2 Long Design Putter",
+    price: "$499",
+    reviews: "Coming Soon"
+}
+    ];
