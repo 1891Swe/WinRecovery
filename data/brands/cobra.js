@@ -393,5 +393,74 @@ window.golfData.cobra = [
         url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-hybrids/products/womens-darkspeed-hybrid",
         description: "Women's Maximum Performance Hybrid",
         reviews: "2 Reviews"
+    },
+
+    // Add these to your existing cobra.js file
+
+    // Utility Irons
+    {
+        brand: "Cobra",
+        model: "KING TEC Utility Irons",
+        type: "Utility Irons",
+        year: "2023-2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-utility-irons/products/king-tec-utility-irons-2023",
+        description: "Players Performance Utility Irons",
+        reviews: "25 Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "KING TEC ONE Length Utility Irons",
+        type: "Utility Irons",
+        year: "2023-2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-utility-irons/products/king-tec-one-length-utility-irons-2023",
+        description: "ONE Length Technology Utility Irons",
+        reviews: "8 Reviews"
+    },
+
+    // Wedges
+    {
+        brand: "Cobra",
+        model: "SNAKEBITE Black Wedge",
+        type: "Wedges",
+        year: "2023-2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-wedges/products/snakebite-black-wedge-2023",
+        description: "Black Finish Performance Wedge",
+        reviews: "60 Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "SNAKEBITE Raw Wedge",
+        type: "Wedges",
+        year: "2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-wedges/products/snakebite-raw-wedge",
+        description: "Raw Finish Performance Wedge",
+        reviews: "8 Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "SNAKEBITE Wedge",
+        type: "Wedges",
+        year: "2023-2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-wedges/products/snakebite-wedge-2023",
+        description: "Classic Chrome Performance Wedge",
+        reviews: "39 Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "SNAKEBITE-X Wedge",
+        type: "Wedges",
+        year: "2023-2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-wedges/products/snakebite-x-wedge-2023",
+        description: "X Performance Wedge",
+        reviews: "45 Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "SNAKEBITE ONE Length Wedge",
+        type: "Wedges",
+        year: "2023-2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-wedges/products/snakebite-one-length-wedge-2023",
+        description: "ONE Length Technology Wedge",
+        reviews: "23 Reviews"
     }
-];
+    ];
