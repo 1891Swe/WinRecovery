@@ -494,5 +494,5 @@ window.golfData.callaway = [
         description: "Premium Muscleback Irons",
         reviews: "Coming Soon",
         price: "TBD"
-    },
+    }
 ];
