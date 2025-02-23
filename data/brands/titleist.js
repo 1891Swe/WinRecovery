@@ -1,5 +1,3 @@
-// Initialize golfData.titleist if it doesn't exist
-window.golfData = window.golfData || {};
 
 // titleist.js
 window.golfData.titleist = [
