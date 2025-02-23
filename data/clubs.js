@@ -8,7 +8,7 @@ const clubsData = [
     {
         brand: "TaylorMade",
         type: "Wedges",
-        url: "https://www.taylormadegolf.com/wedges/",
+        url: "https://www.taylormadegolf.eu/clubs-shop-menu.html/",
         description: "TaylorMade wedge collection"
     },
     // Add more clubs here
