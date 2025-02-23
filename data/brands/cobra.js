@@ -242,7 +242,7 @@ window.golfData.cobra = [
     {
         brand: "Cobra",
         model: "DS-ADAPT X Fairway",
-        type: "Fairways",
+        type: "airway woods,
         year: "2025",
         url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-fairways/products/ds-adapt-x-fairway",
         description: "2025 X Performance Fairway Wood",
@@ -251,7 +251,7 @@ window.golfData.cobra = [
     {
         brand: "Cobra",
         model: "DS-ADAPT MAX Fairway",
-        type: "Fairways",
+        type: "Fairway woods",
         year: "2025",
         url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-fairways/products/ds-adapt-max-fairway",
         description: "2025 Maximum Forgiveness Fairway Wood",
@@ -260,7 +260,7 @@ window.golfData.cobra = [
     {
         brand: "Cobra",
         model: "DS-ADAPT LS Fairway",
-        type: "Fairways",
+        type: "Fairway woods,
         year: "2025",
         url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-fairways/products/ds-adapt-ls-fairway",
         description: "2025 Low Spin Fairway Wood",
@@ -269,7 +269,7 @@ window.golfData.cobra = [
     {
         brand: "Cobra",
         model: "Women's DS-ADAPT MAX Fairway",
-        type: "Fairways",
+        type: "Fairway woods",
         year: "2025",
         url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-fairways/products/womens-ds-adapt-max-fairway",
         description: "2025 Women's Maximum Forgiveness Fairway Wood",
@@ -278,7 +278,7 @@ window.golfData.cobra = [
     {
         brand: "Cobra",
         model: "AIR-X Fairway",
-        type: "Fairways",
+        type: "Fairway woods",
         year: "2023-2024",
         url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-fairways/products/air-x-fairway",
         description: "Lightweight Fairway Wood",
@@ -287,7 +287,7 @@ window.golfData.cobra = [
     {
         brand: "Cobra",
         model: "DARKSPEED MAX Fairway",
-        type: "Fairways",
+        type: "Fairway woods",
         year: "2024",
         url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-fairways/products/darkspeed-max-fairway",
         description: "Maximum Forgiveness Fairway Wood",
@@ -296,7 +296,7 @@ window.golfData.cobra = [
     {
         brand: "Cobra",
         model: "DARKSPEED X Fairway",
-        type: "Fairways",
+        type: "Fairway woods",
         year: "2024",
         url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-fairways/products/darkspeed-x-fairway",
         description: "X Performance Fairway Wood",
@@ -305,7 +305,7 @@ window.golfData.cobra = [
     {
         brand: "Cobra",
         model: "DARKSPEED LS Fairway",
-        type: "Fairways",
+        type: "Fairway woods",
         year: "2024",
         url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-fairways/products/darkspeed-ls-fairway",
         description: "Low Spin Fairway Wood",
@@ -314,7 +314,7 @@ window.golfData.cobra = [
     {
         brand: "Cobra",
         model: "Women's AIR-X Fairway",
-        type: "Fairways",
+        type: "Fairway woods",
         year: "2023-2024",
         url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-fairways/products/womens-air-x-fairway",
         description: "Women's Lightweight Fairway Wood",
@@ -323,7 +323,7 @@ window.golfData.cobra = [
     {
         brand: "Cobra",
         model: "Women's DARKSPEED MAX Fairway",
-        type: "Fairways",
+        type: "airway woods",
         year: "2024",
         url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-fairways/products/womens-darkspeed-max-fairway",
         description: "Women's Maximum Forgiveness Fairway Wood",
