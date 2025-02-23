@@ -3,31 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top Golf Brands Directory</title>
+    <title>Golf Brands Directory</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>Top Golf Brands Directory</h1>
-        <nav>
-            <input type="text" id="brand-search" placeholder="Search brands...">
-            <select id="category-filter">
-                <option value="">All Categories</option>
-                <option value="clubs">Clubs</option>
-                <option value="balls">Balls</option>
-                <option value="accessories">Accessories</option>
+        <h1>Golf Brands Directory</h1>
+        <div class="filters">
+            <select id="brandFilter">
+                <option value="">All Brands</option>
             </select>
-        </nav>
+            <select id="clubTypeFilter">
+                <option value="">All Club Types</option>
+            </select>
+        </div>
     </header>
-
-    <main id="brand-directory" class="brand-grid">
-        <!-- Brand cards will be dynamically inserted here -->
+    
+    <main id="brandsContainer">
+        <!-- Brands will be dynamically loaded here -->
     </main>
 
-    <footer>
-        <p>&copy; 2024 Golf Brands Directory. All rights reserved.</p>
-    </footer>
-
+    <!-- Load brand data files -->
+    <script src="data/brands/cobra.js"></script>
+    <script src="data/brands/taylormade.js"></script>
+    <!-- Add other brand scripts here -->
+    
+    <!-- Load main script -->
     <script src="js/script.js"></script>
 </body>
 </html>
