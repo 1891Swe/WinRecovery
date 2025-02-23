@@ -227,5 +227,171 @@ window.golfData.cobra = [
         url: "https://www.cobragolf.com/collections/golf-clubs-irons/products/womens-darkspeed-irons",
         description: "Women's DARKSPEED Irons - Specifically Engineered for Women",
         reviews: "No Reviews"
+    },
+    
+    // Fairways
+    {
+        brand: "Cobra",
+        model: "DS-ADAPT X Fairway",
+        type: "Fairways",
+        year: "2025",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-fairways/products/ds-adapt-x-fairway",
+        description: "2025 X Performance Fairway Wood",
+        reviews: "4 Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "DS-ADAPT MAX Fairway",
+        type: "Fairways",
+        year: "2025",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-fairways/products/ds-adapt-max-fairway",
+        description: "2025 Maximum Forgiveness Fairway Wood",
+        reviews: "2 Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "DS-ADAPT LS Fairway",
+        type: "Fairways",
+        year: "2025",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-fairways/products/ds-adapt-ls-fairway",
+        description: "2025 Low Spin Fairway Wood",
+        reviews: "No Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "Women's DS-ADAPT MAX Fairway",
+        type: "Fairways",
+        year: "2025",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-fairways/products/womens-ds-adapt-max-fairway",
+        description: "2025 Women's Maximum Forgiveness Fairway Wood",
+        reviews: "No Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "AIR-X Fairway",
+        type: "Fairways",
+        year: "2023-2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-fairways/products/air-x-fairway",
+        description: "Lightweight Fairway Wood",
+        reviews: "14 Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "DARKSPEED MAX Fairway",
+        type: "Fairways",
+        year: "2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-fairways/products/darkspeed-max-fairway",
+        description: "Maximum Forgiveness Fairway Wood",
+        reviews: "28 Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "DARKSPEED X Fairway",
+        type: "Fairways",
+        year: "2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-fairways/products/darkspeed-x-fairway",
+        description: "X Performance Fairway Wood",
+        reviews: "28 Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "DARKSPEED LS Fairway",
+        type: "Fairways",
+        year: "2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-fairways/products/darkspeed-ls-fairway",
+        description: "Low Spin Fairway Wood",
+        reviews: "16 Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "Women's AIR-X Fairway",
+        type: "Fairways",
+        year: "2023-2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-fairways/products/womens-air-x-fairway",
+        description: "Women's Lightweight Fairway Wood",
+        reviews: "No Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "Women's DARKSPEED MAX Fairway",
+        type: "Fairways",
+        year: "2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-fairways/products/womens-darkspeed-max-fairway",
+        description: "Women's Maximum Forgiveness Fairway Wood",
+        reviews: "No Reviews"
+    },
+
+    // Hybrids
+    {
+        brand: "Cobra",
+        model: "DS-ADAPT Hybrid",
+        type: "Hybrids",
+        year: "2025",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-hybrids/products/ds-adapt-hybrid",
+        description: "2025 Performance Hybrid",
+        reviews: "1 Review"
+    },
+    {
+        brand: "Cobra",
+        model: "Women's DS-ADAPT Hybrid",
+        type: "Hybrids",
+        year: "2025",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-hybrids/products/womens-ds-adapt-hybrid",
+        description: "2025 Women's Performance Hybrid",
+        reviews: "No Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "AIR-X Hybrid",
+        type: "Hybrids",
+        year: "2023-2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-hybrids/products/air-x-hybrid",
+        description: "Lightweight Performance Hybrid",
+        reviews: "20 Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "DARKSPEED Hybrid",
+        type: "Hybrids",
+        year: "2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-hybrids/products/darkspeed-hybrid",
+        description: "Maximum Performance Hybrid",
+        reviews: "28 Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "KING TEC Hybrid",
+        type: "Hybrids",
+        year: "2023-2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-hybrids/products/king-tec-hybrid",
+        description: "Players Performance Hybrid",
+        reviews: "35 Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "DARKSPEED ONE Length Hybrid",
+        type: "Hybrids",
+        year: "2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-hybrids/products/darkspeed-one-length-hybrid",
+        description: "ONE Length Technology Hybrid",
+        reviews: "8 Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "Women's AIR-X Hybrid",
+        type: "Hybrids",
+        year: "2023-2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-hybrids/products/womens-air-x-hybrid",
+        description: "Women's Lightweight Hybrid",
+        reviews: "1 Review"
+    },
+    {
+        brand: "Cobra",
+        model: "Women's DARKSPEED Hybrid",
+        type: "Hybrids",
+        year: "2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-hybrids/products/womens-darkspeed-hybrid",
+        description: "Women's Maximum Performance Hybrid",
+        reviews: "2 Reviews"
     }
 ];
