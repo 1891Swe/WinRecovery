@@ -253,6 +253,43 @@ window.golfData.taylormade = [
         description: "Black PVD Finish Performance Irons",
         reviews: "Coming Soon",
         price: "KR15,400.00"
-    }
-];
+    },
+
+// Hybrids/Rescues
+{
+    brand: "TaylorMade",
+    model: "Qi35 Max Rescue",
+    type: "Hybrids",
+    year: "2024",
+    url: "https://www.taylormadegolf.eu/Qi35-Max-Rescue/DW-TC373.html",
+    description: "Maximum forgiveness hybrid with enhanced versatility",
+    reviews: "Coming Soon"
+},
+{
+    brand: "TaylorMade",
+    model: "Qi35 Rescue",
+    type: "Hybrids",
+    year: "2024",
+    url: "https://www.taylormadegolf.eu/Qi35-Rescue/DW-TC374.html",
+    description: "Standard model hybrid with balanced performance",
+    reviews: "Coming Soon"
+},
+{
+    brand: "TaylorMade",
+    model: "Qi35 Max Lite Rescue",
+    type: "Hybrids",
+    year: "2024",
+    url: "https://www.taylormadegolf.eu/Qi35-Max-Lite-Rescue/DW-TC375.html",
+    description: "Lightweight design hybrid for increased swing speed",
+    reviews: "Coming Soon"
+},
+{
+    brand: "TaylorMade",
+    model: "Kalea Gold Rescue",
+    type: "Hybrids",
+    year: "2024",
+    url: "https://www.taylormadegolf.eu/Kalea-Gold-Rescue/DW-TC376.html",
+    description: "Women's specific hybrid design",
+    reviews: "Coming Soon"
+}
 ];
