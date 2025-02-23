@@ -202,5 +202,46 @@ window.golfData.srixon = [
         description: "Women's Game Improvement Iron",
         price: "$1,199.99",
         reviews: "Coming Soon"
+    },
+    // Hybrids
+    {
+        brand: "Srixon",
+        model: "ZX-i Hybrid",
+        type: "Hybrids",
+        year: "2024",
+        url: "https://us.dunlopsports.com/srixon/clubs/hybrids/zxi-hybrid/zxi-hybrid/MZXIHYB.html",
+        description: "Premium Performance Hybrid",
+        price: "$249.99",
+        reviews: "Coming Soon"
+    },
+    {
+        brand: "Srixon",
+        model: "Women's ZX-i Hybrid",
+        type: "Hybrids",
+        year: "2024",
+        url: "https://us.dunlopsports.com/srixon/clubs/hybrids/womens-zxi-hybrid/womens-zxi-hybrid/MWZXIHYB.html",
+        description: "Women's Premium Performance Hybrid",
+        price: "$249.99",
+        reviews: "Coming Soon"
+    },
+    {
+        brand: "Srixon",
+        model: "ZX MK II Hybrid",
+        type: "Hybrids",
+        year: "2023",
+        url: "https://us.dunlopsports.com/srixon/clubs/hybrids/zx-mk-ii-hybrids/zx-mk-ii-hybrids/MZXMKIIHYB.html",
+        description: "MK II Series Performance Hybrid",
+        price: "$249.99",
+        reviews: "Coming Soon"
+    },
+    {
+        brand: "Srixon",
+        model: "Women's ZX MK II Hybrid",
+        type: "Hybrids",
+        year: "2023",
+        url: "https://us.dunlopsports.com/srixon/clubs/hybrids/womens-zx-mk-ii-hybrids/womens-zx-mk-ii-hybrids/MWZXMKIIHYB.html",
+        description: "Women's MK II Series Performance Hybrid",
+        price: "$249.99",
+        reviews: "Coming Soon"
     }
 ];
