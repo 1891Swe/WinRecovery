@@ -1,30 +1,25 @@
-// Wait for DOM content to be loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Global error handler
     window.onerror = function(message, source, lineno, colno, error) {
         console.error('Global error:', message, 'at', source, ':', lineno);
         return false;
     };
-    
+
     // Initialize window.golfData if it doesn't exist
     window.golfData = window.golfData || {};
     
-    // Function to initialize the application
     function initializeApp() {
-        console.log('Initializing app with brands:', Object.keys(window.golfData));
-        
         const allClubs = getAllClubs();
         console.log('Total clubs found:', allClubs.length);
         
         updateFilters(allClubs);
-        renderClubs(allClubs);
+        renderBrands(allClubs);
         
         // Add event listeners to filters
         document.getElementById('brandFilter').addEventListener('change', handleFilters);
         document.getElementById('clubTypeFilter').addEventListener('change', handleFilters);
     }
     
-    // Function to get all clubs from all brands
     function getAllClubs() {
         let allClubs = [];
         for (const brand in window.golfData) {
@@ -35,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
         return allClubs;
     }
     
-    // Function to update filter options
     function updateFilters(clubs) {
         const brandFilter = document.getElementById('brandFilter');
         const clubTypeFilter = document.getElementById('clubTypeFilter');
@@ -48,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         brandFilter.innerHTML = '<option value="">All Brands</option>';
         clubTypeFilter.innerHTML = '<option value="">All Club Types</option>';
         
-        // Add brand options
+        // Add options
         brands.sort().forEach(brand => {
             const option = document.createElement('option');
             option.value = brand;
@@ -56,7 +50,6 @@ document.addEventListener('DOMContentLoaded', function() {
             brandFilter.appendChild(option);
         });
         
-        // Add type options
         types.sort().forEach(type => {
             const option = document.createElement('option');
             option.value = type;
@@ -65,7 +58,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Function to handle filter changes
     function handleFilters() {
         const selectedBrand = document.getElementById('brandFilter').value;
         const selectedType = document.getElementById('clubTypeFilter').value;
@@ -80,51 +72,102 @@ document.addEventListener('DOMContentLoaded', function() {
             filteredClubs = filteredClubs.filter(club => club.type === selectedType);
         }
         
-        renderClubs(filteredClubs);
+        renderBrands(filteredClubs);
     }
     
-    // Function to render clubs
-    function renderClubs(clubs) {
+    function renderBrands(clubs) {
         const container = document.getElementById('brandsContainer');
         container.innerHTML = '';
         
         // Group clubs by brand
-        const groupedClubs = {};
+        const groupedByBrand = {};
         clubs.forEach(club => {
-            if (!groupedClubs[club.brand]) {
-                groupedClubs[club.brand] = [];
+            if (!groupedByBrand[club.brand]) {
+                groupedByBrand[club.brand] = [];
             }
-            groupedClubs[club.brand].push(club);
+            groupedByBrand[club.brand].push(club);
         });
         
-        // Render each brand's clubs
-        Object.keys(groupedClubs).sort().forEach(brand => {
-            const brandClubs = groupedClubs[brand];
-            const brandCard = document.createElement('div');
-            brandCard.className = 'brand-card';
+        // Render each brand section
+        Object.keys(groupedByBrand).sort().forEach(brand => {
+            const brandClubs = groupedByBrand[brand];
+            const brandSection = document.createElement('div');
+            brandSection.className = 'brand-section';
             
-            brandCard.innerHTML = `
+            // Group clubs by type
+            const clubsByType = {};
+            brandClubs.forEach(club => {
+                if (!clubsByType[club.type]) {
+                    clubsByType[club.type] = [];
+                }
+                clubsByType[club.type].push(club);
+            });
+            
+            // Create brand header
+            const header = document.createElement('div');
+            header.className = 'brand-header';
+            header.innerHTML = `
                 <h2>${brand}</h2>
-                <ul class="club-list">
-                    ${brandClubs.map(club => `
-                        <li>
-                            <a href="${club.url}" class="club-link" target="_blank" rel="noopener noreferrer">
-                                <strong>${club.model}</strong> - ${club.type}
-                            </a>
-                            <br>
-                            <small>${club.description}</small>
-                            ${club.price ? `<br><small>Price: ${club.price}</small>` : ''}
-                            <br>
-                            <small>${club.reviews}</small>
-                        </li>
-                    `).join('')}
-                </ul>
+                <span class="expand-icon">▼</span>
             `;
             
-            container.appendChild(brandCard);
+            // Create stats bar
+            const statsBar = document.createElement('div');
+            statsBar.className = 'stats-bar';
+            statsBar.innerHTML = `
+                <div class="stat-item">
+                    <strong>Total Models:</strong> ${brandClubs.length}
+                </div>
+                <div class="stat-item">
+                    <strong>Categories:</strong> ${Object.keys(clubsByType).length}
+                </div>
+            `;
+            
+            // Create content section
+            const content = document.createElement('div');
+            content.className = 'brand-content';
+            
+            // Create club categories
+            const categoriesDiv = document.createElement('div');
+            categoriesDiv.className = 'club-categories';
+            
+            Object.keys(clubsByType).sort().forEach(type => {
+                const categoryDiv = document.createElement('div');
+                categoryDiv.className = 'club-category';
+                categoryDiv.innerHTML = `
+                    <h3>${type}</h3>
+                    <ul class="club-list">
+                        ${clubsByType[type].map(club => `
+                            <li>
+                                <strong>${club.model}</strong>
+                                <br>
+                                <small>${club.description}</small>
+                                ${club.price ? `<br><small>Price: ${club.price}</small>` : ''}
+                                <br>
+                                <small>${club.reviews}</small>
+                            </li>
+                        `).join('')}
+                    </ul>
+                `;
+                categoriesDiv.appendChild(categoryDiv);
+            });
+            
+            content.appendChild(categoriesDiv);
+            
+            // Add click handler for accordion
+            header.addEventListener('click', () => {
+                header.classList.toggle('active');
+                content.classList.toggle('active');
+            });
+            
+            // Assemble the section
+            brandSection.appendChild(header);
+            brandSection.appendChild(statsBar);
+            brandSection.appendChild(content);
+            container.appendChild(brandSection);
         });
     }
     
-    // Initialize the app with a slight delay to ensure scripts are loaded
+    // Initialize after a short delay to ensure scripts are loaded
     setTimeout(initializeApp, 100);
 });
