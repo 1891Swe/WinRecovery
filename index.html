@@ -10,12 +10,18 @@
     <header>
         <h1>Golf Brands Directory</h1>
         <div class="filters">
-            <select id="brandFilter">
-                <option value="">All Brands</option>
-            </select>
-            <select id="clubTypeFilter">
-                <option value="">All Club Types</option>
-            </select>
+            <div class="filter-group">
+                <label for="brandFilter">Brand:</label>
+                <select id="brandFilter">
+                    <option value="">All Brands</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="clubTypeFilter">Club Type:</label>
+                <select id="clubTypeFilter">
+                    <option value="">All Club Types</option>
+                </select>
+            </div>
         </div>
     </header>
     
@@ -29,6 +35,7 @@
     <!-- Load brand data files -->
     <script src="data/brands/cobra.js"></script>
     <script src="data/brands/taylormade.js"></script>
+    <script src="data/brands/titleist.js"></script>
     
     <!-- Load main script -->
     <script src="script.js"></script>
