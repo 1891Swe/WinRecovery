@@ -14,6 +14,10 @@ body {
 header {
     margin-bottom: 30px;
     text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 h1 {
@@ -45,6 +49,13 @@ select {
     border-radius: 4px;
     font-size: 16px;
     min-width: 150px;
+    background-color: white;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+select:hover {
+    border-color: #3498db;
 }
 
 #brandsContainer {
@@ -59,6 +70,11 @@ select {
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.brand-card:hover {
+    transform: translateY(-2px);
 }
 
 .brand-card h2 {
@@ -85,6 +101,7 @@ select {
     color: #2c3e50;
     text-decoration: none;
     transition: color 0.3s ease;
+    display: inline-block;
 }
 
 .club-link:hover {
@@ -103,4 +120,19 @@ small {
     color: #666;
     display: block;
     margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+    .filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    select {
+        width: 100%;
+    }
+    
+    #brandsContainer {
+        grid-template-columns: 1fr;
+    }
 }
