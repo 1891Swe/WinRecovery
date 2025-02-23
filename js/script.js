@@ -1,79 +1,98 @@
-// Main script.js
 document.addEventListener('DOMContentLoaded', function() {
-    // Object to store all loaded brand data
-    const brandDirectory = {};
+    const clubsDirectory = {};
 
-    // Function to load brand data
-    async function loadBrandData(brandName) {
+    async function loadBrandClubs(brandName) {
         try {
             const response = await fetch(`data/brands/${brandName}.js`);
-            const data = await response.json();
-            brandDirectory[brandName] = data;
-            return data;
+            const { default: clubsData } = await response.json();
+            clubsDirectory[brandName.toLowerCase()] = clubsData;
+            return clubsData;
         } catch (error) {
-            console.error(`Error loading ${brandName} data:`, error);
+            console.error(`Error loading ${brandName} clubs data:`, error);
         }
     }
 
-    // Function to display brands in the directory
-    function displayBrands() {
-        const container = document.getElementById('brand-directory');
-        
-        Object.values(brandDirectory).forEach(brand => {
-            const brandCard = createBrandCard(brand);
-            container.appendChild(brandCard);
-        });
-    }
-
-    // Create individual brand cards
-    function createBrandCard(brand) {
+    function createClubCard(club) {
         const card = document.createElement('div');
-        card.className = 'brand-card';
+        card.className = 'club-card';
         
         card.innerHTML = `
-            <div class="brand-header">
-                <h2>${brand.name}</h2>
-                <img src="${brand.logo}" alt="${brand.name} logo" class="brand-logo">
+            <div class="club-header">
+                <h3>${club.model}</h3>
+                <span class="club-year">${club.year}</span>
             </div>
-            <div class="brand-info">
-                <p class="brand-description">${brand.description}</p>
-                <div class="brand-details">
-                    <p><strong>Founded:</strong> ${brand.founded}</p>
-                    <p><strong>Headquarters:</strong> ${brand.headquarters}</p>
-                    <p><strong>Signature Products:</strong> ${brand.signatureProducts.join(', ')}</p>
+            <div class="club-info">
+                <p class="club-description">${club.description}</p>
+                <div class="club-footer">
+                    <span class="club-reviews">${club.reviews}</span>
+                    <a href="${club.url}" class="club-link" target="_blank">View Details</a>
                 </div>
-                <a href="${brand.website}" class="brand-link" target="_blank">Visit Website</a>
             </div>
         `;
         
         return card;
     }
 
-    // Load all brands and initialize display
-    const topBrands = [
-        'titleist',
+    function displayBrandClubs(brandName, clubsData) {
+        const container = document.getElementById('clubs-container');
+        const brandSection = document.createElement('section');
+        brandSection.className = 'brand-section';
+        
+        brandSection.innerHTML = `
+            <h2 class="brand-name">${brandName}</h2>
+            <div class="clubs-grid"></div>
+        `;
+        
+        const clubsGrid = brandSection.querySelector('.clubs-grid');
+        
+        clubsData
+            .sort((a, b) => b.year.localeCompare(a.year))
+            .forEach(club => {
+                clubsGrid.appendChild(createClubCard(club));
+            });
+        
+        container.appendChild(brandSection);
+    }
+
+    // Load club brands
+    const clubBrands = [
+        'cobra',
         'taylormade',
+        'titleist',
         'callaway',
         'ping',
-        'cobra',
         'mizuno',
         'cleveland',
         'wilson',
         'srixon',
-        'odyssey',
-        'pxg',
-        'bridgestone',
-        'adams',
-        'tour-edge',
-        'xxio'
+        'pxg'
     ];
 
-    // Load all brand data and display
-    Promise.all(topBrands.map(loadBrandData))
+    // Load and display
+    Promise.all(clubBrands.map(loadBrandClubs))
         .then(() => {
-            displayBrands();
+            Object.entries(clubsDirectory).forEach(([brandName, clubsData]) => {
+                displayBrandClubs(brandName, clubsData);
+            });
         })
         .catch(error => {
-            console.error('Error initializing brand directory:', error);
+            console.error('Error initializing clubs directory:', error);
         });
+
+    // Year filter
+    document.getElementById('year-filter').addEventListener('change', function(e) {
+        const selectedYear = e.target.value;
+        const container = document.getElementById('clubs-container');
+        container.innerHTML = '';
+        
+        Object.entries(clubsDirectory).forEach(([brandName, clubsData]) => {
+            const filteredClubs = selectedYear 
+                ? clubsData.filter(club => club.year === selectedYear)
+                : clubsData;
+            
+            if (filteredClubs.length > 0) {
+                displayBrandClubs(brandName, filteredClubs);
+            }
+        });
+    });
 });
