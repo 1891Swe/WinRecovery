@@ -1,27 +1,45 @@
+// Wait for DOM content to be loaded
 document.addEventListener('DOMContentLoaded', function() {
-    // Debug: Log initial state
+    // Global error handler
+    window.onerror = function(message, source, lineno, colno, error) {
+        console.error('Global error:', message, 'at', source, ':', lineno);
+        return false;
+    };
+
+    // Explicitly log global object and golfData
+    console.log('Window object:', window);
     console.log('Initial window.golfData:', window.golfData);
-
-    // Ensure window.golfData is initialized
+    
+    // Initialize window.golfData if it doesn't exist
     window.golfData = window.golfData || {};
-
+    
+    // Function to initialize the application
+    function initializeApp() {
+        console.log('Initializing app with brands:', Object.keys(window.golfData));
+        
+        const allClubs = getAllClubs();
+        console.log('Total clubs found:', allClubs.length);
+        
+        updateFilters(allClubs);
+        renderClubs(allClubs);
+        
+        // Add event listeners to filters
+        document.getElementById('brandFilter').addEventListener('change', handleFilters);
+        document.getElementById('clubTypeFilter').addEventListener('change', handleFilters);
+    }
+    
     // Function to get all clubs from all brands
     function getAllClubs() {
         let allClubs = [];
-        
-        // Debug: Log brands in golfData
-        console.log('Brands in golfData:', Object.keys(window.golfData));
-
         for (const brand in window.golfData) {
             console.log(`Processing brand: ${brand}`);
             
+            // Ensure the brand property exists and is an array
             if (window.golfData.hasOwnProperty(brand) && Array.isArray(window.golfData[brand])) {
                 console.log(`Clubs for ${brand}:`, window.golfData[brand].length);
                 allClubs = allClubs.concat(window.golfData[brand]);
             }
         }
-        
-        console.log('Total clubs found:', allClubs.length);
         return allClubs;
     }
     
@@ -120,18 +138,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Add event listeners to filters
-    document.getElementById('brandFilter').addEventListener('change', handleFilters);
-    document.getElementById('clubTypeFilter').addEventListener('change', handleFilters);
-    
     // Delay initialization to ensure scripts are loaded
-    setTimeout(() => {
-        try {
-            const allClubs = getAllClubs();
-            updateFilters(allClubs);
-            renderClubs(allClubs);
-        } catch (error) {
-            console.error('Initialization error:', error);
-        }
-    }, 100);
+    setTimeout(initializeApp, 100);
 });
