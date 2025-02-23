@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Total clubs found:', allClubs.length);
         
         updateFilters(allClubs);
-        renderBrands(allClubs);
+        renderBrandCards(allClubs);
         
         // Add event listeners to filters
         document.getElementById('brandFilter').addEventListener('change', handleFilters);
@@ -72,10 +72,10 @@ document.addEventListener('DOMContentLoaded', function() {
             filteredClubs = filteredClubs.filter(club => club.type === selectedType);
         }
         
-        renderBrands(filteredClubs);
+        renderBrandCards(filteredClubs);
     }
     
-    function renderBrands(clubs) {
+    function renderBrandCards(clubs) {
         const container = document.getElementById('brandsContainer');
         container.innerHTML = '';
         
@@ -88,11 +88,9 @@ document.addEventListener('DOMContentLoaded', function() {
             groupedByBrand[club.brand].push(club);
         });
         
-        // Render each brand section
+        // Create brand cards
         Object.keys(groupedByBrand).sort().forEach(brand => {
             const brandClubs = groupedByBrand[brand];
-            const brandSection = document.createElement('div');
-            brandSection.className = 'brand-section';
             
             // Group clubs by type
             const clubsByType = {};
@@ -103,68 +101,62 @@ document.addEventListener('DOMContentLoaded', function() {
                 clubsByType[club.type].push(club);
             });
             
-            // Create brand header
-            const header = document.createElement('div');
-            header.className = 'brand-header';
-            header.innerHTML = `
-                <h2>${brand}</h2>
-                <span class="expand-icon">▼</span>
+            // Create brand card
+            const card = document.createElement('div');
+            card.className = 'brand-card';
+            
+            // Calculate statistics
+            const totalModels = brandClubs.length;
+            const totalCategories = Object.keys(clubsByType).length;
+            const newModels = brandClubs.filter(club => club.year === '2024' || club.year === '2025').length;
+            
+            // Create card content
+            card.innerHTML = `
+                <div class="brand-header">
+                    <h2>${brand}</h2>
+                </div>
+                <div class="brand-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">${totalModels}</div>
+                        <div class="stat-label">Models</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">${totalCategories}</div>
+                        <div class="stat-label">Categories</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">${newModels}</div>
+                        <div class="stat-label">New Models</div>
+                    </div>
+                </div>
+                <div class="brand-content">
+                    ${Object.keys(clubsByType).slice(0, 3).map(type => `
+                        <div class="club-type">
+                            <h3>${type}</h3>
+                            <ul class="club-list">
+                                ${clubsByType[type].slice(0, 3).map(club => `
+                                    <li class="club-item">
+                                        <div class="club-name">${club.model}</div>
+                                        <div class="club-description">${club.description}</div>
+                                        <div class="club-meta">
+                                            ${club.price ? `Price: ${club.price} • ` : ''}
+                                            ${club.reviews}
+                                        </div>
+                                    </li>
+                                `).join('')}
+                            </ul>
+                            ${clubsByType[type].length > 3 ? 
+                                `<a href="#" class="view-all">View all ${clubsByType[type].length} ${type}</a>` : 
+                                ''}
+                        </div>
+                    `).join('')}
+                    ${Object.keys(clubsByType).length > 3 ? 
+                        `<a href="#" class="view-all">View all categories</a>` : 
+                        ''}
+                </div>
             `;
             
-            // Create stats bar
-            const statsBar = document.createElement('div');
-            statsBar.className = 'stats-bar';
-            statsBar.innerHTML = `
-                <div class="stat-item">
-                    <strong>Total Models:</strong> ${brandClubs.length}
-                </div>
-                <div class="stat-item">
-                    <strong>Categories:</strong> ${Object.keys(clubsByType).length}
-                </div>
-            `;
-            
-            // Create content section
-            const content = document.createElement('div');
-            content.className = 'brand-content';
-            
-            // Create club categories
-            const categoriesDiv = document.createElement('div');
-            categoriesDiv.className = 'club-categories';
-            
-            Object.keys(clubsByType).sort().forEach(type => {
-                const categoryDiv = document.createElement('div');
-                categoryDiv.className = 'club-category';
-                categoryDiv.innerHTML = `
-                    <h3>${type}</h3>
-                    <ul class="club-list">
-                        ${clubsByType[type].map(club => `
-                            <li>
-                                <strong>${club.model}</strong>
-                                <br>
-                                <small>${club.description}</small>
-                                ${club.price ? `<br><small>Price: ${club.price}</small>` : ''}
-                                <br>
-                                <small>${club.reviews}</small>
-                            </li>
-                        `).join('')}
-                    </ul>
-                `;
-                categoriesDiv.appendChild(categoryDiv);
-            });
-            
-            content.appendChild(categoriesDiv);
-            
-            // Add click handler for accordion
-            header.addEventListener('click', () => {
-                header.classList.toggle('active');
-                content.classList.toggle('active');
-            });
-            
-            // Assemble the section
-            brandSection.appendChild(header);
-            brandSection.appendChild(statsBar);
-            brandSection.appendChild(content);
-            container.appendChild(brandSection);
+            container.appendChild(card);
         });
     }
     
