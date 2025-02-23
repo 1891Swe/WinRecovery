@@ -229,7 +229,7 @@ window.golfData.cobra = [
         reviews: "No Reviews"
     },
     
-    // Fairways
+    //Fairway woods
     {
         brand: "Cobra",
         model: "DS-ADAPT X Fairway",
