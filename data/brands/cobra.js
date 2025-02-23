@@ -395,8 +395,6 @@ window.golfData.cobra = [
         reviews: "2 Reviews"
     },
 
-    // Add these to your existing cobra.js file
-
     // Utility Irons
     {
         brand: "Cobra",
@@ -462,5 +460,171 @@ window.golfData.cobra = [
         url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-wedges/products/snakebite-one-length-wedge-2023",
         description: "ONE Length Technology Wedge",
         reviews: "23 Reviews"
+    },
+
+    // Putters
+    {
+        brand: "Cobra",
+        model: "Grandsport-3S 3D Printed Putter",
+        type: "Putters",
+        year: "2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-putters/products/grandsport-3s-3d-printed-putter",
+        description: "3D Printed Performance Putter",
+        reviews: "No Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "Agera 3D Printed Putter",
+        type: "Putters",
+        year: "2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-putters/products/agera-3d-printed-putter",
+        description: "Advanced 3D Printed Technology Putter",
+        reviews: "1 Review"
+    },
+    {
+        brand: "Cobra",
+        model: "Agera RS 3D Printed Putter",
+        type: "Putters",
+        year: "2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-putters/products/agera-rs-3d-printed-putter",
+        description: "RS Performance 3D Printed Putter",
+        reviews: "3 Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "Sport-40 Vintage Putter",
+        type: "Putters",
+        year: "2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-putters/products/sport-40-vintage-putter",
+        description: "Classic Design Vintage Putter",
+        reviews: "5 Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "Agera RS-3D 3D Printed Putter",
+        type: "Putters",
+        year: "2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-putters/products/agera-rs-3d-3d-printed-putter",
+        description: "RS-3D Advanced Performance Putter",
+        reviews: "4 Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "Nova-3D Vintage Putter",
+        type: "Putters",
+        year: "2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-putters/products/nova-3d-vintage-putter",
+        description: "Nova Series Vintage Putter",
+        reviews: "3 Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "Cuda Vintage Putter",
+        type: "Putters",
+        year: "2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-putters/products/cuda-vintage-putter",
+        description: "Cuda Classic Design Putter",
+        reviews: "3 Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "Nova Vintage Putter",
+        type: "Putters",
+        year: "2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-putters/products/nova-vintage-putter",
+        description: "Nova Classic Series Putter",
+        reviews: "3 Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "Stingray Vintage Putter",
+        type: "Putters",
+        year: "2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-putters/products/stingray-vintage-putter",
+        description: "Stingray Classic Design Putter",
+        reviews: "2 Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "Supernova 3D Printed Putter",
+        type: "Putters",
+        year: "2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-putters/products/3dp-supernova-putter",
+        description: "Advanced Supernova 3D Printed Design",
+        reviews: "3 Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "Widesport Vintage Putter",
+        type: "Putters",
+        year: "2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-putters/products/widesport-vintage-putter",
+        description: "Wide Body Classic Design Putter",
+        reviews: "5 Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "Sport-60 Vintage Putter",
+        type: "Putters",
+        year: "2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-putters/products/sport-60-vintage-putter",
+        description: "Sport Series Classic Design Putter",
+        reviews: "No Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "Stingray-3D Vintage Putter",
+        type: "Putters",
+        year: "2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-putters/products/stingray-3d-vintage-putter",
+        description: "Stingray 3D Series Putter",
+        reviews: "2 Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "Agera Armlock 3D Printed Putter",
+        type: "Putters",
+        year: "2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-putters/products/agera-armlock-3d-printed-putter",
+        description: "Armlock 3D Printed Technology",
+        reviews: "1 Review"
+    },
+    {
+        brand: "Cobra",
+        model: "Agera Counter Balanced 3D Printed Putter",
+        type: "Putters",
+        year: "2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-putters/products/agera-counter-balanced-3d-printed-putter",
+        description: "Counter Balanced 3D Design",
+        reviews: "1 Review"
+    },
+    {
+        brand: "Cobra",
+        model: "Grandsport Armlock 3D Printed Putter",
+        type: "Putters",
+        year: "2024",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-putters/products/grandsport-armlock-3d-printed-putter",
+        description: "Grandsport Armlock Technology",
+        reviews: "3 Reviews"
+    },
+    {
+        brand: "Cobra",
+        model: "KING 3D Printed Agera Armlock Black Putter",
+        type: "Putters",
+        year: "2022",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-putters/products/king-3d-printed-agera-armlock-black-putter",
+        description: "KING Series Armlock Black Finish",
+        reviews: "No Reviews"
+    },
+
+    // Additional Women's Clubs
+    {
+        brand: "Cobra",
+        model: "Women's T-Rail - Single Irons",
+        type: "Irons",
+        year: "2023",
+        url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-womens/products/womens-t-rail-single-irons",
+        description: "Women's Hybrid-Iron Design",
+        reviews: "No Reviews"
     }
     ];
