@@ -1,4 +1,5 @@
-const clubsData = [
+// cobra.js
+window.golfData.cobra = [
     {
         brand: "Cobra",
         model: "COBRA LIMITED®",
