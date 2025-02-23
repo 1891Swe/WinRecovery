@@ -255,7 +255,7 @@ window.golfData.taylormade = [
         price: "KR15,400.00"
     },
 
-// Hybrids/Rescues
+// Rescue
 {
     brand: "TaylorMade",
     model: "Qi35 Max Rescue",
