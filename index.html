@@ -1,653 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World Holidays Calendar</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        :root {
-            --primary-color: #4a6fa5;
-            --secondary-color: #f9f9f9;
-            --accent-color: #ff6b6b;
-            --text-color: #333;
-            --border-color: #ddd;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        body {
-            background-color: var(--secondary-color);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 20px;
-        }
-        
-        h1 {
-            color: var(--primary-color);
-            margin-bottom: 10px;
-        }
-        
-        .filter-section {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            margin-bottom: 30px;
-            padding: 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        .filter-group {
-            flex: 1;
-            min-width: 250px;
-        }
-        
-        .filter-group h3 {
-            margin-bottom: 10px;
-            color: var(--primary-color);
-        }
-        
-        .search-container {
-            margin-bottom: 15px;
-            position: relative;
-        }
-        
-        .search-container input {
-            width: 100%;
-            padding: 10px 35px 10px 15px;
-            border: 1px solid var(--border-color);
-            border-radius: 5px;
-            font-size: 16px;
-        }
-        
-        .search-container i {
-            position: absolute;
-            right: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: var(--primary-color);
-        }
-        
-        .checkbox-container {
-            max-height: 200px;
-            overflow-y: auto;
-            border: 1px solid var(--border-color);
-            border-radius: 5px;
-            padding: 10px;
-            background-color: white;
-        }
-        
-        .checkbox-item {
-            margin-bottom: 8px;
-            display: flex;
-            align-items: center;
-        }
-        
-        .checkbox-item input {
-            margin-right: 10px;
-        }
-        
-        .button-group {
-            display: flex;
-            gap: 10px;
-            margin-top: 10px;
-        }
-        
-        button {
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-        
-        .apply-btn {
-            background-color: var(--primary-color);
-            color: white;
-        }
-        
-        .reset-btn {
-            background-color: #e0e0e0;
-            color: var(--text-color);
-        }
-        
-        button:hover {
-            opacity: 0.9;
-        }
-        
-        .calendar-section {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-        
-        .month-container {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            overflow: hidden;
-            margin-bottom: 20px;
-        }
-        
-        .month-header {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 15px;
-            font-size: 18px;
-            font-weight: bold;
-        }
-        
-        .holiday-list {
-            padding: 20px;
-        }
-        
-        .holiday-item {
-            display: flex;
-            margin-bottom: 15px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid var(--border-color);
-        }
-        
-        .holiday-date {
-            min-width: 100px;
-            font-weight: bold;
-            color: var(--primary-color);
-        }
-        
-        .holiday-details {
-            flex: 1;
-        }
-        
-        .holiday-name {
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        
-        .holiday-country {
-            font-size: 14px;
-            color: #777;
-            display: flex;
-            align-items: center;
-        }
-        
-        .country-flag {
-            width: 24px;
-            height: 16px;
-            margin-right: 8px;
-            border: 1px solid #eee;
-        }
-        
-        .no-results {
-            text-align: center;
-            padding: 50px;
-            font-size: 18px;
-            color: #777;
-        }
-        
-        footer {
-            text-align: center;
-            margin-top: 50px;
-            padding: 20px;
-            border-top: 1px solid var(--border-color);
-            color: #777;
-        }
-        
-        .github-link {
-            color: var(--primary-color);
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-        }
-        
-        @media (max-width: 768px) {
-            .filter-section {
-                flex-direction: column;
-            }
-            
-            .filter-group {
-                width: 100%;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1><i class="fas fa-globe"></i> World Holidays Calendar</h1>
-            <p>Discover holidays and celebrations from the 20 largest countries around the world</p>
-        </header>
-        
-        <div class="filter-section">
-            <div class="filter-group">
-                <h3>Countries</h3>
-                <div class="search-container">
-                    <input type="text" id="country-search" placeholder="Search countries...">
-                    <i class="fas fa-search"></i>
-                </div>
-                <div class="checkbox-container" id="country-filters">
-                    <!-- Country checkboxes will be populated here -->
-                </div>
-                <div class="button-group">
-                    <button class="apply-btn" id="select-all-countries">Select All</button>
-                    <button class="reset-btn" id="clear-countries">Clear</button>
-                </div>
-            </div>
-            
-            <div class="filter-group">
-                <h3>Months</h3>
-                <div class="checkbox-container" id="month-filters">
-                    <!-- Month checkboxes will be populated here -->
-                </div>
-                <div class="button-group">
-                    <button class="apply-btn" id="select-all-months">Select All</button>
-                    <button class="reset-btn" id="clear-months">Clear</button>
-                </div>
-            </div>
-            
-            <div class="filter-group">
-                <h3>Filter Options</h3>
-                <div style="margin-bottom: 15px;">
-                    <div class="checkbox-item">
-                        <input type="checkbox" id="current-month-only">
-                        <label for="current-month-only">Show current month only</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input type="checkbox" id="upcoming-holidays">
-                        <label for="upcoming-holidays">Show upcoming holidays only</label>
-                    </div>
-                </div>
-                <button class="apply-btn" id="apply-filters" style="width: 100%;">Apply Filters</button>
-            </div>
-        </div>
-        
-        <div class="calendar-section" id="holidays-container">
-            <!-- Calendar content will be populated here -->
-            <div class="no-results">
-                <i class="fas fa-spinner fa-spin" style="font-size: 2em; margin-bottom: 20px;"></i>
-                <p>Loading holidays data...</p>
-            </div>
-        </div>
-        
-        <footer>
-            <p>Created with <i class="fas fa-heart" style="color: var(--accent-color);"></i> | 
-                <a href="https://github.com/yourusername/world-holidays-calendar" class="github-link" target="_blank">
-                    <i class="fab fa-github"></i> View on GitHub
-                </a>
-            </p>
-        </footer>
-    </div>
+import React, { useState } from 'react';
+import { Card, CardContent } from "@/components/ui/card";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
-    <script>
-        // Define the months
-        const months = [
-            { id: 0, name: 'January' },
-            { id: 1, name: 'February' },
-            { id: 2, name: 'March' },
-            { id: 3, name: 'April' },
-            { id: 4, name: 'May' },
-            { id: 5, name: 'June' },
-            { id: 6, name: 'July' },
-            { id: 7, name: 'August' },
-            { id: 8, name: 'September' },
-            { id: 9, name: 'October' },
-            { id: 10, name: 'November' },
-            { id: 11, name: 'December' }
-        ];
-        
-        // Placeholder data to use before loading the JSON
-        let countries = [];
-        let holidaysData = [];
-        
-        // Load holiday data from the JSON file
-        fetch('./holiday-data.json')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`Failed to load holiday data (${response.status}): ${response.statusText}`);
-                }
-                return response.json();
-            })
-            .then(data => {
-                // Process countries
-                countries = data.countries.map(country => {
-                    // Add flag emoji based on country code
-                    const countryCode = country.code.toUpperCase();
-                    const flagEmoji = getFlagEmoji(countryCode);
-                    return {
-                        code: countryCode,
-                        name: country.name,
-                        flag: flagEmoji
-                    };
-                });
-                
-                // Process holidays
-                holidaysData = [];
-                data.countries.forEach(country => {
-                    if (country.holidays && country.holidays.length > 0) {
-                        country.holidays.forEach(holiday => {
-                            // Convert month and day to date format
-                            const month = holiday.month; // 0-based month
-                            const day = holiday.day;
-                            const year = 2025; // Using 2025 as a fixed year for consistency
-                            
-                            const date = new Date(year, month, day);
-                            const formattedDate = date.toISOString().split('T')[0]; // YYYY-MM-DD format
-                            
-                            holidaysData.push({
-                                date: formattedDate,
-                                name: holiday.name,
-                                country: country.code.toUpperCase()
-                            });
-                        });
-                    }
-                });
-                
-                // After data is loaded, populate the filters and render the initial view
-                populateCountryFilters();
-                renderHolidays();
-            })
-            .catch(error => {
-                console.error('Error loading holiday data:', error);
-                document.getElementById('holidays-container').innerHTML = `
-                    <div class="no-results">
-                        <i class="fas fa-exclamation-circle" style="font-size: 2em; margin-bottom: 20px; color: #ff6b6b;"></i>
-                        <p>Error loading holiday data: ${error.message}</p>
-                        <p>Make sure holiday-data.json is in the same directory as index.html.</p>
-                        <p>Check the console for more details.</p>
-                    </div>
-                `;
-                
-                // For debugging: If the JSON file fails to load, use hardcoded data
-                countries = [
-                    { code: 'US', name: 'United States', flag: '🇺🇸' },
-                    { code: 'GB', name: 'United Kingdom', flag: '🇬🇧' },
-                    { code: 'DE', name: 'Germany', flag: '🇩🇪' },
-                    { code: 'FR', name: 'France', flag: '🇫🇷' },
-                    { code: 'JP', name: 'Japan', flag: '🇯🇵' }
-                ];
-                
-                holidaysData = [
-                    { date: '2025-01-01', name: 'New Year\'s Day', country: 'US' },
-                    { date: '2025-12-25', name: 'Christmas Day', country: 'US' },
-                    { date: '2025-01-01', name: 'New Year\'s Day', country: 'GB' },
-                    { date: '2025-12-25', name: 'Christmas Day', country: 'GB' },
-                    { date: '2025-01-01', name: 'Neujahr', country: 'DE' },
-                    { date: '2025-12-25', name: 'Weihnachten', country: 'DE' }
-                ];
-                
-                // Continue with rendering so the app doesn't appear broken
-                populateCountryFilters();
-                renderHolidays();
-            });
-        
-        // Function to get flag emoji from country code
-        function getFlagEmoji(countryCode) {
-            const codePoints = countryCode
-                .toUpperCase()
-                .split('')
-                .map(char => 127397 + char.charCodeAt());
-            return String.fromCodePoint(...codePoints);
-        }
-        
-        // Function to populate country filters after data is loaded
-        function populateCountryFilters() {
-            const countryFiltersContainer = document.getElementById('country-filters');
-            countryFiltersContainer.innerHTML = '';
-            
-            countries.forEach(country => {
-                const checkboxItem = document.createElement('div');
-                checkboxItem.className = 'checkbox-item';
-                
-                const checkbox = document.createElement('input');
-                checkbox.type = 'checkbox';
-                checkbox.id = `country-${country.code}`;
-                checkbox.value = country.code;
-                checkbox.checked = true;
-                
-                const label = document.createElement('label');
-                label.htmlFor = `country-${country.code}`;
-                label.textContent = `${country.flag} ${country.name}`;
-                
-                checkboxItem.appendChild(checkbox);
-                checkboxItem.appendChild(label);
-                countryFiltersContainer.appendChild(checkboxItem);
-            });
-        ];
-        
-        // Initialize the application
-        document.addEventListener('DOMContentLoaded', function() {
-            // Populate month filters (doesn't depend on JSON data)
-            populateMonthFilters();
-            
-            // Setup event listeners for buttons and search
-            setupEventListeners();
-            
-            // The country filters and holiday rendering will be done after the JSON is loaded
-        });
-        
-        // Function to populate month filters
-        function populateMonthFilters() {
-            const monthFiltersContainer = document.getElementById('month-filters');
-            months.forEach(month => {
-                const checkboxItem = document.createElement('div');
-                checkboxItem.className = 'checkbox-item';
-                
-                const checkbox = document.createElement('input');
-                checkbox.type = 'checkbox';
-                checkbox.id = `month-${month.id}`;
-                checkbox.value = month.id;
-                checkbox.checked = true;
-                
-                const label = document.createElement('label');
-                label.htmlFor = `month-${month.id}`;
-                label.textContent = month.name;
-                
-                checkboxItem.appendChild(checkbox);
-                checkboxItem.appendChild(label);
-                monthFiltersContainer.appendChild(checkboxItem);
-            });
-        }
-        
-        // Function to setup event listeners
-        function setupEventListeners() {
-            // Setup event listeners for buttons
-            document.getElementById('select-all-countries').addEventListener('click', () => {
-                document.querySelectorAll('#country-filters input[type="checkbox"]').forEach(checkbox => {
-                    checkbox.checked = true;
-                });
-            });
-            
-            document.getElementById('clear-countries').addEventListener('click', () => {
-                document.querySelectorAll('#country-filters input[type="checkbox"]').forEach(checkbox => {
-                    checkbox.checked = false;
-                });
-            });
-            
-            document.getElementById('select-all-months').addEventListener('click', () => {
-                document.querySelectorAll('#month-filters input[type="checkbox"]').forEach(checkbox => {
-                    checkbox.checked = true;
-                });
-            });
-            
-            document.getElementById('clear-months').addEventListener('click', () => {
-                document.querySelectorAll('#month-filters input[type="checkbox"]').forEach(checkbox => {
-                    checkbox.checked = false;
-                });
-            });
-            
-            // Setup search functionality for countries
-            document.getElementById('country-search').addEventListener('input', function(e) {
-                const searchTerm = e.target.value.toLowerCase();
-                document.querySelectorAll('#country-filters .checkbox-item').forEach(item => {
-                    const label = item.querySelector('label').textContent.toLowerCase();
-                    if (label.includes(searchTerm)) {
-                        item.style.display = 'flex';
-                    } else {
-                        item.style.display = 'none';
-                    }
-                });
-            });
-            
-            // Apply filters button
-            document.getElementById('apply-filters').addEventListener('click', renderHolidays);
-            
-            // Initial render will be triggered after JSON data is loaded
-            
-display = 'flex';
-                    } else {
-                        item.style.display = 'none';
-                    }
-                });
-            });
-            
-            // Apply filters button
-            document.getElementById('apply-filters').addEventListener('click', renderHolidays);
-            
-            // Function to render holidays based on selected filters
-            function renderHolidays() {
-                const selectedCountries = Array.from(document.querySelectorAll('#country-filters input[type="checkbox"]:checked'))
-                    .map(checkbox => checkbox.value);
-                
-                const selectedMonths = Array.from(document.querySelectorAll('#month-filters input[type="checkbox"]:checked'))
-                    .map(checkbox => parseInt(checkbox.value));
-                
-                const showCurrentMonthOnly = document.getElementById('current-month-only').checked;
-                const showUpcomingOnly = document.getElementById('upcoming-holidays').checked;
-                
-                const today = new Date();
-                const currentMonth = today.getMonth();
-                const currentDate = today.getDate();
-                
-                // Filter holidays based on selected criteria
-                let filteredHolidays = holidaysData.filter(holiday => {
-                    const holidayDate = new Date(holiday.date);
-                    const holidayMonth = holidayDate.getMonth();
-                    const holidayDay = holidayDate.getDate();
-                    
-                    // Country filter
-                    if (!selectedCountries.includes(holiday.country)) {
-                        return false;
-                    }
-                    
-                    // Month filter
-                    if (showCurrentMonthOnly) {
-                        if (holidayMonth !== currentMonth) {
-                            return false;
-                        }
-                    } else if (!selectedMonths.includes(holidayMonth)) {
-                        return false;
-                    }
-                    
-                    // Upcoming holidays filter
-                    if (showUpcomingOnly) {
-                        if (holidayMonth < currentMonth) {
-                            return false;
-                        }
-                        if (holidayMonth === currentMonth && holidayDay < currentDate) {
-                            return false;
-                        }
-                    }
-                    
-                    return true;
-                });
-                
-                // Sort holidays by date
-                filteredHolidays.sort((a, b) => new Date(a.date) - new Date(b.date));
-                
-                // Group holidays by month
-                const holidaysByMonth = {};
-                filteredHolidays.forEach(holiday => {
-                    const date = new Date(holiday.date);
-                    const month = date.getMonth();
-                    
-                    if (!holidaysByMonth[month]) {
-                        holidaysByMonth[month] = [];
-                    }
-                    
-                    holidaysByMonth[month].push(holiday);
-                });
-                
-                // Render holidays
-                const holidaysContainer = document.getElementById('holidays-container');
-                holidaysContainer.innerHTML = '';
-                
-                if (Object.keys(holidaysByMonth).length === 0) {
-                    const noResults = document.createElement('div');
-                    noResults.className = 'no-results';
-                    noResults.innerHTML = `
-                        <i class="fas fa-calendar-times" style="font-size: 2em; margin-bottom: 20px;"></i>
-                        <p>No holidays found with the selected filters.</p>
-                    `;
-                    holidaysContainer.appendChild(noResults);
-                } else {
-                    // Sort months chronologically
-                    const sortedMonths = Object.keys(holidaysByMonth).map(Number).sort((a, b) => a - b);
-                    
-                    sortedMonths.forEach(monthId => {
-                        const monthName = months.find(m => m.id === monthId).name;
-                        const monthHolidays = holidaysByMonth[monthId];
-                        
-                        const monthContainer = document.createElement('div');
-                        monthContainer.className = 'month-container';
-                        
-                        const monthHeader = document.createElement('div');
-                        monthHeader.className = 'month-header';
-                        monthHeader.textContent = monthName;
-                        
-                        const holidayList = document.createElement('div');
-                        holidayList.className = 'holiday-list';
-                        
-                        monthHolidays.forEach(holiday => {
-                            const holidayItem = document.createElement('div');
-                            holidayItem.className = 'holiday-item';
-                            
-                            const date = new Date(holiday.date);
-                            const formattedDate = `${monthName} ${date.getDate()}`;
-                            
-                            const country = countries.find(c => c.code === holiday.country);
-                            if (!country) return; // Skip if country info is not found
-                            
-                            holidayItem.innerHTML = `
-                                <div class="holiday-date">${formattedDate}</div>
-                                <div class="holiday-details">
-                                    <div class="holiday-name">${holiday.name}</div>
-                                    <div class="holiday-country">
-                                        <span class="country-flag">${country.flag}</span>
-                                        ${country.name}
-                                    </div>
-                                </div>
-                            `;
-                            
-                            holidayList.appendChild(holidayItem);
-                        });
-                        
-                        monthContainer.appendChild(monthHeader);
-                        monthContainer.appendChild(holidayList);
-                        holidaysContainer.appendChild(monthContainer);
-                    });
-                }
-            }
-        });
-    </script>
-</body>
-</html>
+const GolfDirectory = () => {
+  // Sample data structure - replace with your actual links
+  const clubs = [
+    {
+      brand: "Cobra",
+      type: "Irons",
+      url: "https://www.cobragolf.com/en-eu/collections/golf-clubs-irons",
+      description: "Complete collection of Cobra golf irons"
+    },
+    {
+      brand: "TaylorMade",
+      type: "Wedges",
+      url: "https://www.taylormadegolf.com/wedges/",
+      description: "TaylorMade wedge collection"
+    },
+    // Add more clubs here
+  ];
+
+  const brands = [...new Set(clubs.map(club => club.brand))];
+  const types = [...new Set(clubs.map(club => club.type))];
+
+  const [selectedBrand, setSelectedBrand] = useState('');
+  const [selectedType, setSelectedType] = useState('');
+
+  const filteredClubs = clubs.filter(club => {
+    if (selectedBrand && selectedType) {
+      return club.brand === selectedBrand && club.type === selectedType;
+    } else if (selectedBrand) {
+      return club.brand === selectedBrand;
+    } else if (selectedType) {
+      return club.type === selectedType;
+    }
+    return true;
+  });
+
+  return (
+    <div className="p-4 max-w-4xl mx-auto">
+      <h1 className="text-3xl font-bold mb-6">Golf Club Directory</h1>
+      
+      <div className="flex gap-4 mb-6">
+        <div className="w-48">
+          <Select value={selectedBrand} onValueChange={setSelectedBrand}>
+            <SelectTrigger>
+              <SelectValue placeholder="Select Brand" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="">All Brands</SelectItem>
+              {brands.map(brand => (
+                <SelectItem key={brand} value={brand}>{brand}</SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        </div>
+
+        <div className="w-48">
+          <Select value={selectedType} onValueChange={setSelectedType}>
+            <SelectTrigger>
+              <SelectValue placeholder="Select Type" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="">All Types</SelectItem>
+              {types.map(type => (
+                <SelectItem key={type} value={type}>{type}</SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {filteredClubs.map((club, index) => (
+          <Card key={index} className="hover:shadow-lg transition-shadow">
+            <CardContent className="p-4">
+              <h2 className="text-xl font-semibold mb-2">{club.brand}</h2>
+              <p className="text-gray-600 mb-2">{club.type}</p>
+              <p className="text-sm text-gray-500 mb-3">{club.description}</p>
+              <a 
+                href={club.url} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-800 underline"
+              >
+                View Collection
+              </a>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+
+      <footer className="mt-8 text-sm text-gray-500">
+        <p>Last updated: {new Date().toLocaleDateString()}</p>
+        <p>Disclaimer: All links direct to official manufacturer websites. Prices and availability may vary.</p>
+      </footer>
+    </div>
+  );
+};
+
+export default GolfDirectory;
