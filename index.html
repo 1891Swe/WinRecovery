@@ -4,46 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Golf Brands Directory</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
         <h1>Golf Brands Directory</h1>
         <div class="filters">
-            <div class="filter-group">
-                <label for="brandFilter">Brand:</label>
-                <select id="brandFilter">
-                    <option value="">All Brands</option>
-                </select>
-            </div>
-            <div class="filter-group">
-                <label for="clubTypeFilter">Club Type:</label>
-                <select id="clubTypeFilter">
-                    <option value="">All Club Types</option>
-                </select>
-            </div>
+            <select id="brandFilter">
+                <option value="">All Brands</option>
+            </select>
+            <select id="clubTypeFilter">
+                <option value="">All Club Types</option>
+            </select>
         </div>
     </header>
     
-    <main>
-        <div id="brandsContainer">
-            <!-- Brands will be dynamically loaded here -->
-        </div>
+    <main id="brandsContainer">
+        <!-- Brands will be dynamically loaded here -->
     </main>
 
-    <!-- Initialize global data object -->
-    <script>
-        window.golfData = {
-            cobra: [],
-            taylormade: []
-        };
-    </script>
-
-    <!-- Load brand data -->
-    <script src="data/brands/cobra.js"></script>
-    <script src="data/brands/taylormade.js"></script>
+    <!-- Initialize golfData object -->
+    <script>window.golfData = {};</script>
+    
+    <!-- Load brand data files -->
+    <script src="js/brands/cobra.js"></script>
+    <script src="js/brands/taylormade.js"></script>
+    <!-- Add other brand scripts here -->
     
     <!-- Load main script -->
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
