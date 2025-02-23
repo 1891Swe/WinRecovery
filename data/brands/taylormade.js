@@ -1,4 +1,7 @@
-// taylormade.js
+// Initialize golfData object if it doesn't exist
+window.golfData = window.golfData || {};
+
+// TaylorMade data structure
 window.golfData.taylormade = [
     // Drivers
     {
