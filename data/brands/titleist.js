@@ -1,5 +1,5 @@
 //titleist.js
-window.golfData.titleist.drivers = [
+window.golfData.titleist = [
     //Drivers
     {
         brand: "Titleist",
