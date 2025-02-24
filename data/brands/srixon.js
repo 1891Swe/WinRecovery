@@ -1,247 +1,196 @@
 // srixon.js
 window.golfData.srixon = [
-    // Drivers
+    // Irons
     {
         brand: "Srixon",
-        model: "ZX-i Driver",
-        type: "Drivers",
-        year: "2024",
-        url: "https://eu.dunlopsports.com/srixon/clubs/drivers/zxi-driver/zxi-driver/MZXIDRV.html",
-        description: "ZX-i Performance Driver",
-        price: "$599",
-        reviews: "Coming Soon"
-    },
-    {
-        brand: "Srixon",
-        model: "ZX-i LS Driver",
-        type: "Drivers",
-        year: "2024",
-        url: "https://eu.dunlopsports.com/srixon/clubs/drivers/zxi-ls-driver/zxi-ls-driver/MZXILSDRV.html",
-        description: "ZX-i Low Spin Driver",
-        price: "$599",
-        reviews: "Coming Soon"
-    },
-    {
-        brand: "Srixon",
-        model: "ZX-i MAX Driver",
-        type: "Drivers",
-        year: "2024",
-        url: "https://eu.dunlopsports.com/srixon/clubs/drivers/zxi-max-driver/zxi-max-driver/MZXIMAXDRV.html",
-        description: "ZX-i Maximum Forgiveness Driver",
-        price: "$599",
-        reviews: "Coming Soon"
-    },
-    {
-        brand: "Srixon",
-        model: "Women's ZX-i MAX Driver",
-        type: "Drivers",
-        year: "2024",
-        url: "https://eu.dunlopsports.com/srixon/clubs/drivers/women%27s-zxi-max-driver/women%27s-zxi-max-driver/MWZXIMAXDRV.html",
-        description: "Women's ZX-i Maximum Forgiveness Driver",
-        price: "$599",
-        reviews: "Coming Soon"
-    },
-    // Fairway Woods
-    {
-        brand: "Srixon",
-        model: "ZX-i Fairway Woods",
-        type: "Fairway Woods",
-        year: "2024",
-        url: "https://us.dunlopsports.com/srixon/clubs/fairway-woods/zxi-fairway/zxi-fairway-woods/MZXIFWY.html",
-        description: "Premium Performance Fairway Wood",
-        price: "$299.99",
-        reviews: "Coming Soon"
-    },
-    {
-        brand: "Srixon",
-        model: "Women's ZX-i Fairway Woods",
-        type: "Fairway Woods",
-        year: "2024",
-        url: "https://us.dunlopsports.com/srixon/clubs/fairway-woods/womens-zxi-fairway/womens-zxi-fairway-woods/MWZXIFWY.html",
-        description: "Women's Premium Performance Fairway Wood",
-        price: "$299.99",
-        reviews: "Coming Soon"
-    },
-    //Irons
-    {
-        brand: "Srixon",
-        model: "ZX MK II Fairway Woods",
-        type: "Fairway Woods",
-        year: "2023",
-        url: "https://us.dunlopsports.com/srixon/clubs/fairway-woods/zx-mk-ii-fairway-woods/zx-mk-ii-fairway-woods/MZXMKIIFWY.html",
-        description: "MK II Series Performance Fairway Wood",
-        price: "$299.99",
-        reviews: "Coming Soon"
-    },
-    {
-        brand: "Srixon",
-        model: "Women's ZX MK II Fairway Woods",
-        type: "Fairway Woods",
-        year: "2023",
-        url: "https://us.dunlopsports.com/srixon/clubs/fairway-woods/womens-zx-mk-ii-fairway-woods/womens-zx-mk-ii-fairway-woods/MWZXMKIIFWY.html",
-        description: "Women's MK II Series Performance Fairway Wood",
-        price: "$299.99",
-        reviews: "Coming Soon"
-    },
-    {
-        brand: "Srixon",
-        model: "ZX-i7 Irons",
+        model: "ZXi7 Irons",
         type: "Irons",
-        year: "2024",
-        url: "https://us.dunlopsports.com/srixon/clubs/irons/zxi7-irons/zxi7-irons/MZXI7IRN.html",
-        description: "Tour Performance Players Iron",
-        price: "$1,199.99",
-        reviews: "Coming Soon"
+        url: "https://eu.dunlopsports.com/srixon/clubs/irons/zxi7-irons"
     },
     {
         brand: "Srixon",
-        model: "ZX-i5 Irons",
+        model: "ZXi5 Irons",
         type: "Irons",
-        year: "2024",
-        url: "https://us.dunlopsports.com/srixon/clubs/irons/zxi5-irons/zxi5-irons/MZXI5IRN.html",
-        description: "Players Distance Iron",
-        price: "$1,199.99",
-        reviews: "Coming Soon"
+        url: "https://eu.dunlopsports.com/srixon/clubs/irons/zxi5-irons"
     },
     {
         brand: "Srixon",
-        model: "ZX-i4 Irons",
+        model: "ZXi4 Irons",
         type: "Irons",
-        year: "2024",
-        url: "https://us.dunlopsports.com/srixon/clubs/irons/zxi4-irons/zxi4-irons/MZXI4IRN.html",
-        description: "Game Improvement Iron",
-        price: "$1,199.99",
-        reviews: "Coming Soon"
+        url: "https://eu.dunlopsports.com/srixon/clubs/irons/zxi4-irons"
     },
     {
         brand: "Srixon",
-        model: "ZX-iU Utility Iron",
+        model: "ZXiU Utility Irons",
         type: "Utility Irons",
-        year: "2024",
-        url: "https://us.dunlopsports.com/srixon/clubs/irons/zxiu-utility-irons/zxiu-utility-irons/MZXIUTY.html",
-        description: "Utility Iron",
-        price: "$219.99",
-        reviews: "Coming Soon"
+        url: "https://eu.dunlopsports.com/srixon/clubs/irons/zxiu-utility-irons"
+    },
+    {
+        brand: "Srixon",
+        model: "Women's ZXi4 Irons",
+        type: "Irons",
+        url: "https://eu.dunlopsports.com/srixon/clubs/irons/women%27s-zxi4-irons"
     },
     {
         brand: "Srixon",
         model: "Z-Forged II Irons",
         type: "Irons",
-        year: "2024",
-        url: "https://us.dunlopsports.com/srixon/clubs/irons/z-forged-ii-irons/z-forged-ii-irons/MZFIII.html",
-        description: "Tour Performance Blade Iron",
-        price: "$1,199.99",
-        reviews: "Coming Soon"
+        url: "https://eu.dunlopsports.com/srixon/clubs/irons/z-forged-ii-irons/z-forged-ii-irons/MZFIII.html"
     },
     {
         brand: "Srixon",
-        model: "Women's ZX-i4 Irons",
+        model: "Z-Forged II Irons",
         type: "Irons",
-        year: "2024",
-        url: "https://us.dunlopsports.com/srixon/clubs/irons/womens-zxi4-irons/womens-zxi4-irons/MWZXI4IRN.html",
-        description: "Women's Game Improvement Iron",
-        price: "$1,199.99",
-        reviews: "Coming Soon"
+        url: "https://eu.dunlopsports.com/srixon/clubs/irons/z-forged-ii-irons"
     },
     {
         brand: "Srixon",
-        model: "ZX7 MK II Irons",
+        model: "Mzxi4Irn",
         type: "Irons",
-        year: "2023",
-        url: "https://us.dunlopsports.com/srixon/clubs/irons/zx7-mk-ii-irons/zx7-mk-ii-irons/MZX7MKIIIRN.html",
-        description: "Tour Performance Players Iron",
-        price: "$1,199.99",
-        reviews: "Coming Soon"
+        url: "https://eu.dunlopsports.com/srixon/clubs/irons/zxi4-irons/zxi4-irons/MZXI4IRN.html"
     },
     {
         brand: "Srixon",
-        model: "ZX5 MK II Irons",
+        model: "Mzxi7Irn",
         type: "Irons",
-        year: "2023",
-        url: "https://us.dunlopsports.com/srixon/clubs/irons/zx5-mk-ii-irons/zx5-mk-ii-irons/MZX5MKIIIRN.html",
-        description: "Players Distance Iron",
-        price: "$1,199.99",
-        reviews: "Coming Soon"
+        url: "https://eu.dunlopsports.com/srixon/clubs/irons/zxi7-irons/zxi7-irons/MZXI7IRN.html"
     },
     {
         brand: "Srixon",
-        model: "ZX4 MK II Irons",
+        model: "Mzxi5Irn",
         type: "Irons",
-        year: "2023",
-        url: "https://us.dunlopsports.com/srixon/clubs/irons/zx4-mk-ii-irons/MZX4MKIIIRN.html",
-        description: "Game Improvement Iron",
-        price: "$1,199.99",
-        reviews: "Coming Soon"
+        url: "https://eu.dunlopsports.com/srixon/clubs/irons/zxi5-irons/zxi5-irons/MZXI5IRN.html"
     },
     {
         brand: "Srixon",
-        model: "ZX MK II Utility Iron",
-        type: "Utility Irons",
-        year: "2023",
-        url: "https://us.dunlopsports.com/srixon/clubs/irons/zx-mk-ii-utility-irons/zx-mk-ii-utility-irons/MZXMKIIUTI.html",
-        description: "Utility Iron",
-        price: "$219.99",
-        reviews: "Coming Soon"
-    },
-    {
-        brand: "Srixon",
-        model: "Women's ZX5 MK II Irons",
+        model: "Mzxiuty",
         type: "Irons",
-        year: "2023",
-        url: "https://us.dunlopsports.com/srixon/clubs/irons/womens-zx5-mk-ii-irons/womens-zx5-mk-ii-irons/MWZX5MKIIIRN.html",
-        description: "Women's Players Distance Iron",
-        price: "$1,199.99",
-        reviews: "Coming Soon"
+        url: "https://eu.dunlopsports.com/srixon/clubs/irons/zxiu-utility-irons/zxiu-utility-irons/MZXIUTY.html"
     },
     {
         brand: "Srixon",
-        model: "Women's ZX4 MK II Irons",
+        model: "Mwzxi4Irn",
         type: "Irons",
-        year: "2023",
-        url: "https://us.dunlopsports.com/srixon/clubs/irons/womens-zx4-mk-ii-irons/womens-zx4-mk-ii-irons/MWZX4MKIIIRN.html",
-        description: "Women's Game Improvement Iron",
-        price: "$1,199.99",
-        reviews: "Coming Soon"
+        url: "https://eu.dunlopsports.com/srixon/clubs/irons/women%27s-zxi4-irons/women%27s-zxi4-irons/MWZXI4IRN.html"
     },
+    
+    // Drivers
+    {
+        brand: "Srixon",
+        model: "Drivers",
+        type: "Drivers",
+        url: "https://eu.dunlopsports.com/srixon/clubs/drivers"
+    },
+    {
+        brand: "Srixon",
+        model: "ZXi Driver",
+        type: "Drivers",
+        url: "https://eu.dunlopsports.com/srixon/clubs/drivers/zxi-driver"
+    },
+    {
+        brand: "Srixon",
+        model: "ZXi LS Driver",
+        type: "Drivers",
+        url: "https://eu.dunlopsports.com/srixon/clubs/drivers/zxi-ls-driver"
+    },
+    {
+        brand: "Srixon",
+        model: "ZXi MAX Driver",
+        type: "Drivers",
+        url: "https://eu.dunlopsports.com/srixon/clubs/drivers/zxi-max-driver"
+    },
+    {
+        brand: "Srixon",
+        model: "Women's ZXi MAX Driver",
+        type: "Drivers",
+        url: "https://eu.dunlopsports.com/srixon/clubs/drivers/women%27s-zxi-max-driver"
+    },
+    {
+        brand: "Srixon",
+        model: "Mzxidrv",
+        type: "Driver",
+        url: "https://eu.dunlopsports.com/srixon/clubs/drivers/zxi-driver/zxi-driver/MZXIDRV.html"
+    },
+    {
+        brand: "Srixon",
+        model: "Mzxilsdrv",
+        type: "Driver",
+        url: "https://eu.dunlopsports.com/srixon/clubs/drivers/zxi-ls-driver/zxi-ls-driver/MZXILSDRV.html"
+    },
+    {
+        brand: "Srixon",
+        model: "Mzximaxdrv",
+        type: "Driver",
+        url: "https://eu.dunlopsports.com/srixon/clubs/drivers/zxi-max-driver/zxi-max-driver/MZXIMAXDRV.html"
+    },
+    {
+        brand: "Srixon",
+        model: "Mwzximaxdrv",
+        type: "Driver",
+        url: "https://eu.dunlopsports.com/srixon/clubs/drivers/women%27s-zxi-max-driver/women%27s-zxi-max-driver/MWZXIMAXDRV.html"
+    },
+    
+    // Fairway Woods
+    {
+        brand: "Srixon",
+        model: "Fairway Woods",
+        type: "Fairway Woods",
+        url: "https://eu.dunlopsports.com/srixon/clubs/fairway-woods"
+    },
+    {
+        brand: "Srixon",
+        model: "ZXi Fairway Woods",
+        type: "Fairway Woods",
+        url: "https://eu.dunlopsports.com/srixon/clubs/fairway-woods/zxi-fairway-woods"
+    },
+    {
+        brand: "Srixon",
+        model: "Women's ZXi Fairway Woods",
+        type: "Fairway Woods",
+        url: "https://eu.dunlopsports.com/srixon/clubs/fairway-woods/women%27s-zxi-fairway-woods"
+    },
+    {
+        brand: "Srixon",
+        model: "Mzxifwy",
+        type: "Fairway Wood",
+        url: "https://eu.dunlopsports.com/srixon/clubs/fairway-woods/zxi-fairway-woods/zxi-fairway-woods/MZXIFWY.html"
+    },
+    {
+        brand: "Srixon",
+        model: "Mwzxifwy",
+        type: "Fairway Wood",
+        url: "https://eu.dunlopsports.com/srixon/clubs/fairway-woods/women%27s-zxi-fairway-woods/women%27s-zxi-fairway-woods/MWZXIFWY.html"
+    },
+    
     // Hybrids
     {
         brand: "Srixon",
-        model: "ZX-i Hybrid",
+        model: "Hybrids",
         type: "Hybrids",
-        year: "2024",
-        url: "https://us.dunlopsports.com/srixon/clubs/hybrids/zxi-hybrid/zxi-hybrid/MZXIHYB.html",
-        description: "Premium Performance Hybrid",
-        price: "$249.99",
-        reviews: "Coming Soon"
+        url: "https://eu.dunlopsports.com/srixon/clubs/hybrids"
     },
     {
         brand: "Srixon",
-        model: "Women's ZX-i Hybrid",
+        model: "ZXi Hybrid",
         type: "Hybrids",
-        year: "2024",
-        url: "https://us.dunlopsports.com/srixon/clubs/hybrids/womens-zxi-hybrid/womens-zxi-hybrid/MWZXIHYB.html",
-        description: "Women's Premium Performance Hybrid",
-        price: "$249.99",
-        reviews: "Coming Soon"
+        url: "https://eu.dunlopsports.com/srixon/clubs/hybrids/zxi-hybrid"
     },
     {
         brand: "Srixon",
-        model: "ZX MK II Hybrid",
+        model: "Women's ZXi Hybrid",
         type: "Hybrids",
-        year: "2023",
-        url: "https://us.dunlopsports.com/srixon/clubs/hybrids/zx-mk-ii-hybrids/zx-mk-ii-hybrids/MZXMKIIHYB.html",
-        description: "MK II Series Performance Hybrid",
-        price: "$249.99",
-        reviews: "Coming Soon"
+        url: "https://eu.dunlopsports.com/srixon/clubs/hybrids/women%27s-zxi-hybrid"
     },
     {
         brand: "Srixon",
-        model: "Women's ZX MK II Hybrid",
-        type: "Hybrids",
-        year: "2023",
-        url: "https://us.dunlopsports.com/srixon/clubs/hybrids/womens-zx-mk-ii-hybrids/womens-zx-mk-ii-hybrids/MWZXMKIIHYB.html",
-        description: "Women's MK II Series Performance Hybrid",
-        price: "$249.99",
-        reviews: "Coming Soon"
+        model: "Mzxihyb",
+        type: "Hybrid",
+        url: "https://eu.dunlopsports.com/srixon/clubs/hybrids/zxi-hybrid/zxi-hybrid/MZXIHYB.html"
+    },
+    {
+        brand: "Srixon",
+        model: "Mwzxihyb",
+        type: "Hybrid",
+        url: "https://eu.dunlopsports.com/srixon/clubs/hybrids/women%27s-zxi-hybrid/women%27s-zxi-hybrid/MWZXIHYB.html"
     }
 ];
