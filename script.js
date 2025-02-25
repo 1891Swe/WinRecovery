@@ -158,9 +158,8 @@ function createBrandCard(brand, selectedClubType) {
         const clubList = document.createElement('ul');
         clubList.className = 'club-list';
         
-        // Add each club
-        const clubsToShow = type.clubs.slice(0, 3);
-        clubsToShow.forEach(club => {
+        // Add ALL clubs instead of just first 3
+        type.clubs.forEach(club => {
             if (!club) return;
             
             const clubItem = document.createElement('li');
@@ -180,19 +179,7 @@ function createBrandCard(brand, selectedClubType) {
         
         clubTypeEl.appendChild(clubList);
         
-        // Add "View All" link if there are more than 3 clubs
-        if (type.clubs.length > 3) {
-            const viewAll = document.createElement('a');
-            viewAll.className = 'view-all';
-            viewAll.href = '#';
-            viewAll.textContent = `View All ${type.clubs.length} Models`;
-            viewAll.addEventListener('click', function(e) {
-                e.preventDefault();
-                alert(`Viewing all ${type.clubs.length} ${type.name} models for ${brand.name}`);
-            });
-            
-            clubTypeEl.appendChild(viewAll);
-        }
+        // Remove the "View All" link since we're showing all clubs already
         
         content.appendChild(clubTypeEl);
     });
