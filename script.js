@@ -20,17 +20,23 @@ function initializeFilters() {
     for (const brandKey in window.golfData) {
         const brand = window.golfData[brandKey];
         
-        // Add brand to brands array if not already included
-        if (!brands.includes(brand.name)) {
-            brands.push(brand.name);
-        }
-        
-        // Add club types if not already included
-        brand.clubTypes.forEach(type => {
-            if (!clubTypes.includes(type.name)) {
-                clubTypes.push(type.name);
+        // Check if brand object is valid and has a name
+        if (brand && brand.name) {
+            // Add brand to brands array if not already included
+            if (!brands.includes(brand.name)) {
+                brands.push(brand.name);
             }
-        });
+            
+            // Add club types if not already included
+            // Make sure clubTypes exists before trying to iterate over it
+            if (brand.clubTypes && Array.isArray(brand.clubTypes)) {
+                brand.clubTypes.forEach(type => {
+                    if (type && type.name && !clubTypes.includes(type.name)) {
+                        clubTypes.push(type.name);
+                    }
+                });
+            }
+        }
     }
     
     // Sort arrays alphabetically
@@ -63,19 +69,23 @@ function renderBrands() {
     container.innerHTML = '';
     
     // Filter and sort brands
-    const filteredBrands = Object.values(window.golfData).filter(brand => {
-        // Apply brand filter if selected
-        if (selectedBrand && brand.name !== selectedBrand) {
-            return false;
-        }
-        
-        // Apply club type filter if selected
-        if (selectedClubType) {
-            return brand.clubTypes.some(type => type.name === selectedClubType);
-        }
-        
-        return true;
-    });
+    const filteredBrands = Object.values(window.golfData)
+        .filter(brand => {
+            // Skip invalid brand objects
+            if (!brand || !brand.name || !brand.clubTypes) return false;
+            
+            // Apply brand filter if selected
+            if (selectedBrand && brand.name !== selectedBrand) {
+                return false;
+            }
+            
+            // Apply club type filter if selected
+            if (selectedClubType) {
+                return brand.clubTypes.some(type => type && type.name === selectedClubType);
+            }
+            
+            return true;
+        });
     
     // Sort brands alphabetically by name
     filteredBrands.sort((a, b) => a.name.localeCompare(b.name));
@@ -112,11 +122,13 @@ function createBrandCard(brand, selectedClubType) {
     // Filter club types if selected
     let clubTypes = brand.clubTypes;
     if (selectedClubType) {
-        clubTypes = clubTypes.filter(type => type.name === selectedClubType);
+        clubTypes = clubTypes.filter(type => type && type.name === selectedClubType);
     }
     
     // Calculate total clubs across all types
-    const totalClubs = clubTypes.reduce((sum, type) => sum + type.clubs.length, 0);
+    const totalClubs = clubTypes.reduce((sum, type) => {
+        return sum + (type.clubs ? type.clubs.length : 0);
+    }, 0);
     
     stats.innerHTML = `
         <div class="stat-item">
@@ -136,6 +148,8 @@ function createBrandCard(brand, selectedClubType) {
     
     // Add each club type
     clubTypes.forEach(type => {
+        if (!type || !type.name || !type.clubs) return;
+        
         const clubTypeEl = document.createElement('div');
         clubTypeEl.className = 'club-type';
         
@@ -145,12 +159,15 @@ function createBrandCard(brand, selectedClubType) {
         clubList.className = 'club-list';
         
         // Add each club
-        type.clubs.slice(0, 3).forEach(club => {
+        const clubsToShow = type.clubs.slice(0, 3);
+        clubsToShow.forEach(club => {
+            if (!club) return;
+            
             const clubItem = document.createElement('li');
             clubItem.className = 'club-item';
             
             clubItem.innerHTML = `
-                <div class="club-name">${club.name}</div>
+                <div class="club-name">${club.name || 'Unknown Club'}</div>
                 <div class="club-description">${club.description || ''}</div>
                 <div class="club-meta">
                     ${club.year ? 'Released: ' + club.year : ''}
