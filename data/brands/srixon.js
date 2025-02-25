@@ -1,3 +1,5 @@
+// srixon.js
+window.golfData.srixon = [
 {
     "products": [
       {
@@ -432,3 +434,4 @@
       "last_updated": "2025-02-25"
     }
   }
+    ];
