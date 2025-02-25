@@ -1,4 +1,7 @@
-{
+
+// srixon.js
+window.golfData.srixon = [
+  {
   "products": [
     {
       "id": "DW-TC375",
@@ -530,3 +533,4 @@
     "note": "This is a representative sample of the TaylorMade product catalog. Actual specifications, pricing, and availability may vary."
   }
 }
+  ];
