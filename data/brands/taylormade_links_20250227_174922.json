@@ -1,0 +1,41 @@
+{
+    "categories": [
+        {
+            "category": "drivers",
+            "category_text": "Drivers",
+            "url": "https://www.taylormadegolf.eu/taylormade-drivers/?lang=en_DE",
+            "source_file": "www.taylormadegolf.eu.html"
+        },
+        {
+            "category": "fairways",
+            "category_text": "Fairways",
+            "url": "https://www.taylormadegolf.eu/taylormade-fairways/?lang=en_DE",
+            "source_file": "www.taylormadegolf.eu.html"
+        },
+        {
+            "category": "hybrids",
+            "category_text": "Hybrids",
+            "url": "https://www.taylormadegolf.eu/taylormade-rescueClubs/?lang=en_DE",
+            "source_file": "www.taylormadegolf.eu.html"
+        },
+        {
+            "category": "irons",
+            "category_text": "Irons",
+            "url": "https://www.taylormadegolf.eu/taylormade-irons/?lang=en_DE",
+            "source_file": "www.taylormadegolf.eu.html"
+        },
+        {
+            "category": "wedges",
+            "category_text": "Wedges",
+            "url": "https://www.taylormadegolf.eu/taylormade-wedges/?lang=en_DE",
+            "source_file": "www.taylormadegolf.eu.html"
+        },
+        {
+            "category": "putters",
+            "category_text": "Putters",
+            "url": "https://www.taylormadegolf.eu/taylormade-putters/?lang=en_DE",
+            "source_file": "www.taylormadegolf.eu.html"
+        }
+    ],
+    "products": []
+}
