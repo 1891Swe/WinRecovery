@@ -7,7 +7,7 @@ if (!window.golfData) {
 window.golfData.taylormade = [
     {
         "brand": "TaylorMade Golf",
-        "model": "Dw Tc375?lang=en_de",
+        "model": "Dw Tc375",
         "type": "Drivers",
         "year": "2025",
         "url": "https://www.taylormadegolf.eu/Qi35-Max-Driver/DW-TC375.html?lang=en_DE",
@@ -15,7 +15,7 @@ window.golfData.taylormade = [
     },
     {
         "brand": "TaylorMade Golf",
-        "model": "Dw Tc370?lang=en_de",
+        "model": "Dw Tc370",
         "type": "Drivers",
         "year": "2025",
         "url": "https://www.taylormadegolf.eu/Qi35-Driver/DW-TC370.html?lang=en_DE",
@@ -23,7 +23,7 @@ window.golfData.taylormade = [
     },
     {
         "brand": "TaylorMade Golf",
-        "model": "Dw Tc366?lang=en_de",
+        "model": "Dw Tc366",
         "type": "Drivers",
         "year": "2025",
         "url": "https://www.taylormadegolf.eu/Qi35-LS-Driver/DW-TC366.html?lang=en_DE",
@@ -31,7 +31,7 @@ window.golfData.taylormade = [
     },
     {
         "brand": "TaylorMade Golf",
-        "model": "Dw Tc377?lang=en_de",
+        "model": "Dw Tc377?",
         "type": "Drivers",
         "year": "2025",
         "url": "https://www.taylormadegolf.eu/Qi35-Max-Lite-Driver/DW-TC377.html?lang=en_DE",
@@ -39,7 +39,7 @@ window.golfData.taylormade = [
     },
     {
         "brand": "TaylorMade Golf",
-        "model": "Dw Tc425 Uk?lang=en_de",
+        "model": "Dw Tc425",
         "type": "Drivers",
         "year": "2025",
         "url": "https://www.taylormadegolf.eu/Qi35-Max-Designer-Series-Driver/DW-TC425-UK.html?lang=en_DE",
@@ -47,7 +47,7 @@ window.golfData.taylormade = [
     },
     {
         "brand": "TaylorMade Golf",
-        "model": "Dw Tc424 Uk?lang=en_de",
+        "model": "Dw Tc424 ",
         "type": "Drivers",
         "year": "2025",
         "url": "https://www.taylormadegolf.eu/Qi35-Designer-Series-Driver/DW-TC424-UK.html?lang=en_DE",
@@ -112,7 +112,7 @@ window.golfData.taylormade = [
     {
         "brand": "TaylorMade Golf",
         "model": "Dw Tc382?lang=en_de",
-        "type": "Other",
+        "type": "Rescue",
         "year": "2025",
         "url": "https://www.taylormadegolf.eu/Qi35-Max-Rescue/DW-TC382.html?lang=en_DE",
         "description": "Other designed for performance and accuracy"
@@ -120,7 +120,7 @@ window.golfData.taylormade = [
     {
         "brand": "TaylorMade Golf",
         "model": "Dw Tc374?lang=en_de",
-        "type": "Other",
+        "type": "Rescue",
         "year": "2025",
         "url": "https://www.taylormadegolf.eu/Qi35-Rescue/DW-TC374.html?lang=en_DE",
         "description": "Other designed for performance and accuracy"
@@ -128,7 +128,7 @@ window.golfData.taylormade = [
     {
         "brand": "TaylorMade Golf",
         "model": "Dw Tc383?lang=en_de",
-        "type": "Other",
+        "type": "Rescue",
         "year": "2025",
         "url": "https://www.taylormadegolf.eu/Qi35-Max-Lite-Rescue/DW-TC383.html?lang=en_DE",
         "description": "Other designed for performance and accuracy"
@@ -136,7 +136,7 @@ window.golfData.taylormade = [
     {
         "brand": "TaylorMade Golf",
         "model": "Dw Tc349?lang=en_de",
-        "type": "Other",
+        "type": "Rescue",
         "year": "2025",
         "url": "https://www.taylormadegolf.eu/Kalea-Gold-Rescue/DW-TC349.html?lang=en_DE",
         "description": "Other designed for performance and accuracy"
