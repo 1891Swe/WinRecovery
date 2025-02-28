@@ -1,3 +1,4 @@
+// Main script to display golf clubs
 document.addEventListener('DOMContentLoaded', function() {
     // Get filter elements
     const brandFilter = document.getElementById('brandFilter');
