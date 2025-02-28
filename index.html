@@ -10,16 +10,21 @@
     <header>
         <h1>Golf Brands Directory</h1>
         <div class="filters">
-            <select id="brandFilter">
-                <option value="">All Brands</option>
-                <option value="cobra">Cobra</option>
-                <option value="taylormade">TaylorMade</option>
-                <option value="callaway">Callaway</option>
-                <option value="titleist">Titleist</option>
-            </select>
-            <select id="clubTypeFilter">
-                <option value="">All Club Types</option>
-            </select>
+            <div class="filter-section">
+                <h3>Brands</h3>
+                <div class="checkbox-group" id="brandFilters">
+                    <label><input type="checkbox" value="cobra" checked> Cobra</label>
+                    <label><input type="checkbox" value="taylormade" checked> TaylorMade</label>
+                    <label><input type="checkbox" value="callaway" checked> Callaway</label>
+                    <label><input type="checkbox" value="titleist" checked> Titleist</label>
+                </div>
+            </div>
+            <div class="filter-section">
+                <h3>Club Types</h3>
+                <div class="checkbox-group" id="clubTypeFilters">
+                    <!-- Club types will be dynamically added here -->
+                </div>
+            </div>
         </div>
     </header>
 
