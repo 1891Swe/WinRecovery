@@ -1,18 +1,24 @@
 // Main script to display golf clubs
 document.addEventListener('DOMContentLoaded', function() {
     // Get filter elements
-    const brandFilter = document.getElementById('brandFilter');
-    const clubTypeFilter = document.getElementById('clubTypeFilter');
+    const brandFiltersContainer = document.getElementById('brandFilters');
+    const clubTypeFiltersContainer = document.getElementById('clubTypeFilters');
     const brandsContainer = document.getElementById('brandsContainer');
     
     // Initialize available club types set
     const clubTypes = new Set();
     
+    // Function to get all selected checkbox values from a container
+    function getSelectedCheckboxValues(container) {
+        const checkboxes = container.querySelectorAll('input[type="checkbox"]:checked');
+        return Array.from(checkboxes).map(checkbox => checkbox.value);
+    }
+    
     // Function to display clubs based on filters
     function displayClubs() {
         // Get selected filter values
-        const selectedBrand = brandFilter.value;
-        const selectedType = clubTypeFilter.value;
+        const selectedBrands = getSelectedCheckboxValues(brandFiltersContainer);
+        const selectedTypes = getSelectedCheckboxValues(clubTypeFiltersContainer);
         
         // Clear the container
         brandsContainer.innerHTML = '';
@@ -23,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Process each brand
         for (const brand in window.golfData) {
             // Skip if brand filter is applied and doesn't match
-            if (selectedBrand && selectedBrand !== brand) continue;
+            if (selectedBrands.length > 0 && !selectedBrands.includes(brand)) continue;
             
             const brandData = window.golfData[brand];
             if (!brandData || !brandData.length) continue;
@@ -40,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 clubTypes.add(club.type);
                 
                 // Skip if club type filter is applied and doesn't match
-                if (selectedType && club.type !== selectedType) return;
+                if (selectedTypes.length > 0 && !selectedTypes.includes(club.type)) return;
                 
                 // Initialize array for this club type if it doesn't exist
                 if (!clubsByType[club.type]) {
@@ -110,33 +116,46 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!foundMatches) {
             brandsContainer.innerHTML = '<div class="no-results">No golf clubs match your selected filters. Please try different criteria.</div>';
         }
-        
-        // Update club type filter options if it's the first load
-        if (clubTypeFilter.options.length <= 2) {
-            populateClubTypeFilter();
-        }
     }
     
-    // Populate club type filter with available options
-    function populateClubTypeFilter() {
-        // Clear existing options except the first "All" option
-        while (clubTypeFilter.options.length > 1) {
-            clubTypeFilter.remove(1);
-        }
+    // Function to populate club type checkboxes
+    function populateClubTypeFilters() {
+        // Get all available club types from the data
+        Object.values(window.golfData).forEach(brandData => {
+            brandData.forEach(club => {
+                clubTypes.add(club.type);
+            });
+        });
         
-        // Add options for each club type
+        // Clear existing options
+        clubTypeFiltersContainer.innerHTML = '';
+        
+        // Add a checkbox for each club type
         Array.from(clubTypes).sort().forEach(type => {
-            const option = document.createElement('option');
-            option.value = type;
-            option.textContent = type;
-            clubTypeFilter.appendChild(option);
+            const label = document.createElement('label');
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.value = type;
+            checkbox.checked = true; // Default to checked
+            checkbox.addEventListener('change', displayClubs);
+            
+            label.appendChild(checkbox);
+            label.appendChild(document.createTextNode(` ${type}`));
+            
+            clubTypeFiltersContainer.appendChild(label);
         });
     }
     
-    // Add event listeners to filters
-    brandFilter.addEventListener('change', displayClubs);
-    clubTypeFilter.addEventListener('change', displayClubs);
+    // Add event listeners to brand filters
+    const brandCheckboxes = brandFiltersContainer.querySelectorAll('input[type="checkbox"]');
+    brandCheckboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', displayClubs);
+    });
     
-    // Initial display
-    displayClubs();
+    // Wait for brand data to be fully loaded then populate filters and display clubs
+    // Use a small timeout to ensure all brand data is loaded
+    setTimeout(() => {
+        populateClubTypeFilters();
+        displayClubs();
+    }, 100);
 });
