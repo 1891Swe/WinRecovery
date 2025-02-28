@@ -5,156 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Golf Brands Directory</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Initialize golfData object in the head section to ensure it exists before any script tries to use it -->
-    <script>
-        window.golfData = {};
-        
-        // Let's create some sample data to ensure the page works even if external data files don't load
-        window.golfData.srixon = {
-            name: "Srixon",
-            clubTypes: [
-                {
-                    name: "Drivers",
-                    clubs: [
-                        {
-                            name: "ZX5",
-                            description: "Premium driver with great forgiveness",
-                            year: 2023,
-                            price: 499
-                        },
-                        {
-                            name: "ZX7",
-                            description: "Tour-preferred driver with workability",
-                            year: 2023,
-                            price: 549
-                        }
-                    ]
-                },
-                {
-                    name: "Irons",
-                    clubs: [
-                        {
-                            name: "ZX4",
-                            description: "Game improvement irons",
-                            year: 2023,
-                            price: 999
-                        },
-                        {
-                            name: "ZX5",
-                            description: "Players distance irons",
-                            year: 2023,
-                            price: 1099
-                        }
-                    ]
-                }
-            ]
-        };
-        
-        window.golfData.taylormade = {
-            name: "TaylorMade",
-            clubTypes: [
-                {
-                    name: "Drivers",
-                    clubs: [
-                        {
-                            name: "Stealth",
-                            description: "Carbon face driver with explosive distance",
-                            year: 2022,
-                            price: 579
-                        },
-                        {
-                            name: "Stealth Plus",
-                            description: "Low-spin model for better players",
-                            year: 2022,
-                            price: 629
-                        }
-                    ]
-                },
-                {
-                    name: "Putters",
-                    clubs: [
-                        {
-                            name: "Spider GT",
-                            description: "High MOI mallet putter",
-                            year: 2022,
-                            price: 349
-                        },
-                        {
-                            name: "TP Hydro Blast",
-                            description: "Classic blade putter design",
-                            year: 2022,
-                            price: 299
-                        }
-                    ]
-                }
-            ]
-        };
-        
-        window.golfData.callaway = {
-            name: "Callaway",
-            clubTypes: [
-                {
-                    name: "Drivers",
-                    clubs: [
-                        {
-                            name: "Paradym",
-                            description: "AI-designed driver with forgiveness",
-                            year: 2023,
-                            price: 599
-                        },
-                        {
-                            name: "Paradym Triple Diamond",
-                            description: "Low spin model for tour players",
-                            year: 2023,
-                            price: 599
-                        }
-                    ]
-                },
-                {
-                    name: "Wedges",
-                    clubs: [
-                        {
-                            name: "Jaws Raw",
-                            description: "Maximum spin wedge",
-                            year: 2022,
-                            price: 179
-                        },
-                        {
-                            name: "JAWS Full Toe",
-                            description: "Versatile bunker and rough performer",
-                            year: 2022,
-                            price: 169
-                        }
-                    ]
-                }
-            ]
-        };
-    </script>
 </head>
 <body>
     <header>
-        <h1>Find golf clubs</h1>
+        <h1>Golf Brands Directory</h1>
         <div class="filters">
-            <div class="filter-group">
-                <label for="brandFilter">Brand:</label>
-                <select id="brandFilter">
-                    <option value="">All Brands</option>
-                </select>
-            </div>
-            <div class="filter-group">
-                <label for="clubTypeFilter">Club Type:</label>
-                <select id="clubTypeFilter">
-                    <option value="">All Club Types</option>
-                </select>
-            </div>
+            <select id="brandFilter">
+                <option value="">All Brands</option>
+            </select>
+            <select id="clubTypeFilter">
+                <option value="">All Club Types</option>
+            </select>
         </div>
     </header>
     
     <main id="brandsContainer">
-        <!-- Brand cards will be dynamically loaded here -->
+        <!-- Brands will be dynamically loaded here -->
     </main>
+
+    <!-- Initialize golfData object -->
+    <script>window.golfData = {};</script>
     
-    <!-- Load main script after all data is defined -->
+    <!-- Load brand data files -->
+    <script src="data/brands/cobra.js"></script>
+    <script src="data/brands/taylormade.js"></script>
+    
+    <!-- Load main script -->
     <script src="script.js"></script>
 </body>
 </html>
