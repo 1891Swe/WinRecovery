@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,25 +12,31 @@
         <div class="filters">
             <select id="brandFilter">
                 <option value="">All Brands</option>
+                <option value="cobra">Cobra</option>
+                <option value="taylormade">TaylorMade</option>
             </select>
             <select id="clubTypeFilter">
                 <option value="">All Club Types</option>
+                <option value="driver">Driver</option>
+                <option value="iron">Iron</option>
+                <option value="putter">Putter</option>
+                <option value="wedge">Wedge</option>
             </select>
         </div>
     </header>
-    
+
     <main id="brandsContainer">
         <!-- Brands will be dynamically loaded here -->
     </main>
 
     <!-- Initialize golfData object -->
     <script>window.golfData = {};</script>
-    
+
     <!-- Load brand data files -->
-    <script src="data/brands/cobra.js"></script>
-    <script src="data/brands/taylormade.js"></script>
+    <script src="brands/cobra-golf-data.js"></script>
+    <script src="brands/taylormade-golf-data.js"></script>
     
-    <!-- Load main script -->
+    <!-- Load the main script that will process and display the data -->
     <script src="script.js"></script>
 </body>
 </html>
