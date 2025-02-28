@@ -30,6 +30,8 @@
     <script src="data/clubs.js"></script>
     <script src="brands/cobra-golf-data.js"></script>
     <script src="brands/taylormade-golf-data.js"></script>
+    <script src="brands/callaway-golf-data.js"></script>
+    <script src="brands/titleist-golf-data.js"></script>
     
     <!-- Load the main script that will process and display the data -->
     <script src="script.js"></script>
