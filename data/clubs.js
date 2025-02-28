@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Load initial brands
-    const brandsToLoad = ['cobra', 'titleist', 'taylormade'];
+    const brandsToLoad = ['cobra', 'titleist','callaway', 'taylormade'];
     Promise.all(brandsToLoad.map(loadBrandData))
         .then(() => {
             // Initialize your display with all loaded data
