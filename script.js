@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const clubTypeFiltersContainer = document.getElementById('clubTypeFilters');
     const brandsContainer = document.getElementById('brandsContainer');
     const clearFiltersBtn = document.getElementById('clearFilters');
+    const resetFiltersBtn = document.getElementById('resetFilters');
     
     // Initialize available club types set
     const clubTypes = new Set();
@@ -162,6 +163,18 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Add event listener for the clear filters button
     clearFiltersBtn.addEventListener('click', function() {
+        // Uncheck all checkboxes
+        const allCheckboxes = document.querySelectorAll('.checkbox-group input[type="checkbox"]');
+        allCheckboxes.forEach(checkbox => {
+            checkbox.checked = false;
+        });
+        
+        // Trigger display update
+        displayClubs();
+    });
+    
+    // Add event listener for the reset filters button
+    resetFiltersBtn.addEventListener('click', function() {
         // Check all checkboxes
         const allCheckboxes = document.querySelectorAll('.checkbox-group input[type="checkbox"]');
         allCheckboxes.forEach(checkbox => {
