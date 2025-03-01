@@ -290,6 +290,7 @@ window.golfData.taylormade = [
         "model": "Milled Grind 4 Wedge",
         "type": "Wedges",
         "year": "2025",
+        }
         ];
 
 
