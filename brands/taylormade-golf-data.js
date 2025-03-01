@@ -293,4 +293,5 @@ window.golfData.taylormade = [
         }
         ];
 
-
+// Add debug logging
+console.log('cobra Golf data loaded:', window.golfData.taylormade);
