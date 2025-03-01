@@ -6,7 +6,7 @@ if (!window.golfData) {
 // taylormade golf clubs data with updated model names from CSV
 window.golfData.taylormade = [
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "BRNR Driver",
         "type": "Drivers",
         "year": "2025",
@@ -14,7 +14,7 @@ window.golfData.taylormade = [
         "description": "Drivers designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "BRNR Tour Rescue",
         "type": "Drivers",
         "year": "2025",
@@ -22,7 +22,7 @@ window.golfData.taylormade = [
         "description": "Drivers designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "BRNR LS Driver",
         "type": "Drivers",
         "year": "2025",
@@ -30,7 +30,7 @@ window.golfData.taylormade = [
         "description": "Drivers designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "BRNR Mini Driver",
         "type": "Drivers",
         "year": "2025",
@@ -38,7 +38,7 @@ window.golfData.taylormade = [
         "description": "Drivers designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "Qi10 Driver",
         "type": "Drivers",
         "year": "2025",
@@ -46,7 +46,7 @@ window.golfData.taylormade = [
         "description": "Drivers designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "Qi10 LS Driver",
         "type": "Drivers",
         "year": "2025",
@@ -54,7 +54,7 @@ window.golfData.taylormade = [
         "description": "Drivers designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "Qi10 Max Driver",
         "type": "Drivers",
         "year": "2025",
@@ -62,7 +62,7 @@ window.golfData.taylormade = [
         "description": "Drivers designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "Kalea Gold Driver",
         "type": "Drivers",
         "year": "2025",
@@ -70,7 +70,7 @@ window.golfData.taylormade = [
         "description": "Drivers designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "Qi10 Max Fairway",
         "type": "Fairway Woods",
         "year": "2025",
@@ -78,7 +78,7 @@ window.golfData.taylormade = [
         "description": "Fairway Woods designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "Qi10 Fairway",
         "type": "Fairway Woods",
         "year": "2025",
@@ -86,7 +86,7 @@ window.golfData.taylormade = [
         "description": "Fairway Woods designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "BRNR Tour Fairway",
         "type": "Fairway Woods",
         "year": "2025",
@@ -94,7 +94,7 @@ window.golfData.taylormade = [
         "description": "Fairway Woods designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "Qi10 Max Lite Fairway",
         "type": "Fairway Woods",
         "year": "2025",
@@ -102,7 +102,7 @@ window.golfData.taylormade = [
         "description": "Fairway Woods designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "Kalea Gold Fairway",
         "type": "Fairway Woods",
         "year": "2025",
@@ -110,7 +110,7 @@ window.golfData.taylormade = [
         "description": "Fairway Woods designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "Qi10 Max Rescue",
         "type": "Rescue",
         "year": "2025",
@@ -118,7 +118,7 @@ window.golfData.taylormade = [
         "description": "Other designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "Qi10 Rescue",
         "type": "Rescue",
         "year": "2025",
@@ -126,7 +126,7 @@ window.golfData.taylormade = [
         "description": "Other designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "Qi10 Max Lite Rescue",
         "type": "Rescue",
         "year": "2025",
@@ -134,7 +134,7 @@ window.golfData.taylormade = [
         "description": "Other designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "Kalea Gold Rescue",
         "type": "Rescue",
         "year": "2025",
@@ -142,7 +142,7 @@ window.golfData.taylormade = [
         "description": "Other designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "P·790 Irons",
         "type": "Irons",
         "year": "2025",
@@ -150,7 +150,7 @@ window.golfData.taylormade = [
         "description": "Irons designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "Qi Gunmetal Edition Irons",
         "type": "Irons",
         "year": "2025",
@@ -158,7 +158,7 @@ window.golfData.taylormade = [
         "description": "Irons designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "P·770 Irons",
         "type": "Irons",
         "year": "2025",
@@ -166,7 +166,7 @@ window.golfData.taylormade = [
         "description": "Irons designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "P·7CB Irons",
         "type": "Irons",
         "year": "2025",
@@ -174,7 +174,7 @@ window.golfData.taylormade = [
         "description": "Irons designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "P790 Aged Copper",
         "type": "Irons",
         "year": "2025",
@@ -182,7 +182,7 @@ window.golfData.taylormade = [
         "description": "Irons designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "Qi Irons",
         "type": "Irons",
         "year": "2025",
@@ -190,7 +190,7 @@ window.golfData.taylormade = [
         "description": "Irons designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "Qi HL Irons",
         "type": "Irons",
         "year": "2025",
@@ -198,7 +198,7 @@ window.golfData.taylormade = [
         "description": "Irons designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "Kalea Gold Irons",
         "type": "Irons",
         "year": "2025",
@@ -206,7 +206,7 @@ window.golfData.taylormade = [
         "description": "Irons designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "P·7MC RAW",
         "type": "Irons",
         "year": "2025",
@@ -214,7 +214,7 @@ window.golfData.taylormade = [
         "description": "Irons designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "P7MC Irons",
         "type": "Irons",
         "year": "2025",
@@ -222,7 +222,7 @@ window.golfData.taylormade = [
         "description": "Irons designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "P7MB Irons",
         "type": "Irons",
         "year": "2025",
@@ -230,7 +230,7 @@ window.golfData.taylormade = [
         "description": "Irons designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "P·UDI",
         "type": "Irons",
         "year": "2025",
@@ -238,7 +238,7 @@ window.golfData.taylormade = [
         "description": "Irons designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "P·DHY",
         "type": "Irons",
         "year": "2025",
@@ -246,7 +246,7 @@ window.golfData.taylormade = [
         "description": "Irons designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "Stealth Black Irons",
         "type": "Irons",
         "year": "2025",
@@ -254,7 +254,7 @@ window.golfData.taylormade = [
         "description": "Irons designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "P·790 Black Irons",
         "type": "Irons",
         "year": "2025",
@@ -262,7 +262,7 @@ window.golfData.taylormade = [
         "description": "Irons designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "MyMG4 Wedge",
         "type": "Wedges",
         "year": "2025",
@@ -270,7 +270,7 @@ window.golfData.taylormade = [
         "description": "Wedges designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "MyHi-Toe 4 Wedge",
         "type": "Wedges",
         "year": "2025",
@@ -278,7 +278,7 @@ window.golfData.taylormade = [
         "description": "Wedges designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "Hi-Toe 4 Wedge",
         "type": "Wedges",
         "year": "2025",
@@ -286,7 +286,7 @@ window.golfData.taylormade = [
         "description": "Wedges designed for performance and accuracy"
     },
     {
-        "brand": "TaylorMade Golf",
+        "brand": "TaylorMade",
         "model": "Milled Grind 4 Wedge",
         "type": "Wedges",
         "year": "2025",
