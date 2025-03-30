@@ -445,7 +445,179 @@
                     </div>
                 </div>
                 
-                <!-- More scenarios would be added here -->
+                <!-- Hardware Issues Suspected -->
+                <div class="scenario-content hidden" id="hardware-content">
+                    <h2>Recovery Options: Hardware Issues Suspected</h2>
+                    <p>When your Windows 11 problems appear to be hardware-related, use these diagnostic and recovery options:</p>
+                    
+                    <div class="recovery-option">
+                        <div class="priority-badge priority-1">First Option</div>
+                        <h3>Windows Memory Diagnostic <span class="internet-required internet-no">No Internet Required</span></h3>
+                        <p>Test RAM for errors that may cause system instability.</p>
+                        <ul class="steps-list">
+                            <li>Boot to Windows Recovery Environment (WinRE)</li>
+                            <li>Select "Troubleshoot" > "Advanced options" > "Windows Memory Diagnostic"</li>
+                            <li>Choose "Restart now and check for problems"</li>
+                            <li>Wait for the memory test to complete (may take 10-30 minutes)</li>
+                            <li>System will restart automatically and display results</li>
+                        </ul>
+                        <div class="data-preservation">
+                            <span class="info-icon">i</span> This diagnostic doesn't modify data but requires restart.
+                        </div>
+                        <button class="expand-btn" data-target="memory-diagnostic-details">Show Technical Details</button>
+                        <div id="memory-diagnostic-details" class="hidden">
+                            <p><strong>Alternative launch method:</strong> From working Windows, press Windows+R, type "mdsched.exe" and press Enter.</p>
+                            <p><strong>Test modes available:</strong></p>
+                            <ul>
+                                <li><strong>Basic:</strong> Fast test covering common memory problems</li>
+                                <li><strong>Standard:</strong> Comprehensive test of all memory locations</li>
+                                <li><strong>Extended:</strong> Thorough test using all test patterns (longest)</li>
+                            </ul>
+                            <p>Press F1 during the test to access the test selection menu.</p>
+                            <p><strong>If errors are found:</strong> Consider replacing the memory module(s). If multiple modules are installed, test them individually to identify the faulty one.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="recovery-option">
+                        <div class="priority-badge priority-2">Second Option</div>
+                        <h3>Hard Drive Diagnostics <span class="internet-required internet-no">No Internet Required</span></h3>
+                        <p>Test storage drives for physical errors and bad sectors.</p>
+                        <ul class="steps-list">
+                            <li>Boot to Windows Recovery Environment (WinRE)</li>
+                            <li>Select "Troubleshoot" > "Advanced options" > "Command Prompt"</li>
+                            <li>Run "chkdsk C: /r /f" (replace C: with your drive letter)</li>
+                            <li>Type "Y" if asked to schedule check on next boot</li>
+                            <li>Restart system and allow check to complete</li>
+                        </ul>
+                        <div class="command-block">
+                            chkdsk C: /r /f<br>
+                            wmic diskdrive get status<br>
+                            wmic diskdrive get model,status,size
+                        </div>
+                        <div class="data-preservation">
+                            <span class="info-icon">i</span> This tool attempts to recover data from bad sectors but may not save all data.
+                        </div>
+                        <button class="expand-btn" data-target="drive-diagnostic-details">Show Manufacturer Tools</button>
+                        <div id="drive-diagnostic-details" class="hidden">
+                            <p><strong>Manufacturer-specific diagnostic tools:</strong></p>
+                            <ul>
+                                <li><strong>Samsung:</strong> Samsung Magician</li>
+                                <li><strong>Western Digital:</strong> WD Dashboard or WD Data Lifeguard</li>
+                                <li><strong>Seagate:</strong> SeaTools</li>
+                                <li><strong>Intel:</strong> Intel SSD Toolbox</li>
+                                <li><strong>Crucial/Micron:</strong> Crucial Storage Executive</li>
+                            </ul>
+                            <p>These manufacturer tools provide more comprehensive diagnostics than Windows built-in tools. Download from manufacturer websites and run from a working Windows installation or bootable media.</p>
+                            <p><strong>S.M.A.R.T. data:</strong> Use CrystalDiskInfo in Windows to check drive health status based on S.M.A.R.T. attributes.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="recovery-option">
+                        <div class="priority-badge priority-2">Third Option</div>
+                        <h3>Hardware Troubleshooter <span class="internet-required internet-no">No Internet Required</span></h3>
+                        <p>Run Windows built-in hardware diagnostic tools.</p>
+                        <ul class="steps-list">
+                            <li>Boot into Safe Mode if possible (F8 during startup)</li>
+                            <li>Open Settings > System > Troubleshoot > Other troubleshooters</li>
+                            <li>Run the Hardware and Devices troubleshooter</li>
+                            <li>Also run related troubleshooters for specific issues (keyboard, audio, etc.)</li>
+                            <li>Follow any recommendations provided</li>
+                        </ul>
+                        <div class="data-preservation">
+                            <span class="info-icon">i</span> This option preserves user data and may fix driver-related issues.
+                        </div>
+                    </div>
+                    
+                    <div class="recovery-option">
+                        <div class="priority-badge priority-3">Fourth Option</div>
+                        <h3>System Component Check <span class="internet-required internet-no">No Internet Required</span></h3>
+                        <p>Physically inspect and test hardware components.</p>
+                        <ul class="steps-list">
+                            <li>Power off the computer completely and unplug it</li>
+                            <li>Open the case and check for loose connections, dust buildup, or swollen capacitors</li>
+                            <li>Reseat RAM modules, storage drives, and expansion cards</li>
+                            <li>Disconnect non-essential hardware and test with minimal configuration</li>
+                            <li>Check CPU temperature in BIOS/UEFI or using monitoring software</li>
+                        </ul>
+                        <div class="data-preservation">
+                            <span class="info-icon">i</span> Physical inspection doesn't affect data, but handle components carefully.
+                        </div>
+                        <button class="expand-btn" data-target="component-check-details">Show Component Testing Guide</button>
+                        <div id="component-check-details" class="hidden">
+                            <p><strong>Systematic component testing:</strong></p>
+                            <ol>
+                                <li><strong>Power Supply:</strong> Test with a PSU tester or multimeter. A failing PSU can cause random restarts or component failures.</li>
+                                <li><strong>RAM:</strong> Test each module individually in different slots.</li>
+                                <li><strong>Storage:</strong> Disconnect all drives except the boot drive. Add back one at a time.</li>
+                                <li><strong>GPU:</strong> Remove dedicated graphics card and use onboard graphics if available.</li>
+                                <li><strong>Peripherals:</strong> Disconnect all external devices and reconnect one by one.</li>
+                                <li><strong>Cooling:</strong> Ensure fans are working and heatsinks are properly attached.</li>
+                            </ol>
+                            <p><strong>Temperature monitoring:</strong> Use HWiNFO, HWMonitor, or Core Temp to check for overheating components. CPU temperatures over 80°C or GPU temperatures over 85°C under load indicate cooling issues.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="recovery-option">
+                        <div class="priority-badge priority-3">Fifth Option</div>
+                        <h3>Driver Rollback/Update <span class="internet-required internet-yes">Internet Recommended</span></h3>
+                        <p>Fix hardware issues caused by problematic device drivers.</p>
+                        <ul class="steps-list">
+                            <li>Boot into Safe Mode if possible</li>
+                            <li>Open Device Manager (right-click Start > Device Manager)</li>
+                            <li>Look for devices with warning icons</li>
+                            <li>Right-click problematic device > Properties > Driver tab > Roll Back Driver (if available)</li>
+                            <li>Or update drivers from manufacturer websites (not Windows Update)</li>
+                        </ul>
+                        <div class="data-preservation">
+                            <span class="info-icon">i</span> This option preserves user data while fixing driver-related hardware issues.
+                        </div>
+                        <div class="command-block">
+                            # PowerShell command to export all driver information for analysis
+                            Get-WmiObject Win32_PnPSignedDriver | Select-Object DeviceName, DriverVersion, Manufacturer | Export-Csv -Path "$env:USERPROFILE\Desktop\drivers.csv" -NoTypeInformation
+                        </div>
+                    </div>
+                    
+                    <div class="recovery-option">
+                        <div class="priority-badge priority-3">Last Resort Option</div>
+                        <h3>Advanced Boot Options <span class="internet-required internet-no">No Internet Required</span></h3>
+                        <p>Modify system configuration to accommodate hardware issues.</p>
+                        <ul class="steps-list">
+                            <li>Boot to Windows Recovery Environment (WinRE)</li>
+                            <li>Select "Troubleshoot" > "Advanced options" > "Startup Settings" > "Restart"</li>
+                            <li>After restart, select appropriate option:
+                                <ul>
+                                    <li>Safe Mode with Networking (option 5)</li>
+                                    <li>Disable driver signature enforcement (option 7)</li>
+                                    <li>Low-resolution video mode (option 3)</li>
+                                </ul>
+                            </li>
+                            <li>Test if system works with modified configuration</li>
+                        </ul>
+                        <div class="data-preservation">
+                            <span class="info-icon">i</span> These options help diagnose specific hardware issues without data loss.
+                        </div>
+                        <button class="expand-btn" data-target="bcdedit-options">Show Advanced Configuration</button>
+                        <div id="bcdedit-options" class="hidden">
+                            <p><strong>BCDEdit commands for hardware troubleshooting:</strong></p>
+                            <div class="command-block">
+                                # Disable hardware graphics acceleration
+                                bcdedit /set disableelamdrivers yes
+                                
+                                # Limit memory usage (if RAM issues suspected)
+                                bcdedit /set truncatememory 256
+                                
+                                # Disable specific hardware features
+                                bcdedit /set nx AlwaysOff
+                                bcdedit /set pae ForceEnable
+                                
+                                # Reset all boot options to default
+                                bcdedit /deletevalue truncatememory
+                                bcdedit /deletevalue nx
+                            </div>
+                            <p><strong>Warning:</strong> These commands modify system boot configuration. Use only for troubleshooting and reset when finished.</p>
+                        </div>
+                    </div>
+                </div>
                 
                 <!-- Example of another scenario content -->
                 <div class="scenario-content hidden" id="malware-content">
