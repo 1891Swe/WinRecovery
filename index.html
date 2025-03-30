@@ -1,52 +1,757 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Golf Brands Directory</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Windows 11 Recovery Guide</title>
+    <style>
+        :root {
+            --primary: #0078d4;
+            --secondary: #106ebe;
+            --light: #f5f5f5;
+            --dark: #323130;
+            --success: #107c10;
+            --warning: #ffb900;
+            --danger: #d13438;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        h1, h2, h3, h4 {
+            margin-bottom: 20px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .main-content {
+            display: flex;
+            margin: 30px 0;
+        }
+        
+        .sidebar {
+            width: 30%;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-right: 20px;
+        }
+        
+        .content-area {
+            width: 70%;
+            background: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .scenario-selector {
+            margin-bottom: 30px;
+        }
+        
+        .scenario-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 10px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: left;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        
+        .scenario-btn:hover {
+            background-color: #f0f0f0;
+            border-color: var(--primary);
+        }
+        
+        .scenario-btn.active {
+            background-color: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+        
+        .recovery-option {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .priority-badge {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        .priority-1 {
+            background-color: var(--success);
+            color: white;
+        }
+        
+        .priority-2 {
+            background-color: var(--warning);
+            color: var(--dark);
+        }
+        
+        .priority-3 {
+            background-color: var(--danger);
+            color: white;
+        }
+        
+        .steps-list {
+            list-style-type: none;
+            margin-left: 20px;
+        }
+        
+        .steps-list li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 10px;
+        }
+        
+        .steps-list li:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            background-color: var(--primary);
+            border-radius: 50%;
+            color: white;
+            text-align: center;
+            line-height: 20px;
+            font-size: 12px;
+        }
+        
+        .steps-list li:nth-child(1):before {
+            content: "1";
+        }
+        
+        .steps-list li:nth-child(2):before {
+            content: "2";
+        }
+        
+        .steps-list li:nth-child(3):before {
+            content: "3";
+        }
+        
+        .steps-list li:nth-child(4):before {
+            content: "4";
+        }
+        
+        .steps-list li:nth-child(5):before {
+            content: "5";
+        }
+        
+        .steps-list li:nth-child(6):before {
+            content: "6";
+        }
+        
+        .internet-required {
+            display: inline-block;
+            padding: 3px 8px;
+            background-color: #e0e0e0;
+            border-radius: 3px;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+        
+        .internet-yes {
+            background-color: #ffd7d7;
+        }
+        
+        .internet-no {
+            background-color: #d7ffd7;
+        }
+        
+        .data-preservation {
+            margin-top: 10px;
+            padding: 5px 0;
+            border-top: 1px solid #eee;
+            font-size: 14px;
+        }
+        
+        .info-icon {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 16px;
+            font-size: 12px;
+            margin-right: 5px;
+            cursor: help;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .show {
+            display: block;
+        }
+        
+        .command-block {
+            background-color: #2d2d2d;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+            overflow-x: auto;
+        }
+        
+        .expand-btn {
+            background-color: #f0f0f0;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+            
+            .sidebar, .content-area {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Golf Brands Directory</h1>
-        <div class="filters">
-            <div class="filter-section">
-                <h3>Brands</h3>
-                <div class="checkbox-group" id="brandFilters">
-                    <label><input type="checkbox" value="cobra" checked> Cobra</label>
-                    <label><input type="checkbox" value="taylormade" checked> TaylorMade</label>
-                    <label><input type="checkbox" value="callaway" checked> Callaway</label>
-                    <label><input type="checkbox" value="titleist" checked> Titleist</label>
+        <div class="container">
+            <div class="header-content">
+                <h1>Windows 11 Recovery Guide</h1>
+                <div>
+                    <label for="internet-toggle">Internet Available:</label>
+                    <input type="checkbox" id="internet-toggle" checked>
                 </div>
             </div>
-            <div class="filter-section">
-                <h3>Club Types</h3>
-                <div class="checkbox-group" id="clubTypeFilters">
-                    <!-- Club types will be dynamically added here -->
-                </div>
-            </div>
-        </div>
-        <div class="clear-filters-container">
-            <button id="resetFilters" class="reset-filters-btn">Reset Filters</button>
-            <button id="clearFilters" class="clear-filters-btn">Clear Filters</button>
         </div>
     </header>
-
-    <main id="brandsContainer">
-        <!-- Brands will be dynamically loaded here -->
-    </main>
-
-    <!-- Initialize golfData object -->
-    <script>window.golfData = {};</script>
-
-    <!-- Load brand data files -->
-    <script src="brands/cobra-golf-data.js"></script>
-    <script src="brands/taylormade-golf-data.js"></script>
-    <script src="brands/titleist-golf-data.js"></script>
-    <script src="brands/callaway-golf-data.js"></script>
-    <script src="data/clubs.js"></script>
     
-    <!-- Load the main script that will process and display the data -->
-    <script src="script.js"></script>
+    <div class="container">
+        <div class="main-content">
+            <div class="sidebar">
+                <h2>Select Your Scenario</h2>
+                <div class="scenario-selector">
+                    <button class="scenario-btn active" data-scenario="wont-boot">System Won't Boot At All</button>
+                    <button class="scenario-btn" data-scenario="boots-crashes">System Boots But Crashes</button>
+                    <button class="scenario-btn" data-scenario="malware">System Infected With Malware</button>
+                    <button class="scenario-btn" data-scenario="hardware">Hardware Issues Suspected</button>
+                    <button class="scenario-btn" data-scenario="enterprise">Enterprise-Managed Device</button>
+                    <button class="scenario-btn" data-scenario="reinstall">Complete Reinstallation Needed</button>
+                    <button class="scenario-btn" data-scenario="blue-screen">Blue Screen Errors</button>
+                    <button class="scenario-btn" data-scenario="new-hardware">New Hardware/Hard Drive</button>
+                </div>
+                
+                <div class="recovery-filter">
+                    <h3>Additional Filters</h3>
+                    <div>
+                        <label><input type="checkbox" id="preserve-data" checked> Must Preserve User Data</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" id="advanced-user"> I'm an Advanced User</label>
+                    </div>
+                    <div>
+                        <label>Hardware Available:</label>
+                        <div class="hardware-options">
+                            <label><input type="checkbox" id="has-dvd" checked> DVD Drive</label>
+                            <label><input type="checkbox" id="has-usb" checked> USB Ports</label>
+                            <label><input type="checkbox" id="has-network" checked> Network Access</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-area">
+                <!-- System Won't Boot -->
+                <div class="scenario-content show" id="wont-boot-content">
+                    <h2>Recovery Options: System Won't Boot At All</h2>
+                    <p>When your Windows 11 system fails to start completely, try these recovery options in the recommended order:</p>
+                    
+                    <div class="recovery-option">
+                        <div class="priority-badge priority-1">First Option</div>
+                        <h3>Startup Repair <span class="internet-required internet-no">No Internet Required</span></h3>
+                        <p>Automatically diagnoses and fixes issues that prevent Windows from starting.</p>
+                        <ul class="steps-list">
+                            <li>Boot to Recovery Environment by forcing shutdown during startup 3 times</li>
+                            <li>Select "Troubleshoot" > "Advanced options" > "Startup Repair"</li>
+                            <li>Wait for the diagnostic and repair process to complete</li>
+                            <li>Restart your computer when prompted</li>
+                        </ul>
+                        <div class="data-preservation">
+                            <span class="info-icon">i</span> This option preserves all user data and applications.
+                        </div>
+                        <button class="expand-btn" data-target="startup-repair-details">Show More Details</button>
+                        <div id="startup-repair-details" class="hidden">
+                            <p>Startup Repair addresses these common issues:</p>
+                            <ul>
+                                <li>Missing or corrupted boot configuration data</li>
+                                <li>Corrupted system files needed during boot</li>
+                                <li>Incompatible drivers preventing boot</li>
+                            </ul>
+                            <p>If Startup Repair runs multiple times without success, it's an indication that you should try the next recovery option.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="recovery-option">
+                        <div class="priority-badge priority-2">Second Option</div>
+                        <h3>Command Prompt Recovery <span class="internet-required internet-no">No Internet Required</span></h3>
+                        <p>Use command-line tools to manually repair boot issues.</p>
+                        <ul class="steps-list">
+                            <li>Boot to Recovery Environment</li>
+                            <li>Select "Troubleshoot" > "Advanced options" > "Command Prompt"</li>
+                            <li>Run boot repair commands (see command list below)</li>
+                            <li>Type "exit" and restart your computer</li>
+                        </ul>
+                        <div class="command-block">
+                            bootrec /scanos<br>
+                            bootrec /rebuildbcd<br>
+                            bootrec /fixmbr<br>
+                            bootrec /fixboot<br>
+                            bcdboot C:\Windows /s C:
+                        </div>
+                        <div class="data-preservation">
+                            <span class="info-icon">i</span> This option preserves user data but requires technical knowledge.
+                        </div>
+                    </div>
+                    
+                    <div class="recovery-option">
+                        <div class="priority-badge priority-3">Third Option</div>
+                        <h3>Reset PC (Keep My Files) <span class="internet-required internet-no">No Internet Required</span></h3>
+                        <p>Reinstalls Windows 11 while preserving your personal files.</p>
+                        <ul class="steps-list">
+                            <li>Boot to Recovery Environment</li>
+                            <li>Select "Troubleshoot" > "Reset this PC"</li>
+                            <li>Choose "Keep my files"</li>
+                            <li>Select "Local reinstall" (not Cloud download)</li>
+                            <li>Follow the on-screen instructions to complete</li>
+                        </ul>
+                        <div class="data-preservation">
+                            <span class="info-icon">i</span> This option preserves personal files but removes applications and settings.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- System Boots But Crashes -->
+                <div class="scenario-content hidden" id="boots-crashes-content">
+                    <h2>Recovery Options: System Boots But Crashes</h2>
+                    <p>When your Windows 11 system starts occasionally but crashes or freezes, try these recovery options:</p>
+                    
+                    <div class="recovery-option">
+                        <div class="priority-badge priority-1">First Option</div>
+                        <h3>Safe Mode <span class="internet-required internet-no">No Internet Required</span></h3>
+                        <p>Boot Windows with minimal drivers to identify problematic software.</p>
+                        <ul class="steps-list">
+                            <li>Press F8 during startup (or from WinRE, select "Troubleshoot" > "Advanced options" > "Startup Settings")</li>
+                            <li>Select option 4 or F4 for Safe Mode</li>
+                            <li>Once in Safe Mode, uninstall recently added programs or drivers</li>
+                            <li>Run System File Checker: Open Command Prompt as admin and type "sfc /scannow"</li>
+                        </ul>
+                        <div class="data-preservation">
+                            <span class="info-icon">i</span> This option preserves all user data and allows troubleshooting.
+                        </div>
+                    </div>
+                    
+                    <div class="recovery-option">
+                        <div class="priority-badge priority-2">Second Option</div>
+                        <h3>System Restore <span class="internet-required internet-no">No Internet Required</span></h3>
+                        <p>Revert system files to a previous working state.</p>
+                        <ul class="steps-list">
+                            <li>From Safe Mode or WinRE, open System Restore</li>
+                            <li>Select a restore point from before the problem started</li>
+                            <li>Follow the wizard to complete the restoration</li>
+                            <li>Restart your computer to apply changes</li>
+                        </ul>
+                        <div class="data-preservation">
+                            <span class="info-icon">i</span> This option preserves personal files but reverts system changes.
+                        </div>
+                    </div>
+                    
+                    <div class="recovery-option">
+                        <div class="priority-badge priority-3">Third Option</div>
+                        <h3>DISM and System File Repairs <span class="internet-required internet-yes">Internet Recommended</span></h3>
+                        <p>Repair Windows system image and files.</p>
+                        <ul class="steps-list">
+                            <li>Boot to Safe Mode with Networking</li>
+                            <li>Run Command Prompt as administrator</li>
+                            <li>Run DISM: "DISM /Online /Cleanup-Image /RestoreHealth"</li>
+                            <li>Run SFC: "sfc /scannow"</li>
+                            <li>Restart and test system stability</li>
+                        </ul>
+                        <div class="command-block">
+                            DISM /Online /Cleanup-Image /RestoreHealth<br>
+                            sfc /scannow
+                        </div>
+                        <div class="data-preservation">
+                            <span class="info-icon">i</span> This option preserves all data while repairing system files.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- More scenarios would be added here -->
+                
+                <!-- Example of another scenario content -->
+                <div class="scenario-content hidden" id="malware-content">
+                    <h2>Recovery Options: System Infected With Malware</h2>
+                    <p>When your Windows 11 system is compromised by malware, try these recovery options:</p>
+                    
+                    <div class="recovery-option">
+                        <div class="priority-badge priority-1">First Option</div>
+                        <h3>Windows Defender Offline Scan <span class="internet-required internet-no">No Internet Required</span></h3>
+                        <p>Run a comprehensive malware scan outside of normal Windows operation.</p>
+                        <ul class="steps-list">
+                            <li>Boot to Recovery Environment</li>
+                            <li>Select "Troubleshoot" > "Advanced options" > "Command Prompt"</li>
+                            <li>Type "MpCmdRun.exe -SignatureUpdate" to update definitions (if internet available)</li>
+                            <li>Type "MpCmdRun.exe -Scan -ScanType 3 -Boot" to run a full offline scan</li>
+                            <li>Let the scan complete and remove any threats found</li>
+                        </ul>
+                        <div class="data-preservation">
+                            <span class="info-icon">i</span> This option preserves all legitimate user data while removing malware.
+                        </div>
+                    </div>
+                    
+                    <!-- Additional options would follow -->
+                </div>
+                
+                <!-- New Hardware / Hard Drive Scenario -->
+                <div class="scenario-content hidden" id="new-hardware-content">
+                    <h2>Recovery Options: New Hardware or Hard Drive</h2>
+                    <p>When installing Windows 11 on new hardware or after a hard drive failure, use these options based on available hardware:</p>
+                    
+                    <div class="recovery-option dvd-option">
+                        <div class="priority-badge priority-1">First Option (with DVD Drive)</div>
+                        <h3>DVD Installation Media <span class="internet-required internet-yes">Internet Required (for creation)</span></h3>
+                        <p>Install Windows 11 using an official installation DVD.</p>
+                        <ul class="steps-list">
+                            <li>On another computer, download Windows 11 ISO from Microsoft</li>
+                            <li>Burn ISO to DVD using Windows built-in burning tool or third-party software</li>
+                            <li>Insert DVD into the new/repaired computer and boot from it</li>
+                            <li>Follow the installation wizard to install Windows 11</li>
+                            <li>Activate Windows with your product key or Microsoft account</li>
+                        </ul>
+                        <div class="data-preservation">
+                            <span class="info-icon">i</span> This is a clean installation on new hardware. No previous data will be preserved.
+                        </div>
+                        <div class="hardware-requirements">
+                            <p><strong>Required:</strong> Working DVD drive, Windows 11 product key</p>
+                            <p><strong>Hardware check:</strong> Modern DVD drives support booting from DVD. Enable DVD boot in BIOS/UEFI.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="recovery-option usb-option">
+                        <div class="priority-badge priority-1">First Option (without DVD Drive)</div>
+                        <h3>USB Installation Media <span class="internet-required internet-yes">Internet Required (for creation)</span></h3>
+                        <p>Install Windows 11 using a bootable USB drive.</p>
+                        <ul class="steps-list">
+                            <li>On another computer, download Media Creation Tool from Microsoft</li>
+                            <li>Run the tool and select "Create installation media for another PC"</li>
+                            <li>Choose USB flash drive option (8GB+ recommended)</li>
+                            <li>Insert the USB drive into the new/repaired computer and boot from it</li>
+                            <li>Follow the installation wizard to install Windows 11</li>
+                        </ul>
+                        <div class="data-preservation">
+                            <span class="info-icon">i</span> This is a clean installation on new hardware. No previous data will be preserved.
+                        </div>
+                        <div class="hardware-requirements">
+                            <p><strong>Required:</strong> USB port, Windows 11 product key</p>
+                            <p><strong>Hardware check:</strong> Enable USB boot in BIOS/UEFI (typically F2, F10, F12, or Del during startup).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="recovery-option network-option">
+                        <div class="priority-badge priority-2">Second Option (Enterprise)</div>
+                        <h3>Network Installation (PXE Boot) <span class="internet-required internet-no">No Internet Required (Local Network)</span></h3>
+                        <p>Install Windows 11 from a network deployment server.</p>
+                        <ul class="steps-list">
+                            <li>Ensure PXE boot server is configured on your network (typically by IT)</li>
+                            <li>Connect new/repaired computer to the network via Ethernet</li>
+                            <li>Enter BIOS/UEFI and enable network boot (PXE)</li>
+                            <li>Boot the computer and press the network boot key (often F12)</li>
+                            <li>Select Windows 11 deployment image from the network menu</li>
+                        </ul>
+                        <div class="data-preservation">
+                            <span class="info-icon">i</span> This is a clean installation on new hardware. No previous data will be preserved.
+                        </div>
+                        <div class="hardware-requirements">
+                            <p><strong>Required:</strong> Network adapter, access to PXE server</p>
+                            <p><strong>Enterprise only:</strong> This option requires a configured deployment server (WDS, MDT, or SCCM).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="recovery-option">
+                        <div class="priority-badge priority-3">Third Option</div>
+                        <h3>Recovery Drive from Another PC <span class="internet-required internet-no">No Internet Required</span></h3>
+                        <p>Use a recovery drive created on another Windows 11 PC.</p>
+                        <ul class="steps-list">
+                            <li>On another Windows 11 PC, create a recovery drive: Start > type "Create a recovery drive"</li>
+                            <li>Follow the wizard to create the recovery drive on a USB (8GB+ recommended)</li>
+                            <li>Insert the recovery drive into the new/repaired computer</li>
+                            <li>Boot from the USB and select "Recover from a drive"</li>
+                            <li>Follow the wizard to install a clean copy of Windows 11</li>
+                        </ul>
+                        <div class="data-preservation">
+                            <span class="info-icon">i</span> This is a clean installation. No previous data will be preserved.
+                        </div>
+                        <div class="hardware-requirements">
+                            <p><strong>Required:</strong> USB port, access to another Windows 11 PC</p>
+                            <p><strong>Note:</strong> This creates a generic Windows 11 installation without specific drivers or applications.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="recovery-option">
+                        <div class="priority-badge priority-3">Alternative Option</div>
+                        <h3>Windows 11 Installation without TPM/Secure Boot <span class="internet-required internet-yes">Internet Required (for download)</span></h3>
+                        <p>Install Windows 11 on hardware that doesn't meet official requirements.</p>
+                        <ul class="steps-list">
+                            <li>Create standard Windows 11 installation media (USB/DVD)</li>
+                            <li>Press Shift+F10 during installation to open Command Prompt</li>
+                            <li>Type "regedit" and navigate to: HKEY_LOCAL_MACHINE\SYSTEM\Setup</li>
+                            <li>Create a new key called "LabConfig"</li>
+                            <li>Create DWORD values: "BypassTPMCheck"=1, "BypassSecureBootCheck"=1, "BypassRAMCheck"=1</li>
+                            <li>Close Registry Editor and continue installation</li>
+                        </ul>
+                        <div class="data-preservation">
+                            <span class="info-icon">i</span> Use this only when hardware doesn't meet Windows 11 requirements.
+                        </div>
+                        <button class="expand-btn" data-target="bypass-details">Show Technical Details</button>
+                        <div id="bypass-details" class="hidden">
+                            <p><strong>Warning:</strong> This method installs Windows 11 on unsupported hardware. You may not receive updates or security patches in the future. Use at your own risk.</p>
+                            <p>Alternative registry bypass commands (via Command Prompt during setup):</p>
+                            <div class="command-block">
+                                reg add HKLM\SYSTEM\Setup\LabConfig /v BypassTPMCheck /t REG_DWORD /d 1<br>
+                                reg add HKLM\SYSTEM\Setup\LabConfig /v BypassSecureBootCheck /t REG_DWORD /d 1<br>
+                                reg add HKLM\SYSTEM\Setup\LabConfig /v BypassRAMCheck /t REG_DWORD /d 1
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 Windows 11 Recovery Guide | Created for IT Professionals</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Scenario switching
+        const scenarioBtns = document.querySelectorAll('.scenario-btn');
+        const scenarioContents = document.querySelectorAll('.scenario-content');
+        
+        scenarioBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                scenarioBtns.forEach(b => b.classList.remove('active'));
+                
+                // Add active class to clicked button
+                btn.classList.add('active');
+                
+                // Hide all scenario contents
+                scenarioContents.forEach(content => content.classList.add('hidden'));
+                scenarioContents.forEach(content => content.classList.remove('show'));
+                
+                // Show the selected scenario content
+                const scenarioId = btn.getAttribute('data-scenario');
+                const scenarioContent = document.getElementById(`${scenarioId}-content`);
+                if (scenarioContent) {
+                    scenarioContent.classList.remove('hidden');
+                    scenarioContent.classList.add('show');
+                }
+                
+                // Update filters based on scenario
+                applyAllFilters();
+            });
+        });
+        
+        // Expand details buttons
+        const expandBtns = document.querySelectorAll('.expand-btn');
+        
+        expandBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const targetId = btn.getAttribute('data-target');
+                const targetElement = document.getElementById(targetId);
+                
+                if (targetElement.classList.contains('hidden')) {
+                    targetElement.classList.remove('hidden');
+                    btn.textContent = 'Show Less';
+                } else {
+                    targetElement.classList.add('hidden');
+                    btn.textContent = 'Show More Details';
+                }
+            });
+        });
+        
+        // Internet availability toggle
+        const internetToggle = document.getElementById('internet-toggle');
+        
+        internetToggle.addEventListener('change', () => {
+            applyAllFilters();
+        });
+        
+        // Data preservation filter
+        const preserveDataToggle = document.getElementById('preserve-data');
+        
+        preserveDataToggle.addEventListener('change', () => {
+            applyAllFilters();
+        });
+        
+        // Hardware availability filters
+        const dvdToggle = document.getElementById('has-dvd');
+        const usbToggle = document.getElementById('has-usb');
+        const networkToggle = document.getElementById('has-network');
+        
+        dvdToggle.addEventListener('change', () => {
+            applyAllFilters();
+        });
+        
+        usbToggle.addEventListener('change', () => {
+            applyAllFilters();
+        });
+        
+        networkToggle.addEventListener('change', () => {
+            applyAllFilters();
+        });
+        
+        // Apply all filters function
+        function applyAllFilters() {
+            const internetAvailable = internetToggle.checked;
+            const preserveData = preserveDataToggle.checked;
+            const hasDVD = dvdToggle.checked;
+            const hasUSB = usbToggle.checked;
+            const hasNetwork = networkToggle.checked;
+            
+            // Get current scenario
+            const activeScenario = document.querySelector('.scenario-btn.active').getAttribute('data-scenario');
+            
+            document.querySelectorAll('.recovery-option').forEach(option => {
+                let showOption = true;
+                
+                // Internet filter
+                if (!internetAvailable) {
+                    const internetBadge = option.querySelector('.internet-required');
+                    if (internetBadge && internetBadge.classList.contains('internet-yes')) {
+                        showOption = false;
+                    }
+                }
+                
+                // Data preservation filter
+                if (preserveData && activeScenario !== 'new-hardware') {
+                    const dataInfo = option.querySelector('.data-preservation');
+                    if (dataInfo && !dataInfo.textContent.includes('preserves')) {
+                        showOption = false;
+                    }
+                }
+                
+                // Hardware filters for new-hardware scenario
+                if (activeScenario === 'new-hardware') {
+                    // DVD filter
+                    if (!hasDVD && option.classList.contains('dvd-option')) {
+                        showOption = false;
+                    }
+                    
+                    // USB filter
+                    if (!hasUSB && option.classList.contains('usb-option')) {
+                        showOption = false;
+                    }
+                    
+                    // Network filter
+                    if (!hasNetwork && option.classList.contains('network-option')) {
+                        showOption = false;
+                    }
+                }
+                
+                // Show or hide based on all filters
+                option.style.display = showOption ? 'block' : 'none';
+            });
+            
+            // Update priority badges after filtering
+            updatePriorityBadges();
+        }
+        
+        // Update priority badges function
+        function updatePriorityBadges() {
+            const visibleOptions = document.querySelectorAll('.scenario-content.show .recovery-option[style="display: block"]');
+            
+            // Reset all badges
+            document.querySelectorAll('.priority-badge').forEach(badge => {
+                badge.classList.remove('priority-1', 'priority-2', 'priority-3');
+                badge.classList.add('priority-3');
+                badge.textContent = 'Option';
+            });
+            
+            // Reassign priorities to visible options
+            if (visibleOptions.length > 0) {
+                visibleOptions[0].querySelector('.priority-badge').classList.add('priority-1');
+                visibleOptions[0].querySelector('.priority-badge').classList.remove('priority-3');
+                visibleOptions[0].querySelector('.priority-badge').textContent = 'First Option';
+                
+                if (visibleOptions.length > 1) {
+                    visibleOptions[1].querySelector('.priority-badge').classList.add('priority-2');
+                    visibleOptions[1].querySelector('.priority-badge').classList.remove('priority-3');
+                    visibleOptions[1].querySelector('.priority-badge').textContent = 'Second Option';
+                }
+            }
+        }
+    </script>
 </body>
 </html>
