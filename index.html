@@ -469,6 +469,185 @@
             </div>
         </div>
     </div>
+    <!-- Enterprise-Managed Device -->
+                <div class="scenario-content hidden" id="enterprise-content">
+                    <h2>Recovery Options: Enterprise-Managed Device</h2>
+                    <p>For devices managed by your organization through Microsoft Entra ID, Microsoft Intune, or SCCM, follow these enterprise-specific recovery options:</p>
+                    
+                    <div class="recovery-option">
+                        <div class="priority-badge priority-1">First Option</div>
+                        <h3>Contact IT Support <span class="internet-required internet-no">No Internet Required</span></h3>
+                        <p>Your organization's IT department may have specific recovery procedures and tools.</p>
+                        <ul class="steps-list">
+                            <li>Contact your IT helpdesk through your organization's standard support channels</li>
+                            <li>Provide your device information (asset tag, serial number, or hostname)</li>
+                            <li>Describe the issue in detail including any error messages</li>
+                            <li>Follow their specific instructions for your managed device</li>
+                        </ul>
+                        <div class="data-preservation">
+                            <span class="info-icon">i</span> Your IT department may be able to recover your data remotely.
+                        </div>
+                    </div>
+                    
+                    <div class="recovery-option">
+                        <div class="priority-badge priority-2">Second Option</div>
+                        <h3>Remote Intune Recovery <span class="internet-required internet-yes">Internet Required</span></h3>
+                        <p>Use Microsoft Intune remote management capabilities to recover the device.</p>
+                        <ul class="steps-list">
+                            <li>IT administrator accesses Microsoft Intune admin center (endpoint.microsoft.com)</li>
+                            <li>Locates affected device under Devices > All devices</li>
+                            <li>Selects "Remote actions" to perform one of these recovery options:</li>
+                            <li>• Fresh Start: Reinstalls Windows while preserving user data</li>
+                            <li>• Remote Restart: Forces device to restart</li>
+                            <li>• Remote Lock: Secures device if compromised</li>
+                            <li>• Sync: Forces device to check in with Intune for policy updates</li>
+                        </ul>
+                        <div class="command-block">
+                            # PowerShell script for IT admins to initiate Fresh Start remotely
+                            Connect-MSGraph
+                            $deviceId = "DEVICE_ID_HERE"
+                            Invoke-DeviceManagementWindowsFreshStart -managedDeviceId $deviceId
+                        </div>
+                        <div class="data-preservation">
+                            <span class="info-icon">i</span> Fresh Start preserves user data but removes OEM apps and non-Store apps.
+                        </div>
+                        <button class="expand-btn" onclick="toggleDetails('intune-remote-details')">Show More Details</button>
+                        <div id="intune-remote-details" class="hidden">
+                            <p><strong>Requirements for Remote Intune Recovery:</strong></p>
+                            <ul>
+                                <li>Device must have previously been enrolled in Intune</li>
+                                <li>Internet connectivity (even intermittent) is required</li>
+                                <li>IT admins need appropriate RBAC permissions in Intune</li>
+                                <li>For BitLocker-enabled devices, recovery keys must be escrowed to Intune</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="recovery-option">
+                        <div class="priority-badge priority-2">Third Option</div>
+                        <h3>Windows Autopilot Reset <span class="internet-required internet-yes">Internet Required</span></h3>
+                        <p>Reset the device while maintaining enrollment in your organization's management system.</p>
+                        <ul class="steps-list">
+                            <li>If Windows is accessible: Settings > System > Recovery > Reset this PC</li>
+                            <li>Choose "Keep my files" or "Remove everything" based on IT policy</li>
+                            <li>Select "Cloud download" for the reinstallation source</li>
+                            <li>During setup, sign in with your work account when prompted</li>
+                            <li>Device will automatically re-enroll and reinstall managed apps</li>
+                        </ul>
+                        <div class="data-preservation">
+                            <span class="info-icon">i</span> Option to keep personal files, but all apps will be reinstalled.
+                        </div>
+                    </div>
+                    
+                    <div class="recovery-option">
+                        <div class="priority-badge priority-3">Fourth Option</div>
+                        <h3>Provisioning Package Recovery <span class="internet-required internet-no">No Internet Required</span></h3>
+                        <p>Use Windows Configuration Designer packages to quickly reconfigure devices without reinstallation.</p>
+                        <ul class="steps-list">
+                            <li>IT admin creates recovery provisioning package (.ppkg) using Windows Configuration Designer</li>
+                            <li>Package is distributed via USB drive to affected device</li>
+                            <li>Boot to Windows Recovery Environment (WinRE)</li>
+                            <li>Select Troubleshoot > Advanced options > Command Prompt</li>
+                            <li>Navigate to the USB drive and run: <code>pkgmgr.exe /auto /add-package /packagepath:path\to\recovery.ppkg</code></li>
+                            <li>Restart the device to apply configurations</li>
+                        </ul>
+                        <div class="command-block">
+                            # PowerShell commands to create a recovery provisioning package (for IT admins)
+                            Install-Module -Name WindowsAutopilotIntune
+                            Import-Module -Name WindowsAutopilotIntune
+                            
+                            # Export device hash for re-enrollment
+                            Get-WindowsAutopilotInfo -OutputFile AutopilotHWID.csv
+                            
+                            # Create PPKG with Windows Configuration Designer
+                            # Then distribute to affected devices
+                        </div>
+                        <div class="data-preservation">
+                            <span class="info-icon">i</span> This preserves user data but reconfigures enterprise settings and enrollment.
+                        </div>
+                    </div>
+                    
+                    <div class="recovery-option">
+                        <div class="priority-badge priority-3">Fifth Option</div>
+                        <h3>SCCM Task Sequence Recovery <span class="internet-required internet-yes">Internet Required</span></h3>
+                        <p>Use Configuration Manager (SCCM) task sequences to restore or rebuild the device.</p>
+                        <ul class="steps-list">
+                            <li>Boot device to Windows PE environment (F12 during startup or use bootable media)</li>
+                            <li>When prompted, select the organization's Task Sequence for OS recovery</li>
+                            <li>For in-place recovery: Choose repair/refresh task sequence that preserves user data</li>
+                            <li>For full rebuild: Choose full OS deployment task sequence</li>
+                            <li>Follow on-screen prompts to complete the deployment</li>
+                            <li>Device will automatically rejoin domain and reinstall required applications</li>
+                        </ul>
+                        <div class="data-preservation">
+                            <span class="info-icon">i</span> Data preservation depends on chosen task sequence - refresh preserves data, rebuild erases it.
+                        </div>
+                        <button class="expand-btn" onclick="toggleDetails('sccm-task-details')">Show More Details</button>
+                        <div id="sccm-task-details" class="hidden">
+                            <p><strong>SCCM Recovery Task Sequence Types:</strong></p>
+                            <ul>
+                                <li><strong>In-Place Upgrade:</strong> Reinstalls Windows while preserving apps, settings, and data</li>
+                                <li><strong>Refresh:</strong> Reinstalls Windows and apps while preserving user data only</li>
+                                <li><strong>Replace:</strong> Full system wipe and reinstall with USMT data restoration</li>
+                                <li><strong>Bare-Metal:</strong> Complete rebuild with no data preservation</li>
+                            </ul>
+                            <p>For devices with User State Migration Tool (USMT) backups, data can be restored even after a full system wipe.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="recovery-option">
+                        <div class="priority-badge priority-3">Sixth Option</div>
+                        <h3>BitLocker Recovery <span class="internet-required internet-no">No Internet Required</span></h3>
+                        <p>Recover access to BitLocker-encrypted drives on enterprise devices.</p>
+                        <ul class="steps-list">
+                            <li>If prompted for BitLocker recovery key at startup:</li>
+                            <li>IT admin retrieves recovery key from one of these sources:</li>
+                            <li>• Microsoft Intune admin center: Devices > All devices > Device > Recover BitLocker keys</li>
+                            <li>• Microsoft Entra admin center: Devices > All devices > Device > BitLocker keys</li>
+                            <li>• Active Directory: Get-ADComputer -Identity "ComputerName" -Properties msFVE-RecoveryPassword</li>
+                            <li>• MBAM server (if deployed)</li>
+                            <li>Enter the 48-digit recovery key when prompted</li>
+                        </ul>
+                        <div class="command-block">
+                            # PowerShell command for IT admins to retrieve BitLocker recovery keys from AD
+                            Get-ADObject -Filter {objectclass -eq 'msFVE-RecoveryInformation'} -SearchBase (Get-ADComputer DEVICENAME).DistinguishedName -Properties 'msFVE-RecoveryPassword'
+                            
+                            # PowerShell command to retrieve BitLocker recovery keys using Intune Graph API
+                            $deviceId = "DEVICE_ID_HERE"
+                            Invoke-MSGraphRequest -HttpMethod GET -Url "deviceManagement/managedDevices('$deviceId')/recoveryKeys"
+                        </div>
+                        <div class="data-preservation">
+                            <span class="info-icon">i</span> Properly recovered BitLocker drives preserve all user data.
+                        </div>
+                    </div>
+                    
+                    <div class="recovery-option">
+                        <div class="priority-badge priority-3">Seventh Option</div>
+                        <h3>Cloud Backup Restoration <span class="internet-required internet-yes">Internet Required</span></h3>
+                        <p>Restore user data from Microsoft 365 cloud backups after device recovery or replacement.</p>
+                        <ul class="steps-list">
+                            <li>After OS reinstallation, ensure device is re-enrolled in Intune/joined to Entra ID</li>
+                            <li>Sign in with user's Microsoft 365 account</li>
+                            <li>OneDrive will automatically start syncing backed-up Desktop, Documents, and Pictures folders</li>
+                            <li>For Known Folder Move (KFM) deployments, data restoration is automatic</li>
+                            <li>For Exchange data: Setup Outlook and mail will resynchronize</li>
+                            <li>For SharePoint data: Reconnect synchronized libraries</li>
+                        </ul>
+                        <div class="command-block">
+                            # PowerShell command to manually force OneDrive Known Folder Move after recovery
+                            $registryPath = "HKLM:\SOFTWARE\Policies\Microsoft\OneDrive"
+                            if (!(Test-Path $registryPath)) { New-Item -Path $registryPath -Force | Out-Null }
+                            Set-ItemProperty -Path $registryPath -Name "KFMSilentOptIn" -Value "YOUR_TENANT_ID_HERE"
+                            
+                            # Restart OneDrive sync client
+                            Get-Process *onedrive* | Stop-Process -Force
+                            Start-Process "$env:LOCALAPPDATA\Microsoft\OneDrive\OneDrive.exe"
+                        </div>
+                        <div class="data-preservation">
+                            <span class="info-icon">i</span> Restores cloud-backed up data only; local-only data cannot be recovered.
+                        </div>
+                    </div>
+                </div>
     
     <footer>
         <div class="container">
