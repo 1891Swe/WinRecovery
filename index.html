@@ -766,32 +766,50 @@
     </footer>
     
     <script>
-        // Scenario switching
-        const scenarioBtns = document.querySelectorAll('.scenario-btn');
-        const scenarioContents = document.querySelectorAll('.scenario-content');
-        
-        scenarioBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                // Remove active class from all buttons
-                scenarioBtns.forEach(b => b.classList.remove('active'));
-                
-                // Add active class to clicked button
-                btn.classList.add('active');
-                
-                // Hide all scenario contents
-                scenarioContents.forEach(content => content.classList.add('hidden'));
-                scenarioContents.forEach(content => content.classList.remove('show'));
-                
-                // Show the selected scenario content
-                const scenarioId = btn.getAttribute('data-scenario');
-                const scenarioContent = document.getElementById(`${scenarioId}-content`);
-                if (scenarioContent) {
-                    scenarioContent.classList.remove('hidden');
-                    scenarioContent.classList.add('show');
-                }
-                
-                // Update filters based on scenario
-                applyAllFilters();
+        // Initialize page when DOM is fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Scenario switching
+            const scenarioBtns = document.querySelectorAll('.scenario-btn');
+            const scenarioContents = document.querySelectorAll('.scenario-content');
+            
+            // Log for debugging
+            console.log('Found ' + scenarioBtns.length + ' scenario buttons');
+            console.log('Found ' + scenarioContents.length + ' scenario contents');
+            
+            scenarioBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Log which button was clicked
+                    console.log('Clicked scenario: ' + btn.getAttribute('data-scenario'));
+                    
+                    // Remove active class from all buttons
+                    scenarioBtns.forEach(b => b.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    btn.classList.add('active');
+                    
+                    // Hide all scenario contents
+                    scenarioContents.forEach(content => {
+                        content.classList.add('hidden');
+                        content.classList.remove('show');
+                    });
+                    
+                    // Show the selected scenario content
+                    const scenarioId = btn.getAttribute('data-scenario');
+                    const scenarioContent = document.getElementById(`${scenarioId}-content`);
+                    
+                    if (scenarioContent) {
+                        console.log('Found matching content: ' + scenarioId + '-content');
+                        scenarioContent.classList.remove('hidden');
+                        scenarioContent.classList.add('show');
+                    } else {
+                        console.error('Could not find content: ' + scenarioId + '-content');
+                    }
+                    
+                    // Update filters based on scenario
+                    if (typeof applyAllFilters === 'function') {
+                        applyAllFilters();
+                    }
+                });
             });
         });
         
