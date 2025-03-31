@@ -5,16 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Windows 11 Recovery Guide</title>
     <style>
-        :root {
-            --primary: #0078d4;
-            --secondary: #106ebe;
-            --light: #f5f5f5;
-            --dark: #323130;
-            --success: #107c10;
-            --warning: #ffb900;
-            --danger: #d13438;
-        }
-        
         * {
             margin: 0;
             padding: 0;
@@ -23,8 +13,8 @@
         }
         
         body {
-            background-color: var(--light);
-            color: var(--dark);
+            background-color: #f5f5f5;
+            color: #323130;
             line-height: 1.6;
         }
         
@@ -35,7 +25,7 @@
         }
         
         header {
-            background-color: var(--primary);
+            background-color: #0078d4;
             color: white;
             padding: 20px 0;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -45,15 +35,10 @@
             margin-bottom: 20px;
         }
         
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
         .main-content {
             display: flex;
             margin: 30px 0;
+            flex-direction: row;
         }
         
         .sidebar {
@@ -73,10 +58,6 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         
-        .scenario-selector {
-            margin-bottom: 30px;
-        }
-        
         .scenario-btn {
             display: block;
             width: 100%;
@@ -93,13 +74,13 @@
         
         .scenario-btn:hover {
             background-color: #f0f0f0;
-            border-color: var(--primary);
+            border-color: #0078d4;
         }
         
         .scenario-btn.active {
-            background-color: var(--primary);
+            background-color: #0078d4;
             color: white;
-            border-color: var(--primary);
+            border-color: #0078d4;
         }
         
         .recovery-option {
@@ -121,23 +102,24 @@
         }
         
         .priority-1 {
-            background-color: var(--success);
+            background-color: #107c10;
             color: white;
         }
         
         .priority-2 {
-            background-color: var(--warning);
-            color: var(--dark);
+            background-color: #ffb900;
+            color: #323130;
         }
         
         .priority-3 {
-            background-color: var(--danger);
+            background-color: #d13438;
             color: white;
         }
         
         .steps-list {
             list-style-type: none;
             margin-left: 20px;
+            margin-bottom: 15px;
         }
         
         .steps-list li {
@@ -147,42 +129,11 @@
         }
         
         .steps-list li:before {
-            content: "";
+            content: "•";
             position: absolute;
-            left: 0;
-            top: 5px;
-            width: 20px;
-            height: 20px;
-            background-color: var(--primary);
-            border-radius: 50%;
-            color: white;
-            text-align: center;
-            line-height: 20px;
-            font-size: 12px;
-        }
-        
-        .steps-list li:nth-child(1):before {
-            content: "1";
-        }
-        
-        .steps-list li:nth-child(2):before {
-            content: "2";
-        }
-        
-        .steps-list li:nth-child(3):before {
-            content: "3";
-        }
-        
-        .steps-list li:nth-child(4):before {
-            content: "4";
-        }
-        
-        .steps-list li:nth-child(5):before {
-            content: "5";
-        }
-        
-        .steps-list li:nth-child(6):before {
-            content: "6";
+            left: 10px;
+            color: #0078d4;
+            font-weight: bold;
         }
         
         .internet-required {
@@ -213,22 +164,17 @@
             display: inline-block;
             width: 16px;
             height: 16px;
-            background-color: var(--primary);
+            background-color: #0078d4;
             color: white;
             border-radius: 50%;
             text-align: center;
             line-height: 16px;
             font-size: 12px;
             margin-right: 5px;
-            cursor: help;
         }
         
         .hidden {
-            display: none;
-        }
-        
-        .show {
-            display: block;
+            display: none !important;
         }
         
         .command-block {
@@ -252,7 +198,7 @@
         }
         
         footer {
-            background-color: var(--dark);
+            background-color: #323130;
             color: white;
             padding: 20px 0;
             text-align: center;
@@ -275,13 +221,7 @@
 <body>
     <header>
         <div class="container">
-            <div class="header-content">
-                <h1>Windows 11 Recovery Guide</h1>
-                <div>
-                    <label for="internet-toggle">Internet Available:</label>
-                    <input type="checkbox" id="internet-toggle" checked>
-                </div>
-            </div>
+            <h1>Windows 11 Recovery Guide</h1>
         </div>
     </header>
     
@@ -290,38 +230,18 @@
             <div class="sidebar">
                 <h2>Select Your Scenario</h2>
                 <div class="scenario-selector">
-                    <button class="scenario-btn active" data-scenario="wont-boot">System Won't Boot At All</button>
-                    <button class="scenario-btn" data-scenario="boots-crashes">System Boots But Crashes</button>
-                    <button class="scenario-btn" data-scenario="malware">System Infected With Malware</button>
-                    <button class="scenario-btn" data-scenario="hardware">Hardware Issues Suspected</button>
-                    <button class="scenario-btn" data-scenario="enterprise">Enterprise-Managed Device</button>
-                    <button class="scenario-btn" data-scenario="reinstall">Complete Reinstallation Needed</button>
-                    <button class="scenario-btn" data-scenario="blue-screen">Blue Screen Errors</button>
-                    <button class="scenario-btn" data-scenario="new-hardware">New Hardware/Hard Drive</button>
-                </div>
-                
-                <div class="recovery-filter">
-                    <h3>Additional Filters</h3>
-                    <div>
-                        <label><input type="checkbox" id="preserve-data" checked> Must Preserve User Data</label>
-                    </div>
-                    <div>
-                        <label><input type="checkbox" id="advanced-user"> I'm an Advanced User</label>
-                    </div>
-                    <div>
-                        <label>Hardware Available:</label>
-                        <div class="hardware-options">
-                            <label><input type="checkbox" id="has-dvd" checked> DVD Drive</label>
-                            <label><input type="checkbox" id="has-usb" checked> USB Ports</label>
-                            <label><input type="checkbox" id="has-network" checked> Network Access</label>
-                        </div>
-                    </div>
+                    <button class="scenario-btn active" onclick="showScenario('wont-boot')">System Won't Boot At All</button>
+                    <button class="scenario-btn" onclick="showScenario('boots-crashes')">System Boots But Crashes</button>
+                    <button class="scenario-btn" onclick="showScenario('blue-screen')">Blue Screen Errors</button>
+                    <button class="scenario-btn" onclick="showScenario('hardware')">Hardware Issues Suspected</button>
+                    <button class="scenario-btn" onclick="showScenario('new-hardware')">New Hardware/Hard Drive</button>
+                    <button class="scenario-btn" onclick="showScenario('enterprise')">Enterprise-Managed Device</button>
                 </div>
             </div>
             
             <div class="content-area">
                 <!-- System Won't Boot -->
-                <div class="scenario-content show" id="wont-boot-content">
+                <div class="scenario-content" id="wont-boot-content">
                     <h2>Recovery Options: System Won't Boot At All</h2>
                     <p>When your Windows 11 system fails to start completely, try these recovery options in the recommended order:</p>
                     
@@ -338,7 +258,7 @@
                         <div class="data-preservation">
                             <span class="info-icon">i</span> This option preserves all user data and applications.
                         </div>
-                        <button class="expand-btn" data-target="startup-repair-details">Show More Details</button>
+                        <button class="expand-btn" onclick="toggleDetails('startup-repair-details')">Show More Details</button>
                         <div id="startup-repair-details" class="hidden">
                             <p>Startup Repair addresses these common issues:</p>
                             <ul>
@@ -371,22 +291,6 @@
                             <span class="info-icon">i</span> This option preserves user data but requires technical knowledge.
                         </div>
                     </div>
-                    
-                    <div class="recovery-option">
-                        <div class="priority-badge priority-3">Third Option</div>
-                        <h3>Reset PC (Keep My Files) <span class="internet-required internet-no">No Internet Required</span></h3>
-                        <p>Reinstalls Windows 11 while preserving your personal files.</p>
-                        <ul class="steps-list">
-                            <li>Boot to Recovery Environment</li>
-                            <li>Select "Troubleshoot" > "Reset this PC"</li>
-                            <li>Choose "Keep my files"</li>
-                            <li>Select "Local reinstall" (not Cloud download)</li>
-                            <li>Follow the on-screen instructions to complete</li>
-                        </ul>
-                        <div class="data-preservation">
-                            <span class="info-icon">i</span> This option preserves personal files but removes applications and settings.
-                        </div>
-                    </div>
                 </div>
                 
                 <!-- System Boots But Crashes -->
@@ -408,44 +312,65 @@
                             <span class="info-icon">i</span> This option preserves all user data and allows troubleshooting.
                         </div>
                     </div>
+                </div>
+                
+                <!-- Blue Screen Errors -->
+                <div class="scenario-content hidden" id="blue-screen-content">
+                    <h2>Recovery Options: Blue Screen Errors (BSOD)</h2>
+                    <p>When your Windows 11 system encounters Blue Screen of Death (BSOD) errors, use these diagnostic and recovery options:</p>
                     
                     <div class="recovery-option">
-                        <div class="priority-badge priority-2">Second Option</div>
-                        <h3>System Restore <span class="internet-required internet-no">No Internet Required</span></h3>
-                        <p>Revert system files to a previous working state.</p>
+                        <div class="priority-badge priority-1">First Option</div>
+                        <h3>Safe Mode and Error Analysis <span class="internet-required internet-no">No Internet Required</span></h3>
+                        <p>Boot into Safe Mode to analyze the blue screen error code and minidump files.</p>
                         <ul class="steps-list">
-                            <li>From Safe Mode or WinRE, open System Restore</li>
-                            <li>Select a restore point from before the problem started</li>
-                            <li>Follow the wizard to complete the restoration</li>
-                            <li>Restart your computer to apply changes</li>
+                            <li>If system can boot occasionally: Press F8 during startup or hold Shift while clicking Restart</li>
+                            <li>If system won't boot: Boot to Recovery Environment > Troubleshoot > Advanced options > Startup Settings > Restart</li>
+                            <li>Press 4 or F4 to boot into Safe Mode</li>
+                            <li>Once in Safe Mode, note the exact error code from previous blue screen (if visible)</li>
+                            <li>Check Event Viewer: Start > type "Event Viewer" > Windows Logs > System > look for Critical errors</li>
                         </ul>
+                        <div class="command-block">
+                            # View most recent minidump files (from Safe Mode or Command Prompt)
+                            dir %SystemRoot%\Minidump\*.dmp /od
+                            
+                            # Copy minidump files to desktop for analysis
+                            mkdir %USERPROFILE%\Desktop\Minidumps
+                            copy %SystemRoot%\Minidump\*.dmp %USERPROFILE%\Desktop\Minidumps\
+                        </div>
                         <div class="data-preservation">
-                            <span class="info-icon">i</span> This option preserves personal files but reverts system changes.
+                            <span class="info-icon">i</span> This diagnostic approach preserves all user data.
+                        </div>
+                        <button class="expand-btn" onclick="toggleDetails('bsod-codes-details')">Show Common BSOD Codes</button>
+                        <div id="bsod-codes-details" class="hidden">
+                            <p><strong>Common Blue Screen Error Codes and Causes:</strong></p>
+                            <ul>
+                                <li><strong>MEMORY_MANAGEMENT (0x0000001A):</strong> Faulty RAM, corrupt system files, incompatible drivers</li>
+                                <li><strong>SYSTEM_SERVICE_EXCEPTION (0x0000003B):</strong> Incompatible drivers, system service issues</li>
+                                <li><strong>IRQL_NOT_LESS_OR_EQUAL (0x0000000A):</strong> Driver conflicts, hardware issues, RAM problems</li>
+                                <li><strong>PAGE_FAULT_IN_NONPAGED_AREA (0x00000050):</strong> RAM issues, corrupt system files, driver conflicts</li>
+                            </ul>
                         </div>
                     </div>
                     
                     <div class="recovery-option">
-                        <div class="priority-badge priority-3">Third Option</div>
-                        <h3>DISM and System File Repairs <span class="internet-required internet-yes">Internet Recommended</span></h3>
-                        <p>Repair Windows system image and files.</p>
+                        <div class="priority-badge priority-2">Second Option</div>
+                        <h3>Driver Rollback or Update <span class="internet-required internet-yes">Internet Recommended</span></h3>
+                        <p>Address driver-related blue screens by rolling back or updating problematic drivers.</p>
                         <ul class="steps-list">
-                            <li>Boot to Safe Mode with Networking</li>
-                            <li>Run Command Prompt as administrator</li>
-                            <li>Run DISM: "DISM /Online /Cleanup-Image /RestoreHealth"</li>
-                            <li>Run SFC: "sfc /scannow"</li>
-                            <li>Restart and test system stability</li>
+                            <li>Boot into Safe Mode as described above</li>
+                            <li>Open Device Manager: Right-click Start > Device Manager</li>
+                            <li>Expand categories and look for devices with warning icons</li>
+                            <li>Right-click problematic device > Properties > Driver tab > Roll Back Driver (if available)</li>
+                            <li>If rollback isn't available, update driver from manufacturer's website (not Windows Update)</li>
                         </ul>
-                        <div class="command-block">
-                            DISM /Online /Cleanup-Image /RestoreHealth<br>
-                            sfc /scannow
-                        </div>
                         <div class="data-preservation">
-                            <span class="info-icon">i</span> This option preserves all data while repairing system files.
+                            <span class="info-icon">i</span> This approach preserves all user data while fixing driver issues.
                         </div>
                     </div>
                 </div>
                 
-                <!-- Hardware Issues Suspected -->
+                <!-- Hardware Issues -->
                 <div class="scenario-content hidden" id="hardware-content">
                     <h2>Recovery Options: Hardware Issues Suspected</h2>
                     <p>When your Windows 11 problems appear to be hardware-related, use these diagnostic and recovery options:</p>
@@ -464,212 +389,16 @@
                         <div class="data-preservation">
                             <span class="info-icon">i</span> This diagnostic doesn't modify data but requires restart.
                         </div>
-                        <button class="expand-btn" data-target="memory-diagnostic-details">Show Technical Details</button>
-                        <div id="memory-diagnostic-details" class="hidden">
-                            <p><strong>Alternative launch method:</strong> From working Windows, press Windows+R, type "mdsched.exe" and press Enter.</p>
-                            <p><strong>Test modes available:</strong></p>
-                            <ul>
-                                <li><strong>Basic:</strong> Fast test covering common memory problems</li>
-                                <li><strong>Standard:</strong> Comprehensive test of all memory locations</li>
-                                <li><strong>Extended:</strong> Thorough test using all test patterns (longest)</li>
-                            </ul>
-                            <p>Press F1 during the test to access the test selection menu.</p>
-                            <p><strong>If errors are found:</strong> Consider replacing the memory module(s). If multiple modules are installed, test them individually to identify the faulty one.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="recovery-option">
-                        <div class="priority-badge priority-2">Second Option</div>
-                        <h3>Hard Drive Diagnostics <span class="internet-required internet-no">No Internet Required</span></h3>
-                        <p>Test storage drives for physical errors and bad sectors.</p>
-                        <ul class="steps-list">
-                            <li>Boot to Windows Recovery Environment (WinRE)</li>
-                            <li>Select "Troubleshoot" > "Advanced options" > "Command Prompt"</li>
-                            <li>Run "chkdsk C: /r /f" (replace C: with your drive letter)</li>
-                            <li>Type "Y" if asked to schedule check on next boot</li>
-                            <li>Restart system and allow check to complete</li>
-                        </ul>
-                        <div class="command-block">
-                            chkdsk C: /r /f<br>
-                            wmic diskdrive get status<br>
-                            wmic diskdrive get model,status,size
-                        </div>
-                        <div class="data-preservation">
-                            <span class="info-icon">i</span> This tool attempts to recover data from bad sectors but may not save all data.
-                        </div>
-                        <button class="expand-btn" data-target="drive-diagnostic-details">Show Manufacturer Tools</button>
-                        <div id="drive-diagnostic-details" class="hidden">
-                            <p><strong>Manufacturer-specific diagnostic tools:</strong></p>
-                            <ul>
-                                <li><strong>Samsung:</strong> Samsung Magician</li>
-                                <li><strong>Western Digital:</strong> WD Dashboard or WD Data Lifeguard</li>
-                                <li><strong>Seagate:</strong> SeaTools</li>
-                                <li><strong>Intel:</strong> Intel SSD Toolbox</li>
-                                <li><strong>Crucial/Micron:</strong> Crucial Storage Executive</li>
-                            </ul>
-                            <p>These manufacturer tools provide more comprehensive diagnostics than Windows built-in tools. Download from manufacturer websites and run from a working Windows installation or bootable media.</p>
-                            <p><strong>S.M.A.R.T. data:</strong> Use CrystalDiskInfo in Windows to check drive health status based on S.M.A.R.T. attributes.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="recovery-option">
-                        <div class="priority-badge priority-2">Third Option</div>
-                        <h3>Hardware Troubleshooter <span class="internet-required internet-no">No Internet Required</span></h3>
-                        <p>Run Windows built-in hardware diagnostic tools.</p>
-                        <ul class="steps-list">
-                            <li>Boot into Safe Mode if possible (F8 during startup)</li>
-                            <li>Open Settings > System > Troubleshoot > Other troubleshooters</li>
-                            <li>Run the Hardware and Devices troubleshooter</li>
-                            <li>Also run related troubleshooters for specific issues (keyboard, audio, etc.)</li>
-                            <li>Follow any recommendations provided</li>
-                        </ul>
-                        <div class="data-preservation">
-                            <span class="info-icon">i</span> This option preserves user data and may fix driver-related issues.
-                        </div>
-                    </div>
-                    
-                    <div class="recovery-option">
-                        <div class="priority-badge priority-3">Fourth Option</div>
-                        <h3>System Component Check <span class="internet-required internet-no">No Internet Required</span></h3>
-                        <p>Physically inspect and test hardware components.</p>
-                        <ul class="steps-list">
-                            <li>Power off the computer completely and unplug it</li>
-                            <li>Open the case and check for loose connections, dust buildup, or swollen capacitors</li>
-                            <li>Reseat RAM modules, storage drives, and expansion cards</li>
-                            <li>Disconnect non-essential hardware and test with minimal configuration</li>
-                            <li>Check CPU temperature in BIOS/UEFI or using monitoring software</li>
-                        </ul>
-                        <div class="data-preservation">
-                            <span class="info-icon">i</span> Physical inspection doesn't affect data, but handle components carefully.
-                        </div>
-                        <button class="expand-btn" data-target="component-check-details">Show Component Testing Guide</button>
-                        <div id="component-check-details" class="hidden">
-                            <p><strong>Systematic component testing:</strong></p>
-                            <ol>
-                                <li><strong>Power Supply:</strong> Test with a PSU tester or multimeter. A failing PSU can cause random restarts or component failures.</li>
-                                <li><strong>RAM:</strong> Test each module individually in different slots.</li>
-                                <li><strong>Storage:</strong> Disconnect all drives except the boot drive. Add back one at a time.</li>
-                                <li><strong>GPU:</strong> Remove dedicated graphics card and use onboard graphics if available.</li>
-                                <li><strong>Peripherals:</strong> Disconnect all external devices and reconnect one by one.</li>
-                                <li><strong>Cooling:</strong> Ensure fans are working and heatsinks are properly attached.</li>
-                            </ol>
-                            <p><strong>Temperature monitoring:</strong> Use HWiNFO, HWMonitor, or Core Temp to check for overheating components. CPU temperatures over 80°C or GPU temperatures over 85°C under load indicate cooling issues.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="recovery-option">
-                        <div class="priority-badge priority-3">Fifth Option</div>
-                        <h3>Driver Rollback/Update <span class="internet-required internet-yes">Internet Recommended</span></h3>
-                        <p>Fix hardware issues caused by problematic device drivers.</p>
-                        <ul class="steps-list">
-                            <li>Boot into Safe Mode if possible</li>
-                            <li>Open Device Manager (right-click Start > Device Manager)</li>
-                            <li>Look for devices with warning icons</li>
-                            <li>Right-click problematic device > Properties > Driver tab > Roll Back Driver (if available)</li>
-                            <li>Or update drivers from manufacturer websites (not Windows Update)</li>
-                        </ul>
-                        <div class="data-preservation">
-                            <span class="info-icon">i</span> This option preserves user data while fixing driver-related hardware issues.
-                        </div>
-                        <div class="command-block">
-                            # PowerShell command to export all driver information for analysis
-                            Get-WmiObject Win32_PnPSignedDriver | Select-Object DeviceName, DriverVersion, Manufacturer | Export-Csv -Path "$env:USERPROFILE\Desktop\drivers.csv" -NoTypeInformation
-                        </div>
-                    </div>
-                    
-                    <div class="recovery-option">
-                        <div class="priority-badge priority-3">Last Resort Option</div>
-                        <h3>Advanced Boot Options <span class="internet-required internet-no">No Internet Required</span></h3>
-                        <p>Modify system configuration to accommodate hardware issues.</p>
-                        <ul class="steps-list">
-                            <li>Boot to Windows Recovery Environment (WinRE)</li>
-                            <li>Select "Troubleshoot" > "Advanced options" > "Startup Settings" > "Restart"</li>
-                            <li>After restart, select appropriate option:
-                                <ul>
-                                    <li>Safe Mode with Networking (option 5)</li>
-                                    <li>Disable driver signature enforcement (option 7)</li>
-                                    <li>Low-resolution video mode (option 3)</li>
-                                </ul>
-                            </li>
-                            <li>Test if system works with modified configuration</li>
-                        </ul>
-                        <div class="data-preservation">
-                            <span class="info-icon">i</span> These options help diagnose specific hardware issues without data loss.
-                        </div>
-                        <button class="expand-btn" data-target="bcdedit-options">Show Advanced Configuration</button>
-                        <div id="bcdedit-options" class="hidden">
-                            <p><strong>BCDEdit commands for hardware troubleshooting:</strong></p>
-                            <div class="command-block">
-                                # Disable hardware graphics acceleration
-                                bcdedit /set disableelamdrivers yes
-                                
-                                # Limit memory usage (if RAM issues suspected)
-                                bcdedit /set truncatememory 256
-                                
-                                # Disable specific hardware features
-                                bcdedit /set nx AlwaysOff
-                                bcdedit /set pae ForceEnable
-                                
-                                # Reset all boot options to default
-                                bcdedit /deletevalue truncatememory
-                                bcdedit /deletevalue nx
-                            </div>
-                            <p><strong>Warning:</strong> These commands modify system boot configuration. Use only for troubleshooting and reset when finished.</p>
-                        </div>
                     </div>
                 </div>
                 
-                <!-- Example of another scenario content -->
-                <div class="scenario-content hidden" id="malware-content">
-                    <h2>Recovery Options: System Infected With Malware</h2>
-                    <p>When your Windows 11 system is compromised by malware, try these recovery options:</p>
+                <!-- New Hardware/Hard Drive -->
+                <div class="scenario-content hidden" id="new-hardware-content">
+                    <h2>Recovery Options: New Hardware or Hard Drive</h2>
+                    <p>When installing Windows 11 on new hardware or after a hard drive failure, use these options:</p>
                     
                     <div class="recovery-option">
                         <div class="priority-badge priority-1">First Option</div>
-                        <h3>Windows Defender Offline Scan <span class="internet-required internet-no">No Internet Required</span></h3>
-                        <p>Run a comprehensive malware scan outside of normal Windows operation.</p>
-                        <ul class="steps-list">
-                            <li>Boot to Recovery Environment</li>
-                            <li>Select "Troubleshoot" > "Advanced options" > "Command Prompt"</li>
-                            <li>Type "MpCmdRun.exe -SignatureUpdate" to update definitions (if internet available)</li>
-                            <li>Type "MpCmdRun.exe -Scan -ScanType 3 -Boot" to run a full offline scan</li>
-                            <li>Let the scan complete and remove any threats found</li>
-                        </ul>
-                        <div class="data-preservation">
-                            <span class="info-icon">i</span> This option preserves all legitimate user data while removing malware.
-                        </div>
-                    </div>
-                    
-                    <!-- Additional options would follow -->
-                </div>
-                
-                <!-- New Hardware / Hard Drive Scenario -->
-                <div class="scenario-content hidden" id="new-hardware-content">
-                    <h2>Recovery Options: New Hardware or Hard Drive</h2>
-                    <p>When installing Windows 11 on new hardware or after a hard drive failure, use these options based on available hardware:</p>
-                    
-                    <div class="recovery-option dvd-option">
-                        <div class="priority-badge priority-1">First Option (with DVD Drive)</div>
-                        <h3>DVD Installation Media <span class="internet-required internet-yes">Internet Required (for creation)</span></h3>
-                        <p>Install Windows 11 using an official installation DVD.</p>
-                        <ul class="steps-list">
-                            <li>On another computer, download Windows 11 ISO from Microsoft</li>
-                            <li>Burn ISO to DVD using Windows built-in burning tool or third-party software</li>
-                            <li>Insert DVD into the new/repaired computer and boot from it</li>
-                            <li>Follow the installation wizard to install Windows 11</li>
-                            <li>Activate Windows with your product key or Microsoft account</li>
-                        </ul>
-                        <div class="data-preservation">
-                            <span class="info-icon">i</span> This is a clean installation on new hardware. No previous data will be preserved.
-                        </div>
-                        <div class="hardware-requirements">
-                            <p><strong>Required:</strong> Working DVD drive, Windows 11 product key</p>
-                            <p><strong>Hardware check:</strong> Modern DVD drives support booting from DVD. Enable DVD boot in BIOS/UEFI.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="recovery-option usb-option">
-                        <div class="priority-badge priority-1">First Option (without DVD Drive)</div>
                         <h3>USB Installation Media <span class="internet-required internet-yes">Internet Required (for creation)</span></h3>
                         <p>Install Windows 11 using a bootable USB drive.</p>
                         <ul class="steps-list">
@@ -682,76 +411,58 @@
                         <div class="data-preservation">
                             <span class="info-icon">i</span> This is a clean installation on new hardware. No previous data will be preserved.
                         </div>
-                        <div class="hardware-requirements">
-                            <p><strong>Required:</strong> USB port, Windows 11 product key</p>
-                            <p><strong>Hardware check:</strong> Enable USB boot in BIOS/UEFI (typically F2, F10, F12, or Del during startup).</p>
-                        </div>
                     </div>
                     
-                    <div class="recovery-option network-option">
-                        <div class="priority-badge priority-2">Second Option (Enterprise)</div>
-                        <h3>Network Installation (PXE Boot) <span class="internet-required internet-no">No Internet Required (Local Network)</span></h3>
-                        <p>Install Windows 11 from a network deployment server.</p>
+                    <div class="recovery-option">
+                        <div class="priority-badge priority-2">Second Option</div>
+                        <h3>DVD Installation Media <span class="internet-required internet-yes">Internet Required (for creation)</span></h3>
+                        <p>Install Windows 11 using an official installation DVD.</p>
                         <ul class="steps-list">
-                            <li>Ensure PXE boot server is configured on your network (typically by IT)</li>
-                            <li>Connect new/repaired computer to the network via Ethernet</li>
-                            <li>Enter BIOS/UEFI and enable network boot (PXE)</li>
-                            <li>Boot the computer and press the network boot key (often F12)</li>
-                            <li>Select Windows 11 deployment image from the network menu</li>
+                            <li>On another computer, download Windows 11 ISO from Microsoft</li>
+                            <li>Burn ISO to DVD using Windows built-in burning tool or third-party software</li>
+                            <li>Insert DVD into the new/repaired computer and boot from it</li>
+                            <li>Follow the installation wizard to install Windows 11</li>
+                            <li>Activate Windows with your product key or Microsoft account</li>
                         </ul>
                         <div class="data-preservation">
                             <span class="info-icon">i</span> This is a clean installation on new hardware. No previous data will be preserved.
                         </div>
-                        <div class="hardware-requirements">
-                            <p><strong>Required:</strong> Network adapter, access to PXE server</p>
-                            <p><strong>Enterprise only:</strong> This option requires a configured deployment server (WDS, MDT, or SCCM).</p>
+                    </div>
+                </div>
+                
+                <!-- Enterprise-Managed Device -->
+                <div class="scenario-content hidden" id="enterprise-content">
+                    <h2>Recovery Options: Enterprise-Managed Device</h2>
+                    <p>For devices managed by your organization through Microsoft Entra ID, Microsoft Intune, or SCCM, follow these enterprise-specific recovery options:</p>
+                    
+                    <div class="recovery-option">
+                        <div class="priority-badge priority-1">First Option</div>
+                        <h3>Contact IT Support <span class="internet-required internet-no">No Internet Required</span></h3>
+                        <p>Your organization's IT department may have specific recovery procedures and tools.</p>
+                        <ul class="steps-list">
+                            <li>Contact your IT helpdesk through your organization's standard support channels</li>
+                            <li>Provide your device information (asset tag, serial number, or hostname)</li>
+                            <li>Describe the issue in detail including any error messages</li>
+                            <li>Follow their specific instructions for your managed device</li>
+                        </ul>
+                        <div class="data-preservation">
+                            <span class="info-icon">i</span> Your IT department may be able to recover your data remotely.
                         </div>
                     </div>
                     
                     <div class="recovery-option">
-                        <div class="priority-badge priority-3">Third Option</div>
-                        <h3>Recovery Drive from Another PC <span class="internet-required internet-no">No Internet Required</span></h3>
-                        <p>Use a recovery drive created on another Windows 11 PC.</p>
+                        <div class="priority-badge priority-2">Second Option</div>
+                        <h3>Windows Autopilot Reset <span class="internet-required internet-yes">Internet Required</span></h3>
+                        <p>Reset the device while maintaining enrollment in your organization's management system.</p>
                         <ul class="steps-list">
-                            <li>On another Windows 11 PC, create a recovery drive: Start > type "Create a recovery drive"</li>
-                            <li>Follow the wizard to create the recovery drive on a USB (8GB+ recommended)</li>
-                            <li>Insert the recovery drive into the new/repaired computer</li>
-                            <li>Boot from the USB and select "Recover from a drive"</li>
-                            <li>Follow the wizard to install a clean copy of Windows 11</li>
+                            <li>If Windows is accessible: Settings > System > Recovery > Reset this PC</li>
+                            <li>Choose "Keep my files" or "Remove everything" based on IT policy</li>
+                            <li>Select "Cloud download" for the reinstallation source</li>
+                            <li>During setup, sign in with your work account when prompted</li>
+                            <li>Device will automatically re-enroll and reinstall managed apps</li>
                         </ul>
                         <div class="data-preservation">
-                            <span class="info-icon">i</span> This is a clean installation. No previous data will be preserved.
-                        </div>
-                        <div class="hardware-requirements">
-                            <p><strong>Required:</strong> USB port, access to another Windows 11 PC</p>
-                            <p><strong>Note:</strong> This creates a generic Windows 11 installation without specific drivers or applications.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="recovery-option">
-                        <div class="priority-badge priority-3">Alternative Option</div>
-                        <h3>Windows 11 Installation without TPM/Secure Boot <span class="internet-required internet-yes">Internet Required (for download)</span></h3>
-                        <p>Install Windows 11 on hardware that doesn't meet official requirements.</p>
-                        <ul class="steps-list">
-                            <li>Create standard Windows 11 installation media (USB/DVD)</li>
-                            <li>Press Shift+F10 during installation to open Command Prompt</li>
-                            <li>Type "regedit" and navigate to: HKEY_LOCAL_MACHINE\SYSTEM\Setup</li>
-                            <li>Create a new key called "LabConfig"</li>
-                            <li>Create DWORD values: "BypassTPMCheck"=1, "BypassSecureBootCheck"=1, "BypassRAMCheck"=1</li>
-                            <li>Close Registry Editor and continue installation</li>
-                        </ul>
-                        <div class="data-preservation">
-                            <span class="info-icon">i</span> Use this only when hardware doesn't meet Windows 11 requirements.
-                        </div>
-                        <button class="expand-btn" data-target="bypass-details">Show Technical Details</button>
-                        <div id="bypass-details" class="hidden">
-                            <p><strong>Warning:</strong> This method installs Windows 11 on unsupported hardware. You may not receive updates or security patches in the future. Use at your own risk.</p>
-                            <p>Alternative registry bypass commands (via Command Prompt during setup):</p>
-                            <div class="command-block">
-                                reg add HKLM\SYSTEM\Setup\LabConfig /v BypassTPMCheck /t REG_DWORD /d 1<br>
-                                reg add HKLM\SYSTEM\Setup\LabConfig /v BypassSecureBootCheck /t REG_DWORD /d 1<br>
-                                reg add HKLM\SYSTEM\Setup\LabConfig /v BypassRAMCheck /t REG_DWORD /d 1
-                            </div>
+                            <span class="info-icon">i</span> Option to keep personal files, but all apps will be reinstalled.
                         </div>
                     </div>
                 </div>
@@ -766,182 +477,51 @@
     </footer>
     
     <script>
-        // Initialize page when DOM is fully loaded
-        document.addEventListener('DOMContentLoaded', function() {
-            // Scenario switching
-            const scenarioBtns = document.querySelectorAll('.scenario-btn');
-            const scenarioContents = document.querySelectorAll('.scenario-content');
-            
-            // Log for debugging
-            console.log('Found ' + scenarioBtns.length + ' scenario buttons');
-            console.log('Found ' + scenarioContents.length + ' scenario contents');
-            
-            scenarioBtns.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    // Log which button was clicked
-                    console.log('Clicked scenario: ' + btn.getAttribute('data-scenario'));
-                    
-                    // Remove active class from all buttons
-                    scenarioBtns.forEach(b => b.classList.remove('active'));
-                    
-                    // Add active class to clicked button
-                    btn.classList.add('active');
-                    
-                    // Hide all scenario contents
-                    scenarioContents.forEach(content => {
-                        content.classList.add('hidden');
-                        content.classList.remove('show');
-                    });
-                    
-                    // Show the selected scenario content
-                    const scenarioId = btn.getAttribute('data-scenario');
-                    const scenarioContent = document.getElementById(`${scenarioId}-content`);
-                    
-                    if (scenarioContent) {
-                        console.log('Found matching content: ' + scenarioId + '-content');
-                        scenarioContent.classList.remove('hidden');
-                        scenarioContent.classList.add('show');
-                    } else {
-                        console.error('Could not find content: ' + scenarioId + '-content');
-                    }
-                    
-                    // Update filters based on scenario
-                    if (typeof applyAllFilters === 'function') {
-                        applyAllFilters();
-                    }
-                });
-            });
-        });
-        
-        // Expand details buttons
-        const expandBtns = document.querySelectorAll('.expand-btn');
-        
-        expandBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const targetId = btn.getAttribute('data-target');
-                const targetElement = document.getElementById(targetId);
-                
-                if (targetElement.classList.contains('hidden')) {
-                    targetElement.classList.remove('hidden');
-                    btn.textContent = 'Show Less';
-                } else {
-                    targetElement.classList.add('hidden');
-                    btn.textContent = 'Show More Details';
-                }
-            });
-        });
-        
-        // Internet availability toggle
-        const internetToggle = document.getElementById('internet-toggle');
-        
-        internetToggle.addEventListener('change', () => {
-            applyAllFilters();
-        });
-        
-        // Data preservation filter
-        const preserveDataToggle = document.getElementById('preserve-data');
-        
-        preserveDataToggle.addEventListener('change', () => {
-            applyAllFilters();
-        });
-        
-        // Hardware availability filters
-        const dvdToggle = document.getElementById('has-dvd');
-        const usbToggle = document.getElementById('has-usb');
-        const networkToggle = document.getElementById('has-network');
-        
-        dvdToggle.addEventListener('change', () => {
-            applyAllFilters();
-        });
-        
-        usbToggle.addEventListener('change', () => {
-            applyAllFilters();
-        });
-        
-        networkToggle.addEventListener('change', () => {
-            applyAllFilters();
-        });
-        
-        // Apply all filters function
-        function applyAllFilters() {
-            const internetAvailable = internetToggle.checked;
-            const preserveData = preserveDataToggle.checked;
-            const hasDVD = dvdToggle.checked;
-            const hasUSB = usbToggle.checked;
-            const hasNetwork = networkToggle.checked;
-            
-            // Get current scenario
-            const activeScenario = document.querySelector('.scenario-btn.active').getAttribute('data-scenario');
-            
-            document.querySelectorAll('.recovery-option').forEach(option => {
-                let showOption = true;
-                
-                // Internet filter
-                if (!internetAvailable) {
-                    const internetBadge = option.querySelector('.internet-required');
-                    if (internetBadge && internetBadge.classList.contains('internet-yes')) {
-                        showOption = false;
-                    }
-                }
-                
-                // Data preservation filter
-                if (preserveData && activeScenario !== 'new-hardware') {
-                    const dataInfo = option.querySelector('.data-preservation');
-                    if (dataInfo && !dataInfo.textContent.includes('preserves')) {
-                        showOption = false;
-                    }
-                }
-                
-                // Hardware filters for new-hardware scenario
-                if (activeScenario === 'new-hardware') {
-                    // DVD filter
-                    if (!hasDVD && option.classList.contains('dvd-option')) {
-                        showOption = false;
-                    }
-                    
-                    // USB filter
-                    if (!hasUSB && option.classList.contains('usb-option')) {
-                        showOption = false;
-                    }
-                    
-                    // Network filter
-                    if (!hasNetwork && option.classList.contains('network-option')) {
-                        showOption = false;
-                    }
-                }
-                
-                // Show or hide based on all filters
-                option.style.display = showOption ? 'block' : 'none';
+        // Simple function to show scenarios
+        function showScenario(scenarioId) {
+            // Hide all scenario contents
+            const allContents = document.querySelectorAll('.scenario-content');
+            allContents.forEach(content => {
+                content.classList.add('hidden');
             });
             
-            // Update priority badges after filtering
-            updatePriorityBadges();
-        }
-        
-        // Update priority badges function
-        function updatePriorityBadges() {
-            const visibleOptions = document.querySelectorAll('.scenario-content.show .recovery-option[style="display: block"]');
+            // Show selected scenario
+            const selectedContent = document.getElementById(scenarioId + '-content');
+            if (selectedContent) {
+                selectedContent.classList.remove('hidden');
+            }
             
-            // Reset all badges
-            document.querySelectorAll('.priority-badge').forEach(badge => {
-                badge.classList.remove('priority-1', 'priority-2', 'priority-3');
-                badge.classList.add('priority-3');
-                badge.textContent = 'Option';
+            // Update button active state
+            const allButtons = document.querySelectorAll('.scenario-btn');
+            allButtons.forEach(button => {
+                button.classList.remove('active');
             });
             
-            // Reassign priorities to visible options
-            if (visibleOptions.length > 0) {
-                visibleOptions[0].querySelector('.priority-badge').classList.add('priority-1');
-                visibleOptions[0].querySelector('.priority-badge').classList.remove('priority-3');
-                visibleOptions[0].querySelector('.priority-badge').textContent = 'First Option';
-                
-                if (visibleOptions.length > 1) {
-                    visibleOptions[1].querySelector('.priority-badge').classList.add('priority-2');
-                    visibleOptions[1].querySelector('.priority-badge').classList.remove('priority-3');
-                    visibleOptions[1].querySelector('.priority-badge').textContent = 'Second Option';
-                }
+            // Find the clicked button by the scenario it shows
+            const clickedButton = document.querySelector(`.scenario-btn[onclick*="${scenarioId}"]`);
+            if (clickedButton) {
+                clickedButton.classList.add('active');
             }
         }
+        
+        // Toggle details sections
+        function toggleDetails(detailsId) {
+            const detailsElement = document.getElementById(detailsId);
+            const button = event.target;
+            
+            if (detailsElement.classList.contains('hidden')) {
+                detailsElement.classList.remove('hidden');
+                button.textContent = 'Show Less';
+            } else {
+                detailsElement.classList.add('hidden');
+                button.textContent = 'Show More Details';
+            }
+        }
+        
+        // Make sure we start with only first scenario visible
+        document.addEventListener('DOMContentLoaded', function() {
+            showScenario('wont-boot');
+        });
     </script>
 </body>
 </html>
