@@ -25,12 +25,34 @@
         }
         
         header {
-            background-color: #0078d4;
-            background-image: linear-gradient(to right, #005a9e, #0078d4, #005a9e); /* Added gradient background */
+            background-color: #0078d4; /* Fallback color if image doesn't load */
+            background-image: url('https://cdn.wallpapersafari.com/92/34/qQJG1U.jpg'); /* Windows 11 default wallpaper */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             color: white;
-            padding: 20px 0;
+            padding: 40px 0;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            text-align: center; /* Added text centering to the header */
+            text-align: center;
+            position: relative;
+        }
+        
+        /* Dark overlay to ensure text remains readable */
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+            z-index: 1;
+        }
+        
+        /* Make header content appear above the overlay */
+        header .container {
+            position: relative;
+            z-index: 2;
         }
         
         h1, h2, h3, h4 {
@@ -39,6 +61,8 @@
         
         h1 {
             text-align: center;
+            font-size: 2.5rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
         }
         
         .main-content {
@@ -458,45 +482,6 @@
                     
                     <div class="recovery-option">
                         <div class="priority-badge priority-2">Second Option</div>
-                        <h3>Windows Autopilot Reset <span class="internet-required internet-yes">Internet Required</span></h3>
-                        <p>Reset the device while maintaining enrollment in your organization's management system.</p>
-                        <ul class="steps-list">
-                            <li>If Windows is accessible: Settings > System > Recovery > Reset this PC</li>
-                            <li>Choose "Keep my files" or "Remove everything" based on IT policy</li>
-                            <li>Select "Cloud download" for the reinstallation source</li>
-                            <li>During setup, sign in with your work account when prompted</li>
-                            <li>Device will automatically re-enroll and reinstall managed apps</li>
-                        </ul>
-                        <div class="data-preservation">
-                            <span class="info-icon">i</span> Option to keep personal files, but all apps will be reinstalled.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Enterprise-Managed Device -->
-                <div class="scenario-content hidden" id="enterprise-content">
-                    <h2>Recovery Options: Enterprise-Managed Device</h2>
-                    <p>For devices managed by your organization through Microsoft Entra ID, Microsoft Intune, or SCCM, follow these enterprise-specific recovery options:</p>
-                    
-                    <div class="recovery-option">
-                        <div class="priority-badge priority-1">First Option</div>
-                        <h3>Contact IT Support <span class="internet-required internet-no">No Internet Required</span></h3>
-                        <p>Your organization's IT department may have specific recovery procedures and tools.</p>
-                        <ul class="steps-list">
-                            <li>Contact your IT helpdesk through your organization's standard support channels</li>
-                            <li>Provide your device information (asset tag, serial number, or hostname)</li>
-                            <li>Describe the issue in detail including any error messages</li>
-                            <li>Follow their specific instructions for your managed device</li>
-                        </ul>
-                        <div class="data-preservation">
-                            <span class="info-icon">i</span> Your IT department may be able to recover your data remotely.
-                        </div>
-                    </div>
-                    
-                    <div class="recovery-option">
-                        <div class="priority-badge priority-2">Second Option</div>
                         <h3>Remote Intune Recovery <span class="internet-required internet-yes">Internet Required</span></h3>
                         <p>Use Microsoft Intune remote management capabilities to recover the device.</p>
                         <ul class="steps-list">
@@ -654,6 +639,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
     
     <footer>
         <div class="container">
